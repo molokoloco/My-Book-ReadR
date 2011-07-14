@@ -177,7 +177,7 @@
 			-o-transition:all 500ms linear;
 		opacity:1;
 	}
-	#disqus_thread.hidden { opacity:0; }
+	#disqus_thread.hidden { opacity:0; right:-60%; }
 	#disqus_thread h3 { font-size:3em; }
 	#disqus_thread em, #disqus_thread span, #disqus_thread a  { font-size:1.4em; font-weight:normal; }
 	#disqus_thread .dsq-comment-message { font-size:2.2em; }
@@ -220,10 +220,26 @@
 	}
 	a.top:hover { color:#333; }
 	a.top:hover:before { border-bottom-color:#333; }
+	a.ribbon {
+		display:block;
+		position:fixed;
+		top:0; right:0;
+		width:80px; height:80px;
+		z-index:100; 
+		margin:0;
+		text-indent:-9999px;
+		background:url('http://www.b2bweb.fr/bonus/github-ribbon.png') no-repeat;
+		opacity:0.05;
+	}
+	a.ribbon:hover { opacity:1; }
 	</style>
 </head>
 <body>
-	<div><a name="top" id="top"></a><a class="top rounded hidden" href="#top" title="Haut de page">Top</a></div>
+	<div id="tool">
+		<a name="top" id="top"></a>
+		<a class="top rounded hidden" href="#top" title="Haut de page">Top</a>
+		<a href="https://github.com/molokoloco/My-Book-ReadR" class="ribbon"  title="Get the code ! Fork me on GitHub">Fork Me !</a>
+	</div>
 	<header id="summary" class="rounded">
 		<p>Sommaire</p>
 		<nav>
