@@ -1,4 +1,5 @@
-<!--// /* Remixed by @molokoloco 2011 - http://b2bweb.fr */ //-->
+<!--// /* Remixed by @molokoloco 2011 - http://b2bweb.fr
+          Src : https://github.com/molokoloco/My-Book-ReadR/ */ //-->
 <!DOCTYPE html> 
 <html> 
 <head> 
@@ -691,8 +692,8 @@ $(document).ready(function() {
 			switch(e2key(event)) {
 				case 'up': event.preventDefault(); goToScreen(-1); break;
 				case 'down': case 'space': event.preventDefault(); goToScreen(1); break;
-				case 'left': event.preventDefault();  setZoom(currentZoom - 5.00); break;
-				case 'right': event.preventDefault();  setZoom(currentZoom + 5.00); break;
+				case 'left': event.preventDefault(); setZoom(currentZoom - 5.00); break;
+				case 'right': event.preventDefault(); setZoom(currentZoom + 5.00); break;
 				case 'enter': event.preventDefault(); $('a#top').scrollToMe(); break;
 			}
 		};
