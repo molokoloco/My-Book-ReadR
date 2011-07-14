@@ -16,42 +16,40 @@
 	html, body { 
 		font:normal 62.5%/162% 'Varela', Verdana, Arial, Sans-Serif;
 		text-rendering: optimizeLegibility;
-		font-smooth:always;
-			-webkit-font-smoothing: antialiased;
-			-moz-font-smoothing: antialiased;
-			-ms-font-smoothing: antialiased;
+		font-smooth:always; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased;
 		color:#333333;
 		background: #efefef;
-		background: -moz-linear-gradient(left, #efefef 0%, #fcfcfc 100%);
-		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#efefef), color-stop(100%,#fcfcfc));
-		background: -webkit-linear-gradient(left, #efefef 0%,#fcfcfc 100%);
-		background: -o-linear-gradient(left, #efefef 0%,#fcfcfc 100%);
-		background: -ms-linear-gradient(left, #efefef 0%,#fcfcfc 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#fcfcfc',GradientType=1);
 		background: linear-gradient(left, #efefef 0%,#fcfcfc 100%);
+			background: -moz-linear-gradient(left, #efefef 0%, #fcfcfc 100%);
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,#efefef), color-stop(100%,#fcfcfc));
+			background: -webkit-linear-gradient(left, #efefef 0%,#fcfcfc 100%);
+			background: -o-linear-gradient(left, #efefef 0%,#fcfcfc 100%);
+			background: -ms-linear-gradient(left, #efefef 0%,#fcfcfc 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#fcfcfc',GradientType=1);
 	}
 	p {
 		font-size: 2.2em;
 		text-align:justify;
-		padding:10px;
+		padding:0 10px;
 		position:relative;
 	}
 	a, p {
 		line-height:166%;
 		color: #333333;
 		text-shadow: 0 0.05em 0 #CCC;
-		margin:1.5em 0;
+		margin:10px 0;
 	}
-	a, a:visited {
-		color:#FF2424;
-		font-weight: bold;
-		text-decoration:none;
-		cursor:pointer;
-	}
-	a:hover {
-		background:#ccc;
-		background:rgba(0,0,0, 0.03);
-	}
+		a, a:visited {
+			color:#FF2424;
+			font-weight: bold;
+			text-decoration:none;
+			cursor:pointer;
+		}
+		a:hover {
+			background:#ccc;
+			background:rgba(0,0,0, 0.03);
+		}
+	
 	h1, h2, h3, h4, h5 {
 		font-size: 18em;
 		line-height: 100%;
@@ -62,105 +60,147 @@
 		color:#333;
 		text-shadow: 1px 1px 2px #CCC;
 	}
-	h1 { text-align:center; line-height:100%; margin:1em 0; }
-	h2 { text-align:center; font-size: 15em; }
-	h3 { font-size: 5em; font-weight:bold; }
-	h3 a { display:block; border-top:1px solid #333; border-bottom:1px solid #333; text-align:right; }
-	h4 { font-size: 7em; margin:1em 0 0.3em 0; }
-	h5 { font-size: 4em; color:#000; }
+		h1 { text-align:center; line-height:100%; margin:1em 0; }
+		h2 { text-align:center; font-size: 15em; }
+		h3 { font-size: 5em; font-weight:bold; }
+		h3 a { display:block; border-top:1px solid #333; border-bottom:1px solid #333; text-align:right; }
+		h4 { font-size: 7em; margin:1em 0 0.3em 0; }
+		h5 { font-size: 4em; color:#000; }
+	
 	blockquote {
 		padding:0 0 0 4em;
 	}
+	
 	/* -------------------------PAGE POLISH ------------------------------------------------------------- */	
 	#section {
+		position:relative;
 		margin:5% 20% 5% 10%;
-		padding:4%;
+		padding:50px;
 		max-width:1000px;
 		cursor:text;
 	}
-	#section p {
-		transition:all 500ms linear;
-			-webkit-transition:all 500ms linear;
-			-moz-transition:all 500ms linear;
-			-ms-transition:all 500ms linear;
-			-o-transition:all 500ms linear;
-	}
-	#section p.p-actif {
-		border-left:1px solid rgba(0,0,0, 0.2);
-		margin-left:-1px;
-	}
+		#section p {
+			transition:all 500ms linear; -webkit-transition:all 500ms linear; -moz-transition:all 500ms linear; -ms-transition:all 500ms linear; -o-transition:all 500ms linear;
+		}
+		#section p.p-actif {
+			border-left:1px solid rgba(0,0,0, 0.2);
+			margin-left:-1px;
+		}
+	
 	p#couverture { text-align:center; }
+	
+	img#resizeHandle {
+		position:absolute;
+		width:20px;
+		right:-10px;
+		top:0; height:100%;
+		cursor:e-resize;
+		z-index:9;
+		user-select':'none'; -webkit-user-select:'none'; -moz-user-select:'none'; -o-user-select:'none'; -ms-user-select:'none';
+	}
+	
 	.rounded {
 		background: #fcfcfc;
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -ms-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -o-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 		border: 1px solid #999;
-		box-shadow: 1px 1px 3px rgba(60, 90, 126, 0.3);
-			-moz-box-shadow: 1px 1px 3px rgba(60, 90, 126, 0.3);
-			-webkit-box-shadow: 1px 1px 3px rgba(60, 90, 126, 0.3);
-			-ms-box-shadow: 1px 1px 3px rgba(60, 90, 126, 0.3);
-			-o-box-shadow: 1px 1px 3px rgba(60, 90, 126, 0.3);
-		border-radius: 10px;
-			-moz-border-radius: 10px;
-			-webkit-border-radius: 10px;	
-			-ms-border-radius: 10px;
-			-o-border-radius: 10px;
+		border-radius: 23px; -moz-border-radius: 23px; -webkit-border-radius: 23px; -ms-border-radius: 23px; -o-border-radius: 23px;
 	}
+	.leftRounded {
+		box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
+			-moz-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
+			-webkit-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
+			-ms-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
+			-o-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
+		border: 1px solid #fcfcfc;
+		border-right:none;
+		border-radius: 10px 0 0 8px; -moz-border-radius: 8px 0 0 8px; -webkit-border-radius: 8px 0 0 8px; -ms-border-radius: 8px 0 0 8px; -o-border-radius: 8px 0 0 8px;
+	}
+	
 	#summary {
 		position:fixed;
 		z-index:999;
-		bottom:76px; right:16px;
-		width:14%;
-		min-width:120px;
+		bottom:76px; right:0;
+		width:160px;
 		display:block;
-		transition:all 500ms linear;
-			-webkit-transition:all 500ms linear;
-			-moz-transition:all 500ms linear;
-			-ms-transition:all 500ms linear;
-			-o-transition:all 500ms linear;
+		padding:11px 3px;
+		transition:all 500ms linear; -webkit-transition:all 500ms linear; -moz-transition:all 500ms linear; -ms-transition:all 500ms linear; -o-transition:all 500ms linear;
 		opacity:0.3;
 	}
-	#summary:hover, #summary.highlight { opacity:1; }
-	#summary ul { margin-left:20px; }
-	#summary p { margin:0.3em 0; padding:0; text-align:center; }
-	#summary button { width:3em; height:2em; margin:0.3em; font-size:0.9em; cursor:pointer; text-align:center; }
-	#summary ul li a, #summary ul li a:visited {
+		#summary:hover, #summary.highlight { opacity:1; }
+		#summary ul { margin-left:20px; }
+		#summary p { margin:0.3em 0; padding:0; text-align:center; }
+		#summary button { width:3em; height:2em; margin:0.3em; font-size:0.9em; cursor:pointer; text-align:center; }
+		#summary ul li a, #summary ul li a:visited {
+			display:block;
+			font-size: 1.8em;
+			line-height:100%;
+			color: #666;
+			text-shadow: 0 0.05em 0 #CCC;
+			/* white-space:nowrap; text-overflow: ellipsis; */
+			font-weight:normal;
+			margin:0.8em 0;
+		}
+		#summary ul li a:hover, #summary ul li a.current {
+			color:#FF2424;
+			background:none;
+			text-decoration:underline;
+		}
+	
+	a.top {
+		position:fixed;
+		z-index:99;
+		bottom:22px; right:64px; 
+		width:36px; height:22px;
+		text-align:center;
+		padding:14px 0 0 0;
+		margin:0;
+		line-height:17px;
+		color:#666;
 		display:block;
-		font-size: 1.8em;
-		line-height:100%;
-		color: #666;
-		text-shadow: 0 0.05em 0 #CCC;
-		/*white-space:nowrap;
-		text-overflow: ellipsis;*/
-		font-weight:normal;
-		margin:0.8em 0;
+		text-transform:uppercase;
+		text-decoration:none;
+		font-size:11px;
+		behavior:url(../PIE.htc);
+		transition:opacity 500ms linear; -webkit-transition:opacity 500ms linear; -moz-transition:opacity 500ms linear; -ms-transition:opacity 500ms linear; -o-transition:opacity 500ms linear;
+		opacity:0.3;
 	}
-	#summary ul li a:hover, #summary ul li a.current {
-		color:#FF2424;
-		background:none;
-		text-decoration:underline;
-	}
-	span.comment {
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPNJREFUeNpiZICCpUuX2gOpIiA2BmJpBvLBUyA+C8R90dHRB0ECjFALKoBUOwP1QSXQog5GqA/2AjEzDSz5C8QOTECihUYWMEDNbQFZostAW2AAsoSfxpbwMzHQAYxaMmoJbS35SGM7voAsuUxjS86CLKmBFmS0ACBza5igZX4NjSypAZp/hBFLpWUGxBJUsMAbaME2eKVFDgA6SgVIbQdiFRxKDIGWXKAoCQMNuAOkzIF4Hw4lclTJJ0CL3gEpNyCeQjNLoBb9BeJcIDMXLZUqUj3HAy0C+cYHlPmo7hM0i3aAIhyI79DEJ1gSxH2YGECAAQBGGjsDacU3rwAAAABJRU5ErkJggg%3D%3D", sizingMethod="scale");
+		a.top:hover { opacity:1; }
+		a.top.hidden { opacity:0; }
+		a.top:before {
+			position:absolute;
+			top:5px;
+			left:7px;
+			content:"";
+			border-bottom:11px solid #666;
+			border-left:11px solid transparent;
+			border-right:11px solid transparent;
+		}
+		a.top:hover { color:#333; }
+		a.top:hover:before { border-bottom-color:#333; }
+	
+	span.comment { /* Mini bulle */
 		background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPNJREFUeNpiZICCpUuX2gOpIiA2BmJpBvLBUyA+C8R90dHRB0ECjFALKoBUOwP1QSXQog5GqA/2AjEzDSz5C8QOTECihUYWMEDNbQFZostAW2AAsoSfxpbwMzHQAYxaMmoJbS35SGM7voAsuUxjS86CLKmBFmS0ACBza5igZX4NjSypAZp/hBFLpWUGxBJUsMAbaME2eKVFDgA6SgVIbQdiFRxKDIGWXKAoCQMNuAOkzIF4Hw4lclTJJ0CL3gEpNyCeQjNLoBb9BeJcIDMXLZUqUj3HAy0C+cYHlPmo7hM0i3aAIhyI79DEJ1gSxH2YGECAAQBGGjsDacU3rwAAAABJRU5ErkJggg%3D%3D);
 		display: block;
 		width: 25px; height: 25px;
 		position: absolute;
-		top: 0; left: -30px;
+		top: 0; left: -32px;
 		line-height: 20px;
 		opacity:0.15;
 		overflow:hidden;
 	}
-	span.comment:hover, p:hover span.comment { opacity:1; }
-	span.comment a, span.comment a:visited {
-		display: block;
-		width: 25px; height: 25px;
-		font-size: 10px;
-		color: #fcfcfc;
-		text-align: center;
-		line-height: 20px;
-		margin:0;
-		padding:0;
-	}
-	span.comment a:hover { background:none; }
+		span.comment:hover, p:hover span.comment { opacity:1; }
+		span.comment a, span.comment a:visited {
+			display: block;
+			width: 25px; height: 25px;
+			font-size: 10px;
+			color: #fcfcfc;
+			text-align: center;
+			line-height: 20px;
+			margin:0;
+			padding:0;
+		}
+		span.comment a:hover { background:none; }
+	
 	#disqus_thread {
 		position:fixed;
 		z-index:99999;
@@ -171,56 +211,16 @@
 		overflow:auto;
 		margin:0;
 		padding:20px;
-		transition:all 500ms linear;
-			-webkit-transition:all 500ms linear;
-			-moz-transition:all 500ms linear;
-			-ms-transition:all 500ms linear;
-			-o-transition:all 500ms linear;
+		transition:all 500ms linear; -webkit-transition:all 500ms linear; -moz-transition:all 500ms linear; -ms-transition:all 500ms linear; -o-transition:all 500ms linear;
 		opacity:1;
 	}
-	#disqus_thread.hidden { opacity:0; right:-60%; }
-	#disqus_thread h3 { font-size:3em; }
-	#disqus_thread em, #disqus_thread span, #disqus_thread a  { font-size:1.4em; font-weight:normal; }
-	#disqus_thread .dsq-comment-message { font-size:2.2em; }
-	#disqus_thread .dsq-comment-footer, #disqus_thread .dsq-widget-item { font-size:1.5em; }
-	#disqus_thread .dsq-trackback-url {display:none;}
-	a.top {
-		position:fixed;
-		bottom:16px; right:16px; 
-		width:50px; height:20px;
-		padding-top:20px;
-		margin:0;
-		line-height:14px;
-		color: #666;
-		display:block;
-		text-transform:uppercase;
-		text-decoration:none;
-		text-align:center;
-		font-size:14px;
-		behavior:url(../PIE.htc);
-		transition:all 500ms linear;
-			-webkit-transition:all 500ms linear;
-			-moz-transition:all 500ms linear;
-			-ms-transition:all 500ms linear;
-			-o-transition:all 500ms linear;
-		opacity:0.3;
-	}
-	a.top:hover { opacity:1; }
-	a.top.hidden {
-		opacity:0;
-		right:-65px;
-	}
-	a.top:before {
-		position:absolute;
-		top:4px;
-		left:14px;
-		content:"";
-		border-bottom:11px solid #666;
-		border-left:11px solid transparent;
-		border-right:11px solid transparent;
-	}
-	a.top:hover { color:#333; }
-	a.top:hover:before { border-bottom-color:#333; }
+		#disqus_thread.hidden { opacity:0; right:-60%; }
+		#disqus_thread h3 { font-size:3em; }
+		#disqus_thread em, #disqus_thread span, #disqus_thread a  { font-size:1.4em; font-weight:normal; }
+		#disqus_thread .dsq-comment-message { font-size:2.2em; }
+		#disqus_thread .dsq-comment-footer, #disqus_thread .dsq-widget-item { font-size:1.5em; }
+		#disqus_thread .dsq-trackback-url {display:none;}
+	
 	a.ribbon {
 		display:block;
 		position:fixed;
@@ -229,19 +229,35 @@
 		z-index:100; 
 		margin:0;
 		text-indent:-9999px;
-		background:url('http://www.b2bweb.fr/bonus/github-ribbon.png') no-repeat;
+		background:url('http://www.b2bweb.fr/bonus/github-ribbon.png') no-repeat; /* so much strings when Base64 encoded */
 		opacity:0.05;
 	}
-	a.ribbon:hover { opacity:1; }
+		a.ribbon:hover { opacity:1; }
+	
+	div.partage {
+		position:fixed;
+		z-index:99;
+		bottom:16px; left:12px; 
+		width:120px; height:60px;
+		transition:all 500ms linear; -webkit-transition:opacity 500ms linear; -moz-transition:opacity 500ms linear; -ms-transition:opacity 500ms linear; -o-transition:opacity 500ms linear;
+		opacity:0.2;
+	}
+		div.partage:hover { opacity:1; }
+		div.partage > * { marging:2px 0; padding:0; }
 	</style>
 </head>
 <body>
 	<div id="tool">
 		<a name="top" id="top"></a>
 		<a class="top rounded hidden" href="#top" title="Haut de page">Top</a>
-		<a href="https://github.com/molokoloco/My-Book-ReadR" class="ribbon"  title="Get the code ! Fork me on GitHub">Fork Me !</a>
+		<a href="https://github.com/molokoloco/My-Book-ReadR/" class="ribbon"  title="Get the code ! Fork me on GitHub">Fork Me !</a>
 	</div>
-	<header id="summary" class="rounded">
+	<div class="partage hidden">
+		<g:plusone size="medium" count="true"></g:plusone>
+		<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="Paul_Da_Silva">Tweet</a>
+		<iframe src="http://www.facebook.com/plugins/like.php?app_id=235087756512662&amp;href&amp;send=false&amp;layout=button_count&amp;width=120&amp;height=20&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:20px;" allowtransparency="true"></iframe>
+	</div>
+	<header id="summary" class="leftRounded">
 		<p>Sommaire</p>
 		<nav>
 			<ul><!-- Here comme the summary based on H4, see JS above //--></ul>
@@ -256,7 +272,10 @@
 		</div>
 		-->
 	</div>
-	<div id="section" class="rounded"><!--<section class="rounded"><article>-->
+	<div id="section" class="rounded"><!-- <section class="rounded"><article> -->
+
+		<!--// -------------------------------------------- FROM NOW HERE YOU CANT EASELY ADD YOUR CODE -------------------------------------------- //-->
+		
 		<h1>Piratons la démocratie</h1>
 		<h3><a href="http://www.paulds.fr/" target="_blank">Paul da Silva</a></h3>
 		<h5>Livre publié sous licence <a href="http://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons 0</a></h5>
@@ -512,8 +531,11 @@
 		<p>De même la notion de conclusion qui chapeaute cette “fin” de livre suppose que l’on ait arrêté un développement alors que dans la réalité des faits toutes les réponses restent à apporter et tout le travail à faire.<br />
 			C’est là l’un des inconvénients majeurs du support livre : une version doit, à un moment, être arrêtée.<br />
 			Cette contrainte n’est présente sur aucun des deux outils traités ici et cela nous permettra de les faire évoluer, ensemble, vers quelque chose approchant toujours plus la réponse à apporter à un besoin légitime du peuple : sa souveraineté.</p>
+			
+			
+		<!--// -------------------------------------------- BECAREFULL EDITING CODE ABOVE -------------------------------------------- //-->
 		
-	<!--</article></section>--></div>
+	<!-- </article></section> --></div>
 	
 <script src="http://www.b2bweb.fr/js/jquery-1.6.2.min.js"></script>
 <script src="http://www.b2bweb.fr/js/waypoints.min.js"></script>
@@ -533,13 +555,22 @@ var disqus_url 			= 'http://www.b2bweb.fr/bonus/piratons-la-democratie.html'
 
 $(document).ready(function() {
 	
+	// ----------- VARS ---------------------------------------------------------------------------------- //
 	// Build summary for the page, parsing H4...
-	var titlesChapter 	= '#section h4', // Choose your HTML tags for the summary
+	var container  		= '#section', // Main text box
+		titlesChapter 	= container+' h4', // Choose your HTML tags for the summary
 		$titlesChapter 	= $(titlesChapter),
-		sectionPrgh 	= '#section > p',
+		sectionPrgh 	= container+' > p',
+		sectionPrghActif= container+' > p.p-actif',
 		$summary 		= $('#summary'), // Box who print summary
 		$summaryUl 		= $summary.find('ul'), // keep a ref to UL
-		$disqus_thread 	= $('#disqus_thread');
+		$summary_links	= null,
+		$disqus_thread 	= $('#disqus_thread'),
+		debounce 		= null,
+		scrollElement 	= 'html, body',
+		currentZoom = 62.50; // body font-size of 62.5% want to say that 1em == 10px
+	
+	// ----------- ITERATE <h4> AND <p> ---------------------------------------------------------------------------------- //
 	
 	$titlesChapter // Create summary based on the H4 tags
 		.each(function(i) {
@@ -551,15 +582,19 @@ $(document).ready(function() {
 		})
 		.waypoint({offset:'5%'}); // Create Waypoint obj, foreach H4 // http://imakewebthings.github.com/jquery-waypoints/
 	
-	var $summary_links = $summaryUl.find('a'); // Stock summary links
+	$summary_links = $summaryUl.find('a'); // Stock summary links
 	
 	$(sectionPrgh)
 		.waypoint({offset: '35%'}) // highlight continuously current <p>, when scrolling
-		.each(function(i) { // Add infobul comments for each <P> - Disqus system // BECAREFULL : Editing the HTML <p> could lead to comments crash disorder !!!
+		.each(function(i) { // Add infobulle comments for each <P> - Disqus system // BECAREFULL : Editing the HTML <p> could lead to comments crash disorder !!!
 			$(this).prepend('<span class="comment"><a href="'+disqus_url+'?pirate='+i+'#disqus_thread" data-disqus-identifier="pirate='+i+'" title="Commenter le texte (P#'+i+')">-</a></span>');
 		});
 	
-	var debounce = null;
+	// Focus current <p>
+	var setParaphActif = function($e) { $(sectionPrghActif).removeClass('p-actif'); $e.addClass('p-actif'); };
+	
+	// ----------- BODY EVENTS ---------------------------------------------------------------------------------- //
+	
 	$('body') // YES move your body ;)
 		.delegate(sectionPrgh, 'waypoint.reached', function(event, direction) { // Waypoint obj, listening viewport scrolling, detecting <p>
 			var $active = $(this);
@@ -567,9 +602,18 @@ $(document).ready(function() {
 			debounce = setTimeout(function($a, d) {
 				if (d === 'up') $a = $a.prev('p');
 				if (!$a.length) $a.end();
-				$('#section > p.p-actif').removeClass('p-actif');
-				$a.addClass('p-actif');
+				setParaphActif($a);
 			}, 1000, $active, direction);
+		})
+		.delegate(sectionPrgh, 'mouseenter', function(event) { // Subtelly(?) hightlight paragraph // Focus with scroll or mouseenter...
+			var $active = $(this);
+			if (debounce) clearTimeout(debounce);
+			debounce = setTimeout(function($a) {
+				setParaphActif($a);
+			}, 1400, $active);
+		})
+		.delegate(sectionPrgh, 'mouseleave', function(event) {
+			if (debounce) clearTimeout(debounce);
 		})
 		.delegate(titlesChapter, 'waypoint.reached', function(event, direction) { // Waypoint obj, detecting <h4>
 			var i = $(this).data('id');
@@ -577,10 +621,9 @@ $(document).ready(function() {
 				.removeClass('current')
 				.eq(i).addClass('current'); // set selected summary link
 		})
-		.delegate('#section span.comment > a', 'click', function(event) { // Call Disqus comment system
+		.delegate(container+' span.comment > a', 'click', function(event) { // Call Disqus comment system
 			event.preventDefault();
-			$('#section > p.p-actif').removeClass('p-actif');
-			$(this).closest('p').addClass('p-actif');
+			setParaphActif($(this).closest('p'));
 			embedDisqus($(this).attr('href'), $(this).data('disqus-identifier'));
 		})
 		.bind('mousewheel', function(event, delta) { // Catch user WHEEL (and intent to set custom ZOOM with ctrl + wheel, but fail in Chrome)
@@ -595,7 +638,9 @@ $(document).ready(function() {
 		.bind('click', function() {
 			killDisqus();
 		});
-
+	
+	// ----------- DISCUSS ---------------------------------------------------------------------------------- //
+	
 	$disqus_thread.click(function(event){
 		event.stopPropagation(); // Stop hidding comment if body click event
 	});	
@@ -619,15 +664,9 @@ $(document).ready(function() {
 			});
 		};
 	
-	// Call Disqus comments counter
-	$.ajax({
-		url: 'http://'+disqus_shortname+'.disqus.com/count.js',
-		dataType:'script', async:true, cache:true,
-		success: function(XMLHttpRequest, textStatus) {}
-	});
+	// ----------- PAGE ZOOM ---------------------------------------------------------------------------------- //
 	
 	// Global Text zoom
-	var currentZoom = 62.50; // body font-size of 62.5% want to say that 1em == 10px
 	var setZoom = function(zoom) {
 		currentZoom = (zoom < 30.00 ? 30.00 : zoom); // not readable
 		currentZoom = (currentZoom > 60.00 && currentZoom <= 65.00 ? 62.50 : currentZoom); // Set normal
@@ -638,18 +677,14 @@ $(document).ready(function() {
 	$('#zoomdefault').bind('click', function() { setZoom(62.50); });
 	$('#zoommoins').bind('click', function() { setZoom(currentZoom - 5.00); });
 	
-	// http://www.zachstronaut.com/posts/2009/01/18/jquery-smooth-scroll-bugs.html
-	var scrollElement = 'html, body';
+	// ----------- PAGE SCROLL ---------------------------------------------------------------------------------- //
 	
-	$('html, body').each(function () {
-		var initScrollTop = $(this).attr('scrollTop');
-		$(this).attr('scrollTop', initScrollTop + 1);
-		if ($(this).attr('scrollTop') == initScrollTop + 1) {
-			scrollElement = this.nodeName.toLowerCase();
-			$(this).attr('scrollTop', initScrollTop);
-			return false;
-		}
-	});
+	// Scroll viewport page by page
+	var goToScreen = function(dir) { // 1, -1 or factor
+		var currentOffset = $(window).scrollTop(),
+			winH = parseInt($(window).height() * 0.75 * dir);
+		$(scrollElement).stop(true).animate({scrollTop: currentOffset + winH}, 800, 'swing');
+	};
 	
 	// extend jQuery, scroll to element
 	$.fn.scrollToMe = function(event) {
@@ -658,8 +693,19 @@ $(document).ready(function() {
 		});
 	};
 	
+	// http://www.zachstronaut.com/posts/2009/01/18/jquery-smooth-scroll-bugs.html
+	$(scrollElement).each(function () { // 'html, body'
+		var initScrollTop = $(this).attr('scrollTop'); // Produce NaN on my #FF4 / Chrome 11, but works...
+		$(this).attr('scrollTop', initScrollTop + 1);
+		if ($(this).attr('scrollTop') == initScrollTop + 1) {
+			scrollElement = this.nodeName.toLowerCase();
+			$(this).attr('scrollTop', initScrollTop);
+			return false;
+		}
+	});
+	
 	// Smooth scrolling for ALL links to anchors
-	$("a[href^='#']").click(function(event) {
+	$('a[href^="#"]').click(function(event) {
 		event.preventDefault();
 		var $this = $(this), target = this.hash, $target = $(target);
 		if (!$target) return;
@@ -667,9 +713,11 @@ $(document).ready(function() {
 		window.location.hash = target;
 	});
 	
+	// ----------- WINDOW EVENTS ---------------------------------------------------------------------------------- //
+	
 	// Show/hide goto Top link
 	var iddle = null;
-	$(window).scroll(function() {
+	$(window).bind('scroll', function() {
 		$summary.addClass('highlight');
 		if (iddle) clearTimeout(iddle);
 		iddle = setTimeout(function() {
@@ -678,12 +726,7 @@ $(document).ready(function() {
 		}, 250);
     });
 	
-	// Scroll viewport page by page
-	var goToScreen = function(dir) { // 1, -1 or factor
-		var currentOffset = $(window).scrollTop(),
-			winH = parseInt($(window).height() * 0.75 * dir);
-		$(scrollElement).stop(true).animate({scrollTop: currentOffset + winH}, 800, 'swing');
-	};
+	// ----------- DOCUMENT EVENTS & RESIZE ---------------------------------------------------------------------------------- //
 	
 	// Listen to key UP and DOWN
 	var event2key = {'37':'left', '39':'right', '38':'up', '40':'down', '13':'enter', '27':'esc', '32':'space', '107':'+', '109':'-', '33':'pageUp', '34':'pageDown'},
@@ -697,9 +740,41 @@ $(document).ready(function() {
 				case 'enter': event.preventDefault(); $('a#top').scrollToMe(); break;
 			}
 		};
+	
+	// RESIZER, Listening mouse move only when mouse down...
+	var $resizeHandle = $('<img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D" width="20" height="600" id="resizeHandle"/>');
+		$resizeHandle.appendTo(container); // My beloved Pixel
+	
+	var mouseIsMove = function(event) { 
+			var newW = event.pageX * 0.7;
+			newW = (newW > 1200 ? 1200 : (newW < 420 ? 420 : newW));
+			$(container).stop(true).animate({width: newW+'px'}, 30);
+		},
+		mouseIsDown = function(event) {
+			if ($(event.target).is($resizeHandle))
+				$('body').bind('mousemove', mouseIsMove);
+		},
+		mouseIsUp = function(event) { 
+			$('body').unbind('mousemove', mouseIsMove);
+		};
+	
+	// Allo Doc ?
 	$(document)
 		.focus()
-		.bind('keydown', pageKey);
+		.bind('keydown', pageKey)
+		.bind('mousedown', mouseIsDown)
+		.bind('mouseup click ', mouseIsUp);
+	
+	// ----------- THIRD PARTY ---------------------------------------------------------------------------------- //
+	
+	// Call async scripts
+	var callScript = function(src) { $.ajax({url:src, dataType:'script', async:true, cache:true}); };
+	
+	// Load plugins...
+	callScript('http://'+disqus_shortname+'.disqus.com/count.js'); // get <p> comments counter
+	callScript('https://apis.google.com/js/plusone.js'); // Social API...
+	callScript('http://platform.twitter.com/widgets.js');
+	callScript('http://connect.facebook.net/en_US/all.js#appId=235087756512662&amp;xfbml=1');
 });
 
 </script>
