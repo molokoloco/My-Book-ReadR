@@ -3,283 +3,58 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-	<meta http-equiv="content-language" content="fr"/> 
-	<title>Piratons la démocratie</title> 
-	<meta name="viewport" content="width=600,initial-scale=1.0" /> 
-	<link href="http://fonts.googleapis.com/css?family=Varela|Terminal+Dosis+Light&v2" rel="stylesheet" type="text/css" />
-	<style type="text/css">
-	/* ------------------------- MAIN TAGS ------------------------------------------------------------- */	
-	* { margin:0; padding:0; }
-	::-moz-selection {background-color:#efefef;color:#FF2424;}
-	::selection {background-color:#efefef;color:#FF2424;}
-	html, body { 
-		font:normal 62.5%/162% 'Varela', Verdana, Arial, Sans-Serif;
-		text-rendering: optimizeLegibility;
-		font-smooth:always; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased;
-		color:#333333;
-		background: #efefef;
-		background: linear-gradient(left, #efefef 0%,#fcfcfc 100%);
-			background: -moz-linear-gradient(left, #efefef 0%, #fcfcfc 100%);
-			background: -webkit-gradient(linear, left top, right top, color-stop(0%,#efefef), color-stop(100%,#fcfcfc));
-			background: -webkit-linear-gradient(left, #efefef 0%,#fcfcfc 100%);
-			background: -o-linear-gradient(left, #efefef 0%,#fcfcfc 100%);
-			background: -ms-linear-gradient(left, #efefef 0%,#fcfcfc 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#fcfcfc',GradientType=1);
-	}
-	p {
-		font-size: 2.2em;
-		text-align:justify;
-		padding:0 10px;
-		position:relative;
-	}
-	a, p {
-		line-height:166%;
-		color: #333333;
-		text-shadow: 0 0.05em 0 #CCC;
-		margin:10px 0;
-	}
-		a, a:visited {
-			color:#FF2424;
-			font-weight: bold;
-			text-decoration:none;
-			cursor:pointer;
-		}
-		a:hover {
-			background:#ccc;
-			background:rgba(0,0,0, 0.03);
-		}
-	
-	h1, h2, h3, h4, h5 {
-		font-size: 18em;
-		line-height: 100%;
-		margin:0.3em 0;
-		padding:10px;
-		font-family:'Terminal Dosis Light','Trebuchet', 'Tahoma', Verdana, Arial, Sans-Serif;
-		font-weight:normal;
-		color:#333;
-		text-shadow: 1px 1px 2px #CCC;
-	}
-		h1 { text-align:center; line-height:100%; margin:1em 0; }
-		h2 { text-align:center; font-size: 15em; }
-		h3 { font-size: 5em; font-weight:bold; }
-		h3 a { display:block; border-top:1px solid #333; border-bottom:1px solid #333; text-align:right; }
-		h4 { font-size: 7em; margin:1em 0 0.3em 0; }
-		h5 { font-size: 4em; color:#000; }
-	
-	blockquote {
-		padding:0 0 0 4em;
-	}
-	
-	/* -------------------------PAGE POLISH ------------------------------------------------------------- */	
-	#section {
-		position:relative;
-		margin:5% 20% 5% 10%;
-		padding:50px;
-		max-width:1000px;
-		cursor:text;
-	}
-		#section p {
-			transition:all 500ms linear; -webkit-transition:all 500ms linear; -moz-transition:all 500ms linear; -ms-transition:all 500ms linear; -o-transition:all 500ms linear;
-		}
-		#section p.p-actif {
-			border-left:1px solid rgba(0,0,0, 0.2);
-			margin-left:-1px;
-		}
-	
-	p#couverture { text-align:center; }
-	
-	img#resizeHandle {
-		position:absolute;
-		width:20px;
-		right:-10px;
-		top:0; height:100%;
-		cursor:e-resize;
-		z-index:9;
-		user-select':'none'; -webkit-user-select:'none'; -moz-user-select:'none'; -o-user-select:'none'; -ms-user-select:'none';
-	}
-	
-	.rounded {
-		background: #fcfcfc;
-		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -ms-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -o-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-		border: 1px solid #999;
-		border-radius: 23px; -moz-border-radius: 23px; -webkit-border-radius: 23px; -ms-border-radius: 23px; -o-border-radius: 23px;
-	}
-	.leftRounded {
-		box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
-			-moz-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
-			-webkit-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
-			-ms-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
-			-o-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
-		border: 1px solid #fcfcfc;
-		border-right:none;
-		border-radius: 10px 0 0 8px; -moz-border-radius: 8px 0 0 8px; -webkit-border-radius: 8px 0 0 8px; -ms-border-radius: 8px 0 0 8px; -o-border-radius: 8px 0 0 8px;
-	}
-	
-	#summary {
-		position:fixed;
-		z-index:999;
-		bottom:76px; right:0;
-		width:160px;
-		display:block;
-		padding:11px 3px;
-		transition:all 500ms linear; -webkit-transition:all 500ms linear; -moz-transition:all 500ms linear; -ms-transition:all 500ms linear; -o-transition:all 500ms linear;
-		opacity:0.3;
-	}
-		#summary:hover, #summary.highlight { opacity:1; }
-		#summary ul { margin-left:20px; }
-		#summary p { margin:0.3em 0; padding:0; text-align:center; }
-		#summary button { width:3em; height:2em; margin:0.3em; font-size:0.9em; cursor:pointer; text-align:center; }
-		#summary ul li a, #summary ul li a:visited {
-			display:block;
-			font-size: 1.8em;
-			line-height:100%;
-			color: #666;
-			text-shadow: 0 0.05em 0 #CCC;
-			/* white-space:nowrap; text-overflow: ellipsis; */
-			font-weight:normal;
-			margin:0.8em 0;
-		}
-		#summary ul li a:hover, #summary ul li a.current {
-			color:#FF2424;
-			background:none;
-			text-decoration:underline;
-		}
-	
-	a.top {
-		position:fixed;
-		z-index:99;
-		bottom:22px; right:64px; 
-		width:36px; height:22px;
-		text-align:center;
-		padding:14px 0 0 0;
-		margin:0;
-		line-height:17px;
-		color:#666;
-		display:block;
-		text-transform:uppercase;
-		text-decoration:none;
-		font-size:11px;
-		behavior:url(../PIE.htc);
-		transition:opacity 500ms linear; -webkit-transition:opacity 500ms linear; -moz-transition:opacity 500ms linear; -ms-transition:opacity 500ms linear; -o-transition:opacity 500ms linear;
-		opacity:0.3;
-	}
-		a.top:hover { opacity:1; }
-		a.top.hidden { opacity:0; }
-		a.top:before {
-			position:absolute;
-			top:5px;
-			left:7px;
-			content:"";
-			border-bottom:11px solid #666;
-			border-left:11px solid transparent;
-			border-right:11px solid transparent;
-		}
-		a.top:hover { color:#333; }
-		a.top:hover:before { border-bottom-color:#333; }
-	
-	span.comment { /* Mini bulle */
-		background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPNJREFUeNpiZICCpUuX2gOpIiA2BmJpBvLBUyA+C8R90dHRB0ECjFALKoBUOwP1QSXQog5GqA/2AjEzDSz5C8QOTECihUYWMEDNbQFZostAW2AAsoSfxpbwMzHQAYxaMmoJbS35SGM7voAsuUxjS86CLKmBFmS0ACBza5igZX4NjSypAZp/hBFLpWUGxBJUsMAbaME2eKVFDgA6SgVIbQdiFRxKDIGWXKAoCQMNuAOkzIF4Hw4lclTJJ0CL3gEpNyCeQjNLoBb9BeJcIDMXLZUqUj3HAy0C+cYHlPmo7hM0i3aAIhyI79DEJ1gSxH2YGECAAQBGGjsDacU3rwAAAABJRU5ErkJggg%3D%3D);
-		display: block;
-		width: 25px; height: 25px;
-		position: absolute;
-		top: 0; left: -32px;
-		line-height: 20px;
-		opacity:0.15;
-		overflow:hidden;
-	}
-		span.comment:hover, p:hover span.comment { opacity:1; }
-		span.comment a, span.comment a:visited {
-			display: block;
-			width: 25px; height: 25px;
-			font-size: 10px;
-			color: #fcfcfc;
-			text-align: center;
-			line-height: 20px;
-			margin:0;
-			padding:0;
-		}
-		span.comment a:hover { background:none; }
-	
-	#disqus_thread {
-		position:fixed;
-		z-index:99999;
-		top:16px;
-		right:16px;
-		width:50%;
-		max-height:90%;
-		overflow:auto;
-		margin:0;
-		padding:20px;
-		transition:all 500ms linear; -webkit-transition:all 500ms linear; -moz-transition:all 500ms linear; -ms-transition:all 500ms linear; -o-transition:all 500ms linear;
-		opacity:1;
-	}
-		#disqus_thread.hidden { opacity:0; right:-60%; }
-		#disqus_thread h3 { font-size:3em; }
-		#disqus_thread em, #disqus_thread span, #disqus_thread a  { font-size:1.4em; font-weight:normal; }
-		#disqus_thread .dsq-comment-message { font-size:2.2em; }
-		#disqus_thread .dsq-comment-footer, #disqus_thread .dsq-widget-item { font-size:1.5em; }
-		#disqus_thread .dsq-trackback-url {display:none;}
-	
-	a.ribbon {
-		display:block;
-		position:fixed;
-		top:0; right:0;
-		width:80px; height:80px;
-		z-index:100; 
-		margin:0;
-		text-indent:-9999px;
-		background:url('http://www.b2bweb.fr/bonus/github-ribbon.png') no-repeat; /* so much strings when Base64 encoded */
-		opacity:0.05;
-	}
-		a.ribbon:hover { opacity:1; }
-	
-	div.partage {
-		position:fixed;
-		z-index:99;
-		bottom:16px; left:12px; 
-		width:120px; height:60px;
-		transition:all 500ms linear; -webkit-transition:opacity 500ms linear; -moz-transition:opacity 500ms linear; -ms-transition:opacity 500ms linear; -o-transition:opacity 500ms linear;
-		opacity:0.2;
-	}
-		div.partage:hover { opacity:1; }
-		div.partage > * { marging:2px 0; padding:0; }
-	</style>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="fr"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Piratons la démocratie</title>
+	<meta name="description" content="Piratons la démocratie, un livre de Paul da Silva 2011">
+	<meta name="viewport" content="width=640,initial-scale=1.0" />
+	<link href="./css/modernizr.css" rel="stylesheet" type="text/css" />
+	<link href="./css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
+	<!-- UX items //-->
 	<div id="tool">
 		<a name="top" id="top"></a>
-		<a class="top rounded hidden" href="#top" title="Haut de page">Top</a>
+		<a class="top derounded fade" href="#top" title="Haut de page">Top</a>
 		<a href="https://github.com/molokoloco/My-Book-ReadR/" class="ribbon"  title="Get the code ! Fork me on GitHub">Fork Me !</a>
 	</div>
-	<div class="partage hidden">
+	
+	<!-- "Social" API //-->
+	<div class="partage fade">
 		<g:plusone size="medium" count="true"></g:plusone>
 		<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="Paul_Da_Silva">Tweet</a>
-		<iframe src="http://www.facebook.com/plugins/like.php?app_id=235087756512662&amp;href&amp;send=false&amp;layout=button_count&amp;width=120&amp;height=20&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:20px;" allowtransparency="true"></iframe>
+		<iframe src="http://www.facebook.com/plugins/like.php?app_id=235087756512662&amp;href&amp;send=false&amp;layout=button_count&amp;width=120&amp;height=20&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font" scrolling="no" frameborder="0" width="120" height="20" allowtransparency="true"></iframe>
 	</div>
-	<header id="summary" class="leftRounded">
+	
+	<!-- Here comme the summary based on H4, see JS above //-->
+	<aside id="summary">
 		<p>Sommaire</p>
 		<nav>
-			<ul><!-- Here comme the summary based on H4, see JS above //--></ul>
+			<ul></ul>
 		</nav>
 		<p title="Changer la taille du texte"><button id="zoommoins">A-</button><button id="zoomdefault">A</button><button id="zoomplus">A+</button></p>
-	</header>
-	<div id="disqus_thread" class="rounded hidden">
+	</aside>
+	
+	<!-- Discuss Box -->
+	<div id="disqus_thread" class="rounded fade">
 		<!--
 		<div id="recentcomments"> 
-			<h3>Commenatires récents</h3> 
+			<h3>Commentaires récents</h3> 
 			<script type="text/javascript" src="http://piratonsladmocratie.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=120"></script> 
 		</div>
 		-->
 	</div>
-	<div id="section" class="rounded"><!-- <section class="rounded"><article> -->
-
-		<!--// -------------------------------------------- FROM NOW HERE YOU CANT EASELY ADD YOUR CODE -------------------------------------------- //-->
+	
+	<!-- THERE WE GO ! EDIT HERE ! -->
+	<section id="section" class="rounded"><article>
+		<div id="resizeHandle"></div>
 		
 		<h1>Piratons la démocratie</h1>
 		<h3><a href="http://www.paulds.fr/" target="_blank">Paul da Silva</a></h3>
 		<h5>Livre publié sous licence <a href="http://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons 0</a></h5>
-		<p><em>Le livre est <a href="http://pictures.korben.info/2011/07/pld.pdf" target="_blank">disponible au format PDF</a>, et sera très bientôt disponible au format papier pour 2,60 € chez <a href="http://www.inlibroveritas.net/" target="_blank">In Libro Veritas</a>. <br>
+		<p><em>Le livre est <a href="http://pictures.korben.info/2011/07/pld.pdf" target="_blank">disponible au format PDF</a>, et sera très bientôt disponible au format papier pour 2,60€ chez <a href="http://www.inlibroveritas.net/" target="_blank">In Libro Veritas</a>. <br>
 		Vous êtes libres de l'utiliser à loisir, de le copier, de le redistribuer, de le traduire, ...</em></p>
 		<p>Image de couverture : Geoffrey Dorne (licence CC0)<br />
 		Page web : @molokoloco<br />
@@ -287,18 +62,18 @@
 		<p>Merci à tous ceux qui ont rendu ce projet possible :</p>
 		<blockquote>
 			<p>Tous ceux que j'ai rencontrés<br />
-				Tous ceux que j'ai lus ou écoutés<br />
-				Et les rares que j'ai ignorés<br />
-				Ainsi que les contributeurs :<br />
-				Aedius, Jérôme Mauvais, Ampelmann, Hadrien Beucher, Ebernat, sgarret,<br />
-				Alexandre Boucherot, Jeey, nka11,<br />
-				iSuitUp, Matthieu Honel, Val1984,<br />
-				Kévin le Jeune, Diane Couprie,<br />
-				Sébastien Debollivier, Shahor,<br />
-				Cédric Boussicaud, DixDel,<br />
-				Valery Xavier Lentz,<br />
-				Charly Coyette<br />
-				Enfin, un remerciement tout particulier à Serge et Geoffrey avec qui j'ai eu l'honneur de travailler sur ce livre.</p>
+			Tous ceux que j'ai lus ou écoutés<br />
+			Et les rares que j'ai ignorés<br />
+			Ainsi que les contributeurs :<br />
+			Aedius, Jérôme Mauvais, Ampelmann, Hadrien Beucher, Ebernat, sgarret,<br />
+			Alexandre Boucherot, Jeey, nka11,<br />
+			iSuitUp, Matthieu Honel, Val1984,<br />
+			Kévin le Jeune, Diane Couprie,<br />
+			Sébastien Debollivier, Shahor,<br />
+			Cédric Boussicaud, DixDel,<br />
+			Valery Xavier Lentz,<br />
+			Charly Coyette<br />
+			Enfin, un remerciement tout particulier à Serge et Geoffrey avec qui j'ai eu l'honneur de travailler sur ce livre.</p>
 		</blockquote>
 		<h4>Prologue</h4>
 		<h5>Par Serge Soudoplatoff</h5>
@@ -531,252 +306,13 @@
 		<p>De même la notion de conclusion qui chapeaute cette “fin” de livre suppose que l’on ait arrêté un développement alors que dans la réalité des faits toutes les réponses restent à apporter et tout le travail à faire.<br />
 			C’est là l’un des inconvénients majeurs du support livre : une version doit, à un moment, être arrêtée.<br />
 			Cette contrainte n’est présente sur aucun des deux outils traités ici et cela nous permettra de les faire évoluer, ensemble, vers quelque chose approchant toujours plus la réponse à apporter à un besoin légitime du peuple : sa souveraineté.</p>
-			
-			
-		<!--// -------------------------------------------- BECAREFULL EDITING CODE ABOVE -------------------------------------------- //-->
 		
-	<!-- </article></section> --></div>
+	</article></section>
 	
-<script src="http://www.b2bweb.fr/js/jquery-1.6.2.min.js"></script>
-<script src="http://www.b2bweb.fr/js/waypoints.min.js"></script>
-<script src="http://www.b2bweb.fr/js/jquery.mousewheel.min.js"></script>
-<script type="text/javascript">
-
-// Remixed by @molokoloco 2011 - http://b2bweb.fr
-
-var db = function() { 'console' in window && console.log.call(console, arguments); } // Debug tool
-
-/* DISQUS comment system, must by global */
-var disqus_url 			= 'http://www.b2bweb.fr/bonus/piratons-la-democratie.html'
-	disqus_identifier 	= 'pirate',
-	disqus_domain 		= 'disqus.com',
-	disqus_shortname 	= 'piratonsladmocratie',
-	disqus_title 		= 'Piratons la démocratie';
-
-$(document).ready(function() {
-	
-	// ----------- VARS ---------------------------------------------------------------------------------- //
-	// Build summary for the page, parsing H4...
-	var container  		= '#section', // Main text box
-		titlesChapter 	= container+' h4', // Choose your HTML tags for the summary
-		$titlesChapter 	= $(titlesChapter),
-		sectionPrgh 	= container+' > p',
-		sectionPrghActif= container+' > p.p-actif',
-		$summary 		= $('#summary'), // Box who print summary
-		$summaryUl 		= $summary.find('ul'), // keep a ref to UL
-		$summary_links	= null,
-		$disqus_thread 	= $('#disqus_thread'),
-		debounce 		= null,
-		scrollElement 	= 'html, body',
-		currentZoom = 62.50; // body font-size of 62.5% want to say that 1em == 10px
-	
-	// ----------- ITERATE <h4> AND <p> ---------------------------------------------------------------------------------- //
-	
-	$titlesChapter // Create summary based on the H4 tags
-		.each(function(i) {
-			$(this)
-				.data({id:i}) // Attach menu_id to chapters
-				.prepend('<a name="chapter_'+(i+1)+'" id="chapter_'+(i+1)+'"></a>') // Add anchors
-			$('<li><a href="#chapter_'+(i+1)+'">'+$(this).text()+'</a></li>')
-				.appendTo($summaryUl); // Build summary links
-		})
-		.waypoint({offset:'5%'}); // Create Waypoint obj, foreach H4 // http://imakewebthings.github.com/jquery-waypoints/
-	
-	$summary_links = $summaryUl.find('a'); // Stock summary links
-	
-	$(sectionPrgh)
-		.waypoint({offset: '35%'}) // highlight continuously current <p>, when scrolling
-		.each(function(i) { // Add infobulle comments for each <P> - Disqus system // BECAREFULL : Editing the HTML <p> could lead to comments crash disorder !!!
-			$(this).prepend('<span class="comment"><a href="'+disqus_url+'?pirate='+i+'#disqus_thread" data-disqus-identifier="pirate='+i+'" title="Commenter le texte (P#'+i+')">-</a></span>');
-		});
-	
-	// Focus current <p>
-	var setParaphActif = function($e) { $(sectionPrghActif).removeClass('p-actif'); $e.addClass('p-actif'); };
-	
-	// ----------- BODY EVENTS ---------------------------------------------------------------------------------- //
-	
-	$('body') // YES move your body ;)
-		.delegate(sectionPrgh, 'waypoint.reached', function(event, direction) { // Waypoint obj, listening viewport scrolling, detecting <p>
-			var $active = $(this);
-			if (debounce) clearTimeout(debounce);
-			debounce = setTimeout(function($a, d) {
-				if (d === 'up') $a = $a.prev('p');
-				if (!$a.length) $a.end();
-				setParaphActif($a);
-			}, 1000, $active, direction);
-		})
-		.delegate(sectionPrgh, 'mouseenter', function(event) { // Subtelly(?) hightlight paragraph // Focus with scroll or mouseenter...
-			var $active = $(this);
-			if (debounce) clearTimeout(debounce);
-			debounce = setTimeout(function($a) {
-				setParaphActif($a);
-			}, 1400, $active);
-		})
-		.delegate(sectionPrgh, 'mouseleave', function(event) {
-			if (debounce) clearTimeout(debounce);
-		})
-		.delegate(titlesChapter, 'waypoint.reached', function(event, direction) { // Waypoint obj, detecting <h4>
-			var i = $(this).data('id');
-			$summary_links
-				.removeClass('current')
-				.eq(i).addClass('current'); // set selected summary link
-		})
-		.delegate(container+' span.comment > a', 'click', function(event) { // Call Disqus comment system
-			event.preventDefault();
-			setParaphActif($(this).closest('p'));
-			embedDisqus($(this).attr('href'), $(this).data('disqus-identifier'));
-		})
-		.bind('mousewheel', function(event, delta) { // Catch user WHEEL (and intent to set custom ZOOM with ctrl + wheel, but fail in Chrome)
-			event.preventDefault();
-			if (event.ctrlKey) {
-				if (delta > 0) setZoom(currentZoom + 5.00);
-				else setZoom(currentZoom - 5.00);
-			}
-			else if (delta > 0) goToScreen(-0.45); // $(this).roundabout_adjustBearing(10.00 * delta);
-			else goToScreen(0.45);
-		})
-		.bind('click', function() {
-			killDisqus();
-		});
-	
-	// ----------- DISCUSS ---------------------------------------------------------------------------------- //
-	
-	$disqus_thread.click(function(event){
-		event.stopPropagation(); // Stop hidding comment if body click event
-	});	
-	
-	// Prepare Disqus call from <p>
-	var killDisqus = function(identifier) {
-			$disqus_thread.addClass('hidden').empty();
-		},
-		req = null,
-		embedDisqus = function(url, identifier) {
-			killDisqus();
-			disqus_identifier = identifier || 'pirate';
-			disqus_url = url ||  'http://www.b2bweb.fr/bonus/piratons-la-democratie.html';
-			if (req) req.abort();
-			req = $.ajax({ // Query comments for this <p>
-				url: 'http://'+disqus_shortname+'.'+disqus_domain+'/embed.js',
-				dataType:'script', async:false, cache:false,
-				success: function(XMLHttpRequest, textStatus) {
-					$disqus_thread.removeClass('hidden');
-				}
-			});
-		};
-	
-	// ----------- PAGE ZOOM ---------------------------------------------------------------------------------- //
-	
-	// Global Text zoom
-	var setZoom = function(zoom) {
-		currentZoom = (zoom < 30.00 ? 30.00 : zoom); // not readable
-		currentZoom = (currentZoom > 60.00 && currentZoom <= 65.00 ? 62.50 : currentZoom); // Set normal
-		$('body').css('font-size', zoom+'%'); // $('html,body').css('zoom', currentZoom);
-		$.waypoints('refresh');
-	};
-	$('#zoomplus').bind('click', function() { setZoom(currentZoom + 5.00); });
-	$('#zoomdefault').bind('click', function() { setZoom(62.50); });
-	$('#zoommoins').bind('click', function() { setZoom(currentZoom - 5.00); });
-	
-	// ----------- PAGE SCROLL ---------------------------------------------------------------------------------- //
-	
-	// Scroll viewport page by page
-	var goToScreen = function(dir) { // 1, -1 or factor
-		var currentOffset = $(window).scrollTop(),
-			winH = parseInt($(window).height() * 0.75 * dir);
-		$(scrollElement).stop(true).animate({scrollTop: currentOffset + winH}, 800, 'swing');
-	};
-	
-	// extend jQuery, scroll to element
-	$.fn.scrollToMe = function(event) {
-		return this.each(function() {
-			$(scrollElement).stop(true).animate({scrollTop: $(this).offset().top - 20}, 800, 'swing'); // scrollElement == 'html, body'
-		});
-	};
-	
-	// http://www.zachstronaut.com/posts/2009/01/18/jquery-smooth-scroll-bugs.html
-	$(scrollElement).each(function () { // 'html, body'
-		var initScrollTop = $(this).attr('scrollTop'); // Produce NaN on my #FF4 / Chrome 11, but works...
-		$(this).attr('scrollTop', initScrollTop + 1);
-		if ($(this).attr('scrollTop') == initScrollTop + 1) {
-			scrollElement = this.nodeName.toLowerCase();
-			$(this).attr('scrollTop', initScrollTop);
-			return false;
-		}
-	});
-	
-	// Smooth scrolling for ALL links to anchors
-	$('a[href^="#"]').click(function(event) {
-		event.preventDefault();
-		var $this = $(this), target = this.hash, $target = $(target);
-		if (!$target) return;
-		$target.scrollToMe();
-		window.location.hash = target;
-	});
-	
-	// ----------- WINDOW EVENTS ---------------------------------------------------------------------------------- //
-	
-	// Show/hide goto Top link
-	var iddle = null;
-	$(window).bind('scroll', function() {
-		$summary.addClass('highlight');
-		if (iddle) clearTimeout(iddle);
-		iddle = setTimeout(function() {
-			$('a.top').toggleClass('hidden', ($(this).scrollTop() < $(window).height()));
-			$summary.removeClass('highlight');
-		}, 250);
-    });
-	
-	// ----------- DOCUMENT EVENTS & RESIZE ---------------------------------------------------------------------------------- //
-	
-	// Listen to key UP and DOWN
-	var event2key = {'37':'left', '39':'right', '38':'up', '40':'down', '13':'enter', '27':'esc', '32':'space', '107':'+', '109':'-', '33':'pageUp', '34':'pageDown'},
-		e2key = function(e) { return event2key[(e.which || e.keyCode)] || ''; };
-		pageKey = function(event) {
-			switch(e2key(event)) {
-				case 'up': event.preventDefault(); goToScreen(-1); break;
-				case 'down': case 'space': event.preventDefault(); goToScreen(1); break;
-				case 'left': event.preventDefault(); setZoom(currentZoom - 5.00); break;
-				case 'right': event.preventDefault(); setZoom(currentZoom + 5.00); break;
-				case 'enter': event.preventDefault(); $('a#top').scrollToMe(); break;
-			}
-		};
-	
-	// RESIZER, Listening mouse move only when mouse down...
-	var $resizeHandle = $('<img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D" width="20" height="600" id="resizeHandle"/>');
-		$resizeHandle.appendTo(container); // My beloved Pixel
-	
-	var mouseIsMove = function(event) { 
-			var newW = event.pageX * 0.7;
-			newW = (newW > 1200 ? 1200 : (newW < 420 ? 420 : newW));
-			$(container).stop(true).animate({width: newW+'px'}, 30);
-		},
-		mouseIsDown = function(event) {
-			if ($(event.target).is($resizeHandle))
-				$('body').bind('mousemove', mouseIsMove);
-		},
-		mouseIsUp = function(event) { 
-			$('body').unbind('mousemove', mouseIsMove);
-		};
-	
-	// Allo Doc ?
-	$(document)
-		.focus()
-		.bind('keydown', pageKey)
-		.bind('mousedown', mouseIsDown)
-		.bind('mouseup click ', mouseIsUp);
-	
-	// ----------- THIRD PARTY ---------------------------------------------------------------------------------- //
-	
-	// Call async scripts
-	var callScript = function(src) { $.ajax({url:src, dataType:'script', async:true, cache:true}); };
-	
-	// Load plugins...
-	callScript('http://'+disqus_shortname+'.disqus.com/count.js'); // get <p> comments counter
-	callScript('https://apis.google.com/js/plusone.js'); // Social API...
-	callScript('http://platform.twitter.com/widgets.js');
-	callScript('http://connect.facebook.net/en_US/all.js#appId=235087756512662&amp;xfbml=1');
-});
-
-</script>
+<script src="./js/jquery-1.6.2.min.js"></script>
+<script src="./js/modernizr-2.0.min.js"></script>
+<script src="./js/waypoints.min.js"></script>
+<script src="./js/jquery.mousewheel.min.js"></script>
+<script src="./js/jquery.readr.js"></script>
 </body>
 </html>
