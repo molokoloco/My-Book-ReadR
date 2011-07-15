@@ -1,5 +1,4 @@
-<!--// /* Remixed by @molokoloco 2011 - http://b2bweb.fr
-          Src : https://github.com/molokoloco/My-Book-ReadR/ */ //-->
+<!--// Remixed by @molokoloco 2011 - http://b2bweb.fr | Src : https://github.com/molokoloco/My-Book-ReadR/ -->
 <!DOCTYPE html> 
 <html> 
 <head> 
@@ -8,48 +7,56 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<title>Piratons la démocratie</title>
 	<meta name="description" content="Piratons la démocratie, un livre de Paul da Silva 2011">
-	<meta name="viewport" content="width=640,initial-scale=1.0" />
+	<meta name="viewport" content="width=720" />
 	<link href="./css/modernizr.css" rel="stylesheet" type="text/css" />
 	<link href="./css/styles.css" rel="stylesheet" type="text/css" />
+	<script src="./js/modernizr-2.0.min.js"></script>
 </head>
 <body>
-
-	<!-- UX items //-->
+	
+	<!-- //---------------------------------------------- !!! All elements with #ID have some JS dependency !!! ----------------------------------------------// -->
+	
+	<!-- UX items -->
 	<div id="tool">
 		<a name="top" id="top"></a>
-		<a class="top derounded fade" href="#top" title="Haut de page">Top</a>
+		<a class="top roundered fade" href="#top" title="Haut de page">Top</a>
 		<a href="https://github.com/molokoloco/My-Book-ReadR/" class="ribbon"  title="Get the code ! Fork me on GitHub">Fork Me !</a>
 	</div>
 	
-	<!-- "Social" API //-->
-	<div class="partage fade">
+	<!-- "Social" API -->
+	<div id="partage" class="fade">
 		<g:plusone size="medium" count="true"></g:plusone>
 		<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="Paul_Da_Silva">Tweet</a>
-		<iframe src="http://www.facebook.com/plugins/like.php?app_id=235087756512662&amp;href&amp;send=false&amp;layout=button_count&amp;width=120&amp;height=20&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font" scrolling="no" frameborder="0" width="120" height="20" allowtransparency="true"></iframe>
+		<iframe id="facebook" src="javascript:void(0)" scrolling="no" frameborder="0" width="120" height="20" allowtransparency="true"></iframe>
 	</div>
 	
-	<!-- Here comme the summary based on H4, see JS above //-->
-	<aside id="summary">
-		<p>Sommaire</p>
+	<!-- Here comme the summary based on H4, see JS above + paginettes ! -->
+	<aside id="aside" role="summary" class="roundered">
+		<h3 title="Vous pouvez aussi naviguer à l'aide de votre clavier">&Eacute;crans</h3>
 		<nav>
-			<ul></ul>
+			<ul id="paginettes"></ul>
+		</nav>
+		<div class="spacer"></div>"
+		<h3>Sommaire</h3>
+		<nav>
+			<ul id="summary"></ul>
 		</nav>
 		<p title="Changer la taille du texte"><button id="zoommoins">A-</button><button id="zoomdefault">A</button><button id="zoomplus">A+</button></p>
 	</aside>
 	
 	<!-- Discuss Box -->
 	<div id="disqus_thread" class="rounded fade">
-		<!--
 		<div id="recentcomments"> 
-			<h3>Commentaires récents</h3> 
-			<script type="text/javascript" src="http://piratonsladmocratie.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=120"></script> 
+			<h3 class="menu">Commentaires r&eacute;cents</h3>
+			<script src="http://piratonsladmocratie.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=120"></script>
 		</div>
-		-->
 	</div>
 	
-	<!-- THERE WE GO ! EDIT HERE ! -->
-	<section id="section" class="rounded"><article>
-		<div id="resizeHandle"></div>
+<section id="section" role="main" class="rounded">
+	<div id="resizeHandle"></div>
+	<article>
+		
+		<!-- //---------------------------------------------- !!! THERE WE GO ... EDIT HERE !!! ----------------------------------------------// -->
 		
 		<h1>Piratons la démocratie</h1>
 		<h3><a href="http://www.paulds.fr/" target="_blank">Paul da Silva</a></h3>
@@ -305,14 +312,11 @@
 		<p>En l’espèce si l’on devait qualifier, de façon très pragmatique, en versions les outils dont nous disposons et disposions jusqu’alors il faudrait considérer que la démocratie était jusque-là un système en beta, fonctionnant sur un principe du best effort compte tenu des contraintes techniques trop fortes à l’époque de son invention, et qui a aujourd’hui une chance de basculer en version stable : 1.0</p>
 		<p>De même la notion de conclusion qui chapeaute cette “fin” de livre suppose que l’on ait arrêté un développement alors que dans la réalité des faits toutes les réponses restent à apporter et tout le travail à faire.<br />
 			C’est là l’un des inconvénients majeurs du support livre : une version doit, à un moment, être arrêtée.<br />
-			Cette contrainte n’est présente sur aucun des deux outils traités ici et cela nous permettra de les faire évoluer, ensemble, vers quelque chose approchant toujours plus la réponse à apporter à un besoin légitime du peuple : sa souveraineté.</p>
-		
-	</article></section>
+			Cette contrainte n’est présente sur aucun des deux outils traités ici et cela nous permettra de les faire évoluer, ensemble, vers quelque chose approchant toujours plus la réponse à apporter à un besoin légitime du peuple : sa souveraineté.</p>		
+	</article>
+</section>
 	
 <script src="./js/jquery-1.6.2.min.js"></script>
-<script src="./js/modernizr-2.0.min.js"></script>
-<script src="./js/waypoints.min.js"></script>
-<script src="./js/jquery.mousewheel.min.js"></script>
 <script src="./js/jquery.readr.js"></script>
 </body>
 </html>

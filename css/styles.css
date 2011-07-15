@@ -23,7 +23,8 @@
 html, body { 
 	font:normal 62.5%/162% 'Varela', Verdana, Arial, Sans-Serif;
 	text-rendering: optimizeLegibility;
-	font-smooth:always; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased;
+	font-smooth:always; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased;
+	size-adjust:none; -webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none; -o-text-size-adjust:none;
 	color:#333333;
 	background: #efefef;
 	background: linear-gradient(left, #efefef 0%,#fcfcfc 100%);
@@ -34,11 +35,10 @@ html, body {
 		background: -ms-linear-gradient(left, #efefef 0%,#fcfcfc 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#fcfcfc',GradientType=1);
 }
+body { min-width:280px; }
 p {
 	font-size: 2.2em;
-	text-align:justify;
 	padding:0 10px;
-	position:relative;
 }
 a, p {
 	line-height:166%;
@@ -78,17 +78,40 @@ blockquote {
 	padding:0 0 0 4em;
 }
 
+div.spacer {
+	clear:both;
+	width:100%;
+	height:16px;
+}
 /* -------------------------PAGE POLISH ------------------------------------------------------------- */	
+
 #section {
 	position:relative;
-	margin:5% 0 5% 10%;
+	margin:5% 0 5% 8%;
 	width:60%;
-	padding:50px;
 	max-width:1000px;
+	padding:50px;
 	cursor:text;
 }
+	@media all and (max-width: 850px){
+		#section  {
+			margin:5% 0 5% 4%;
+			padding:24px;
+			overflow:hidden;
+		}
+	}
+	@media all and (max-width: 550px){
+		#section  {
+			margin:12px;
+			padding:12px;
+			width:auto;
+			overflow:hidden;
+		}
+	}
 	#section p {
 		transition:all 500ms linear; -webkit-transition:all 500ms linear; -moz-transition:all 500ms linear; -ms-transition:all 500ms linear; -o-transition:all 500ms linear;
+		text-align:justify;
+		position:relative;	
 	}
 	#section p.p-actif {
 		border-left:1px dotted rgba(0,0,0, 0.2);
@@ -109,59 +132,82 @@ blockquote {
 	user-select':'none'; -webkit-user-select:'none'; -moz-user-select:'none'; -o-user-select:'none'; -ms-user-select:'none';
 }
 
-.rounded {
+.rounded, #disqus_thread.fade:hover {
 	background: #fcfcfc;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -ms-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -o-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 	border: 1px solid #999;
-	border-radius: 23px; -moz-border-radius: 23px; -webkit-border-radius: 23px; -ms-border-radius: 23px; -o-border-radius: 23px;
+	border-radius: 23px; -moz-border-radius:23px; -webkit-border-radius:23px; -ms-border-radius:23px; -o-border-radius:23px;
 }
-.derounded {
-	box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
-		-moz-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
-		-webkit-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
-		-ms-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
-		-o-box-shadow:inset 2px 1px 4px rgba(0, 0, 0, 0.15), 2px -2px 8px rgba(255, 255, 255, 0.5);
-	border: 1px solid #fcfcfc;
-	border-radius: 23px; -moz-border-radius: 23px; -webkit-border-radius: 23px; -ms-border-radius: 23px; -o-border-radius: 23px;
+.roundered, #disqus_thread.fade {
+	background:rgba(255,255,255,0.8);
+	box-shadow:0 0 8px rgba(255, 255, 255, 0.5);
+		-moz-box-shadow:0 0 8px rgba(255, 255, 255, 0.5);
+		-webkit-box-shadow:0 0 8px rgba(255, 255, 255, 0.5);
+		-ms-box-shadow:0 0 8px rgba(255, 255, 255, 0.5);
+		-o-box-shadow:0 0 8px rgba(255, 255, 255, 0.5);
+	border: 1px dashed rgba(0,0,0,0.2);
+	border-radius: 8px; -moz-border-radius:8px; -webkit-border-radius:8px; -ms-border-radius:8px; -o-border-radius:8px;
+	padding:8px;
 }
 
-#summary {
+#aside {
 	position:fixed;
 	z-index:999;
-	bottom:76px;
-	left:82%; right:2%;
-	min-width:160px;
+	bottom:62px;
+	right:12px; width:150px;
 	display:block;
-	padding:11px 3px;
 	transition:all 500ms linear; -webkit-transition:all 500ms linear; -moz-transition:all 500ms linear; -ms-transition:all 500ms linear; -o-transition:all 500ms linear;
 	opacity:0.3;
 }
-	#summary:hover, #summary.highlight { opacity:1; }
-	#summary ul { margin-left:20px; }
-	#summary p { margin:0.3em 0; padding:0; text-align:center; }
-	#summary button { width:3em; height:2em; margin:0.3em; font-size:0.9em; cursor:pointer; text-align:center; }
-	#summary ul li a, #summary ul li a:visited {
-		display:block;
-		font-size: 1.8em;
-		line-height:100%;
-		color: #666;
-		text-shadow: 0 0.05em 0 #CCC;
-		/* white-space:nowrap; text-overflow: ellipsis; */
-		font-weight:normal;
-		margin:0.8em 0;
-	}
-	#summary ul li a:hover, #summary ul li a.current {
-		color:#FF2424;
-		background:none;
-		text-decoration:underline;
-	}
-
+	#aside:hover, #aside.highlight { opacity:1; }
+	
+	#aside h3, #aside p { font-size:2.2em; letter-spacing:0.3em; margin:0 0 8px 0; padding:0; text-align:center; font-weight:normal; color:#fcfcfc; color:rgba(0,0,0,0.5); }
+	#aside button { width:3em; height:2em; margin:0.3em; font-size:0.9em; cursor:pointer; text-align:center; }
+		
+	#aside ul#paginettes { list-style-type:none; margin:0; padding:0; overflow:hidden; }
+		#aside ul#paginettes li { margin:0; padding:0; float:left; }
+		#aside ul#paginettes li a, #paginettes ul li a:visited {
+			display:block;
+			text-align:center;
+			font-size: 1.4em;
+			line-height:14px;
+			color: #fcfcfc;
+			text-shadow: 0 0.05em 0 #666;
+			font-weight:normal;
+			margin:0 0 1px 1px; padding:2px;
+			width:14px; height:14px; /* real width 20px */
+			border: 1px solid #fcfcfc;
+			background:rgba(0,0,0,0.05);
+		}
+		#aside ul#paginettes li a:hover, #aside ul#paginettes li a.current {
+			color:#fff;
+			background:rgba(0,0,0,0.3);
+			text-decoration:none;
+		}
+	
+	#aside ul#summary { list-style-type:none;  margin:0; padding:0; overflow:hidden; }
+		#aside ul#paginettes li { margin:0; padding:0; }
+		#aside ul#summary li a, #aside ul#summary li a:visited {
+			display:block;
+			font-size: 1.8em;
+			line-height:100%;
+			color: #666;
+			text-shadow: 0 0.05em 0 #CCC;
+			/* white-space:nowrap; text-overflow: ellipsis; */
+			font-weight:normal;
+			margin:0.8em 0;
+		}
+		#aside ul#summary li a:hover, #aside ul#summary li a.current {
+			color:#FF2424;
+			background:none;
+			text-decoration:underline;
+		}
+	
 a.top {
 	position:fixed;
 	z-index:99;
-	bottom:22px; 
-	left:82%; right:2%;
-	min-width:160px;
+	bottom:12px; 
+	right:12px; width:166px;
 	height:22px;
 	text-align:center;
 	padding:14px 0 0 0;
@@ -176,7 +222,7 @@ a.top {
 	transition:opacity 500ms linear; -webkit-transition:opacity 500ms linear; -moz-transition:opacity 500ms linear; -ms-transition:opacity 500ms linear; -o-transition:opacity 500ms linear;
 	opacity:0.3;
 }
-	a.top:hover { opacity:1; }
+	a.top:hover { opacity:1 !important ; }
 	a.top.fade { opacity:0; }
 	a.top:before {
 		position:absolute;
@@ -215,20 +261,24 @@ span.comment {
 	span.comment a:hover { background:none; }
 
 #disqus_thread {
-	position:fixed;
-	z-index:99999;
-	top:16px;
-	right:16px;
-	width:50%;
-	max-height:90%;
-	overflow:auto;
-	margin:0;
-	padding:20px;
 	transition:all 500ms linear; -webkit-transition:all 500ms linear; -moz-transition:all 500ms linear; -ms-transition:all 500ms linear; -o-transition:all 500ms linear;
-	opacity:1;
 }
-	#disqus_thread.fade { opacity:0; right:-60%; }
+	#disqus_thread, #disqus_thread.fade:hover { /* check .roundered */
+		position:fixed;
+		z-index:99999;
+		top:12px;
+		right:12px;
+		width:45%;
+		height:auto;
+		max-height:90%;
+		overflow:auto;
+		margin:0;
+		opacity:1;
+		padding:20px;
+	}
+	#disqus_thread.fade { opacity:0.3; width:151px; height:26px; overflow:hidden; } /* check .roundered */
 	#disqus_thread h3 { font-size:3em; }
+	#disqus_thread h3.menu { font-size:2.2em; letter-spacing:0.3em; margin:0 0 8px 0; padding:0; text-align:center; font-weight:normal; color:#fcfcfc; color:rgba(0,0,0,0.5); }
 	#disqus_thread em, #disqus_thread span, #disqus_thread a  { font-size:1.4em; font-weight:normal; }
 	#disqus_thread .dsq-comment-message { font-size:2.2em; }
 	#disqus_thread .dsq-comment-footer, #disqus_thread .dsq-widget-item { font-size:1.5em; }
@@ -247,13 +297,13 @@ a.ribbon {
 }
 	a.ribbon:hover { opacity:1; }
 
-div.partage {
+#partage {
 	position:fixed;
 	z-index:99;
-	bottom:16px; left:12px; 
+	bottom:12px; left:12px; 
 	width:120px; height:60px;
 	transition:all 500ms linear; -webkit-transition:opacity 500ms linear; -moz-transition:opacity 500ms linear; -ms-transition:opacity 500ms linear; -o-transition:opacity 500ms linear;
 	opacity:0.2;
 }
-	div.partage:hover { opacity:1; }
-	div.partage > * { marging:2px 0; padding:0; }
+	#partage:hover { opacity:1; }
+	#partage > * { marging:2px 0; padding:0; }
