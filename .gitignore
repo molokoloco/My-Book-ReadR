@@ -1,1 +1,5 @@
-cache/_BAK_/_notes/*.BAK.*git.txtDesktop.iniThumbs.db
+_WORK_*
+_notes*
+*.BAK.*
+Desktop.ini
+Thumbs.db

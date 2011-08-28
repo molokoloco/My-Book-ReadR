@@ -6,353 +6,415 @@
 	<meta http-equiv="content-language" content="fr"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<title>Piratons la démocratie</title>
-	<meta name="description" content="Piratons la démocratie, un livre de Paul da Silva 2011">
+	<meta name="description" content="Piratons la démocratie, un livre de Paul da Silva 2011" />
 	<meta name="viewport" content="width=720" />
-	<link href="./css/modernizr.css" type="text/css" rel="stylesheet"/>
-	<!--<link href="./css/jquery-ui-1.8.14.custom.css" type="text/css" rel="stylesheet" />-->
-	<link href="./css/styles.min.css" type="text/css" rel="stylesheet"/>
+	<link type="text/css" rel="stylesheet" href="./css/modernizr.css" />
+	<!--<link" type="text/css" rel="stylesheet" href="./css/jquery-ui-1.8.14.custom.css />-->
+	<link rel="stylesheet" type="text/css" href="./css/styles.css" />
 	<script src="./js/modernizr-2.0.min.js"></script>
 </head>
 <body>
 
-<div class="spacer"><a name="top" id="top"></a></div>
-	
-<section id="section" role="main" class="rounded">
-	<article>
+	<div class="spacer"><a name="top" id="top"></a></div>
 		
-		<!--// ---------------------------------------------- !!! THERE WE GO ... EDIT HERE !!! ---------------------------------------------- //-->
+	<section>
+		<article id="article" role="main" class="rounded">
 		
-		<h1>Piratons la démocratie</h1>
-		<h3><a href="http://www.paulds.fr/" target="_blank">Paul da Silva</a></h3>
-		
-		<div class="preface"> <!--// Protect Content inside a child div : ROOT <p> are dynamically targeted by JS -->
-		
-			<p><em>Le livre est <a href="http://pictures.korben.info/2011/07/pld.pdf" target="_blank">disponible au format PDF</a>, et sera très bientôt disponible au format papier pour 2,60€ chez <a href="http://www.inlibroveritas.net/" target="_blank">In Libro Veritas</a>.<br />
-			Vous êtes libres de l'utiliser à loisir, de le copier, de le redistribuer, de le traduire, ...</em></p>
-			<div class="spacer"></div>
-			
-			<p>Image de couverture&nbsp;: Geoffrey Dorne (licence CC0)<br />
-			Page web&nbsp;: @molokoloco<br />
-			Préface&nbsp;: Serge Soudoplatoff (licence CC0)</p>			
-			<div class="spacer"></div>
+<!--// ---------------------------------------------- !!! THERE WE GO ... EDIT HERE !!! ---------------------------------------------- //-->
+<!--// -------------------------------------- Semantic HTML with <H-12345> and <P> targeted by JS ------------------------------------ //-->
 
-			<h5>Livre publié sous licence <a href="http://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons 0</a></h5>			
-			<div class="spacer"></div>
-			
-			<p>Merci à tous ceux qui ont rendu ce projet possible&nbsp;:</p>		
-			<blockquote class="colonne">
-				Tous ceux que j'ai rencontrés<br />
-				Tous ceux que j'ai lus ou écoutés<br />
-				Et les rares que j'ai ignorés<br />
-				Ainsi que les contributeurs&nbsp;:<br />
-				Aedius, Jérôme Mauvais, Ampelmann, Hadrien Beucher, Ebernat, sgarret,<br />
-				Alexandre Boucherot, Jeey, nka11,<br />
-				iSuitUp, Matthieu Honel, Val1984,<br />
-				Kévin le Jeune, Diane Couprie,<br />
-				Sébastien Debollivier, Shahor,<br />
-				Cédric Boussicaud, DixDel,<br />
-				Valery Xavier Lentz,<br />
-				Charly Coyette<br />
-				Enfin, un remerciement tout particulier à Serge et Geoffrey avec qui j'ai eu l'honneur de travailler sur ce livre.
-			</blockquote>
-			<div class="spacer"></div>
-			
-		</div>
-		
-		 <!--// ---------------------------------------------- Semantic HTML with <H-12345> and <P> targeted by JS ---------------------------------------------- //-->
+<h1>Piratons la démocratie</h1>
 
-		<h4>Prologue</h4>
-		<h5>Par Serge Soudoplatoff</h5>
-		<p>Les grandes phrases ont ceci de terrible que leur beauté amène à figer dans le marbre leur contenu, donnant l'illusion au concept qu'elles soutiennent d'être définitif, immuable, intangible, universel et intemporel.</p>
-		<p>La réalité est autre.<br />
-			À part les insectes qui n'ont pas changé d'un iota depuis 170 millions d'années, la vie ne cesse d'évoluer, de se transformer, de constamment s'adapter aux cruelles mutations de l'environnement.<br />
-			Même l'être humain, qui est, pour l'instant, la forme la plus complexe de vie sur notre vaisseau spatial, n'échappe pas à ces nécessaires transformations.<br />
-			Il faut être iconoclaste pour s'adapter, il faut savoir remettre en cause les acquis, les idées reçues, le dogme.</p>
-		<p>Pour choisir une grande expression, appelons-en au grand Sir Winston Churchill&nbsp;: « la démocratie est le pire des régimes, à l'exception de tous les autres ».<br />
-			Voilà un exemple de belle phrase, qui a marqué toute la génération de l'après-guerre.<br />
-			Ne la nions pas, elle aura servi à stabiliser un système qui devait se remettre du trauma de la seconde guerre mondiale, voire de la première.<br />
-			De plus, qui pourrait la critiquer ? Qui oserait se prétendre anti démocratique ? Dans une logique binaire, où « ne pas être pour » signifie automatiquement « être contre », oser challenger cette phrase aurait comme conséquence d'être considéré comme fasciste, dictateur, etc...<br />
-			Pas très sympathique.<br />
-			Or, il n'y pas de raison que la démocratie, comme toute forme sociale, ne soit pas remise en question.<br />
-			Si l'idée de base, le pouvoir du peuple, reste entière, la manière dont ce pouvoir s'exprime, les modes de gouvernance, ne doivent pas être figés.<br />
-			Oui, il faut avoir le courage de revisiter la démocratie.</p>
-		<p>Surtout qu'arrive une grande révolution&nbsp;: Internet, qui vient tout chambouler, et tout remettre en cause.<br />
-			La vie est ainsi faite&nbsp;: les champs techniques et scientifiques passent leur temps à construire des corpus de connaissances qui s'enrichissent au fur et à mesure ; mais le champ du social ne fait, finalement, que de ré explorer les mêmes formes.<br />
-			Ce qui change, est justement la technologie, qui vient impacter les règles sociales, et les force à se remettre en question.</p>
-		<p>De par sa faculté à faire circuler l'information en peer to peer, Internet ne peut pas laisser indifférente la politique.<br />
-			Le gouvernement 2.0, les mouvements hacktivistes, wikileaks (qui est une forme moderne du canard enchaîné), sont autant de tentatives modernes de revoir les modes de gouvernance traditionnels des démocraties.<br />
-			Il est temps de mettre un frein à l'immobilisme.<br />
-			Pour reprendre le bon mot de Hans Rosling&nbsp;: ne soyons ni optimistes, ni pessimistes ; soyons des « possibilistes ».<br />
-			Et changeons la démocratie.</p>
-		<p>Mais pourquoi faut-il la « pirater » ? Pourquoi cette méthode plus qu'une autre ? Peut-être parce que toute innovation commence par désobéissance ? Ou bien peut-être parce que, tout simplement, en copiant l'article de wikipedia, l'étymologie du mot vient du grec verbe πειράω (peiraô) signifiant « s'efforcer de », « essayer de », « tenter sa chance à l'aventure », et du latin pirata&nbsp;: « qui est entreprenant ».</p>
-		<p>Oui, piratons la démocratie, non pas pour qu'elle soit meilleure, mais tout simplement pour qu'elle soit en phase avec les essentielles mutations de nos sociétés.</p>
-		<h4> Introduction</h4>
-		<p>Je suis né le 18 septembre 1987, j'ai donc 23 ans à l'heure où j'écris ce livre.<br />
-			Pourquoi moi, pourquoi si jeune ? Je ne suis pas né « fils-de », je n'ai pas touché d'héritage, j'ai fait un bac+2 en informatique que j'ai presque raté, … Rien ne me prédestine à écrire et publier ce que j'apparente à un essai philosophique à cet âge qui est le mien.</p>
-		<p>J'en ai eu envie, j'ai eu cette curiosité qui caractérise les gens qui s'ouvrent au monde, j'ai cherché, j'ai réfléchi, j'ai été plus loin que ce que les médias traditionnels m’offraient.<br />
-			En un mot, j'ai satisfait cette curiosité par tous les moyens que le monde moderne a mis à ma disposition.<br />
-			Ainsi, j'ai rencontré des gens, eu des discussions passionnées avec ceux qui partagent mon avis et plus passionnées encore avec ceux qui vont à l'encontre.<br />
-			Du politique carriériste au grand patron, du militant historique à l'Hacktiviste moderne, je les ai tous écoutés, je leur ai à tous dit ma façon de penser et tous ensemble nous avons échangé, partagé nos savoirs et nos opinions.</p>
-		<p>Mais cela ne suffit pas, cette démarche que j'ai faite et qui m'a pris plusieurs années j’aimerai qu'elle s'ancre en chacun de nous, que chaque personne qui se sente mis à part ou mal représenté par le système prenne conscience qu'un système n'est que la somme des individus qui le composent et que se taire et laisser faire, aujourd’hui plus que jamais, c'est cautionner.<br />
-			À l'heure où nous avons un réel moyen de faire pression sur les élites qui ont longtemps décidé à notre place, cette passivité est criminelle et contre-productive.<br />
-			Il est temps de pirater la démocratie !<br />
-		</p>
-		<h4>La démarche derrière ce livre</h4>
-		<p>Ce livre est, à ma connaissance, le premier ouvrage à s'ouvrir à la participation collective.<br />
-			Il a été écrit publiquement en utilisant un outil permettant de suivre l'édition en temps réel et de discuter de ce que l'on voit (ou d'autre chose) avec toutes les personnes connectées afin que le parcours de réflexion que je me suis imposé depuis plusieurs années ne soit pas interrompu par la rédaction de ce livre et qu’en ressorte le document le plus complet possible.</p>
-		<p>Il est donc le fruit de mon écriture et celui de la réflexion de plusieurs centaines d'Internautes qui m'ont aidé, tout au long de l'écriture, à élargir encore un peu ma vision des choses et à ne pas oublier d'éléments intéressants dans la rédaction d'un ouvrage qui se veut un premier pas vers une réflexion globale d'une remise en question citoyenne de la démocratie dans son fonctionnement pour que celui-ci approche, comme c’est devenu possible aujourd’hui, son optimalité.</p>
-		<p>Pour que ce livre rencontre une audience maximale il est diffusé sous licence libre (CC0 domaine public) et est gratuit en version numérique.<br />
-			Je ne touche pas de droits d'auteur sur la version papier afin que celle-ci soit vendue le moins cher possible et accessible ainsi au plus grand nombre.</p>
-		<p>Piratons la démocratie a été rédigé en français et sera traduit en Anglais au plus tôt.<br />
-			Toute traduction est la bienvenue afin de propager les idées, au-delà des frontières de la langue, que je considère comme fondamentales et que j'ai exposées dans ce livre.</p>
-		<p>Le financement de la publication de ce livre a été assuré par les Internautes désirant participer de cette façon via une plateforme de financement collective et a recueilli l'ensemble des fonds nécessaires en moins de deux jours, signe de l’intérêt citoyen pour le débat lancé ici.</p>
-		<p>Enfin, pour pousser la réflexion plus loin encore j'ai ouvert un site regroupant mes publications diverses et ouvert aux commentaires&nbsp;: <a href="http://livres.paulds.fr" target="_blank">http://livres.paulds.fr</a>.<br />
-			Ainsi, au-delà de ce support relativement figé qu'est le livre, le débat peut continuer sur l'outil le plus démocratique qui ait, à l’heure actuelle, jamais été inventé&nbsp;: Internet.</p>
-		
-		<p class="center spaced">
-			<img src="http://www.b2bweb.fr/bonus/piratons-la-democratie.png" width="372" height="558" border="0">
-		</p>
-		
-		<h4> Piratons la démocratie</h4>
-		<p>Théoriquement la liberté d’expression est un droit accessible à tous, dans la mesure de son audience et du contexte sociopolitique en place.<br />
-			C’est une liberté primaire qui va dans le sens de la nature de l’être humain à qui l’évolution a donné la parole et le langage.<br />
-			Être humain qui s’est par la suite doté de l’alphabet, de l’imprimerie et d’autres médiums à la liberté d’expression pour satisfaire à cette faculté primaire.<br />
-			Malgré cela, avant Internet les gens devaient se battre pour que cette liberté leur soit accordée.<br />
-			Quand elle était enfin reconnue, dans les faits, ce sont les élites qui avaient accès à une réelle liberté d’expression, une parole qui ait un poids et une portée au-delà de leur cercle d’amis proches ou de rencontres.<br />
-			Les seules et rares grandes familles de personnes ayant un réel accès à la liberté d’expression étaient donc les politiciens, les auteurs professionnels (écrivains, nouvellistes, poètes, artistes) et les journalistes (ou plus généralement les Hommes de médias).</p>
-		<p>Cette liberté a toujours été contrebalancée d’un devoir de décence et la diffamation est suffisamment ancrée dans le droit pour que l’on comprenne que n’importe qui n’exprime pas ce qu’il veut, que le droit d’un individu s’arrête là où celui de son prochain commence.<br />
-			Pour autant, personne ne devrait, en démocratie et en théorie, pouvoir être inquiété pour avoir exprimé ses opinions.</p>
-		<p>Cette distinction est moins présente de l’autre côté de l’Atlantique où le premier amendement de la constitution américaine défend de façon presque extrémiste la liberté d’expression.<br />
-			S’il est effectivement souhaitable que les libertés des uns ne soient pas bafouées par celles des autres, la modération a priori de tout ce que l’Homme peut dire publiquement n’est plus possible.<br />
-			Elle est un réel danger pour la liberté d’expression en ce sens qu’elle conduit nécessairement à une réduction de ce que chacun de nous aurait le droit d’exprimer (les volumes d’information échangés chaque jour sont tels que pour qu’un tiers de la population ait le droit de s’exprimer, les deux tiers restants devraient se poser en censeur).<br />
-			La modération est aussi dangereuse dans la mesure où elle place un jugement arbitraire du bien et du mal entre les mains de tout un chacun et ce même si elle est encadrée par des textes de loi stricts, le verdict restant le fruit d’un être humain soumis lui-même à son propre jugement potentiellement discutable même s’il est rendu dans le cadre de lois, de règlements qui sont eux aussi issus de la réflexion d’êtres humains.</p>
-		<p>Quelle est alors la solution au respect des libertés de chacun ? La censure par un acteur étranger étant rendue matériellement impossible par la profusion des informations, produit des libertés de chacun, la liberté d’expression étant devenue un droit à part entière, concret, et sur lequel nous ne pourrions jamais revenir.<br />
-			La solution adoptée jusqu’alors est la modération a posteriori.<br />
-			Elle a l’avantage de respecter la liberté d’expression de tous - y compris dans ses dérives - et de proposer un recours afin de faire respecter la liberté de tous.<br />
-			C’est ainsi que cela fonctionne sur Internet, c’est aussi comme cela que ça fonctionne dans notre société matérielle actuelle&nbsp;: personne n’a jamais été interdit de s’exprimer publiquement par la loi (en démocratie telle qu’on la connaît à l’heure actuelle).</p>
-		<p>Ce concept implique que les dérives soient suffisamment peu nombreuses pour que l’autorité en charge de les réprimer puisse faire son travail correctement.<br />
-			Ce qui devient difficile - en assumant que le nombre de dérives soit proportionnel au volume total d’informations échangées - quand la somme de ces informations atteint un seuil trop important.<br />
-			Quand les gens ont le tort de trop s’exprimer...</p>
-		<p>Le concept de liberté d’expression lui-même est finalement assez mal adapté à ce que tout un chacun puisse avoir une audience.<br />
-			C’est pourtant ce qui est favorisé par la naissance d’outils comme Internet qui posent, par conséquent, de graves questions à ceux qui avaient, historiquement, le monopole de cette liberté et qui, à tort ou à raison, ont plus peur des dérives qu’ils ne voient les avancés sociétales considérables que ces outils permettent.</p>
-		<p>J’ai coutume de dire que l’Histoire de l’Homme a connu deux percées fondamentales du point de vue de la liberté d’expression&nbsp;: la démocratie et Internet.<br />
-			Le second est encore tout jeune et seul l’avenir, et ce que nous déciderons de faire, conditionnera ce que sera son futur.<br />
-			Le premier présente un grand nombre de défauts qui correspondent à une réponse faite au mieux à un besoin de liberté manifesté il y a plusieurs millénaires déjà.<br />
-			Il s’agit de deux outils basés sur la neutralité la plus absolue afin de donner à tous la même chance de se faire entendre à travers un système pensé pour que la société évolue dans le sens souhaité par les populations.<br />
-			Dans les deux cas, le système s’efface devant ses utilisateurs pour que seule se manifeste la voix de ceux-ci, dans un cadre forcément strict, mais qui se doit de ne pas orienter les réflexions portées par l’utilisation de l’un ou l’autre de ces outils.<br />
-			Toute atteinte à cette neutralité risque d’orienter les réflexions et donc les débats ultérieurs - elles doivent donc être considérées comme une tentative de truchement d’un débat démocratique.</p>
-		<p>La démocratie est ce formidable outil qui permet à chacun de se faire entendre au travers du prisme de la politique, une élite désignée, directement ou non, par le peuple lui-<br />
-			même et censée représenter ses intérêts et prendre des décisions consensuelles pour l’avenir de la société les ayant élus.<br />
-			Cette représentation délégative vient de l’impossibilité technique de consulter la totalité des intéressés de façon directe ou d’organiser un débat constructif à très grande échelle.<br />
-			C’est une contrainte bien connue et qui se reproduit partout où l’on a, historiquement, tenté de représenter les intérêts d’une population trop conséquente pour que la représentation directe soit envisageable dans un contexte technologique qui ne permettait pas la communication rapide entre les individus.<br />
-			Par cet outil la liberté d’expression de tous est exprimée par ceux à qui l’on confère le pouvoir de les représenter, créant ainsi une élite délégative à qui l’on doit, de par le fonctionnement du système, faire confiance pour la durée d’un mandat d’une durée variable définie par le système lui-même.</p>
-		<p>Jusqu’alors, du fait de la difficulté d’accéder aux postes de décideur en démocratie, nous sommes plus proches d’une méritocratie couplée à une ploutocratie et incluant une certaine part de “hasard” (au sens mathématique du terme) par le vote.<br />
-			Cet acte décisionnel unique est donc le seul moyen pour le citoyen d’influer sur un système qui lui échappe par ailleurs totalement alors qu’il est censé œuvrer pour lui.<br />
-			Depuis peu, quelques années, décennies au plus, et en réponse à ce manque de possible implication, des citoyens ont commencé à investir la scène politique pour faire entendre leur voix de façon plus durable que par un simple vote.</p>
-		<p>Le vote en soi a en effet un rôle castrateur sur la population qui a pour seule mission de désigner des représentants et d’assumer les conséquences négatives de ces choix sans jamais tirer d’intérêt réel, au delà des quelques mesures prises et qui satisferont les citoyens en tant que tels, aux actions intéressantes menées par ces mêmes représentants.<br />
-			Le résultat est que de moins en moins de personnes s’intéressent à la politique et se reconnaissent dans l’action prétendue essentielle de voter.</p>
-		<p>Internet a cette faculté extraordinaire de couper toutes les barrières existant entre les Hommes&nbsp;: de la distance géographique à la langue.<br />
-			Et là où nous avions besoin, il y a près de 3000 ans, d’être représentés par une élite politique, de nous contenter du vote comme seul médium de la liberté d’expression, nous pourrons peut-être demain intervenir directement sur la vie politique, y participer autrement, plus pleinement et plus durablement.<br />
-			La politique elle-même pourrait souffrir de ce regain d’intérêt citoyen pour enfin entrer en adéquation avec les attentes du peuple - ce qui est son rôle primaire et pourrait - devrait - devenir son rôle unique.</p>
-		<p>Comme tous les outils, ceux-ci ont tout intérêt à se faire chaque jour plus discret, à s’effacer en tant qu’entités pour rejaillir en tant que résultats de ces systèmes.<br />
-			La démocratie comme l’Internet ont pour vocation de donner la liberté d’expression au peuple en le contraignant le moins possible à leur fonctionnement.<br />
-			Sur ce point, Internet est quelque peu particulier puisqu’il répond à des normes techniques sous-jacentes et particulièrement obscures pour un néophyte.<br />
-			Cependant, ces normes sont toutes disponibles au grand public et celui-ci a un contrôle de principe sur le fonctionnement de l’outil et là où les néophytes peuvent avoir des difficultés à lire ces documentations, des spécialistes se chargent de les décrypter et les vulgariser pour les rendre accessibles - ce que les politiques ne font pas à propos des lois, tout aussi obscures.</p>
-		<p>La démocratie elle aussi fonctionne selon des règles établies, les textes de loi, qui évoluent eux aussi en fonction de la société pour y répondre toujours mieux...<br />
-			En principe.</p>
-		<p>Le piratage est cette forme d’art qui vise à considérer un existant souvent vieillissant, à l’analyser et à essayer de l’envisager autrement, de le faire tendre vers quelque chose qui réponde plus aux besoins actuels des utilisateurs.<br />
-			Le piratage vient souvent répondre à l’obsolescence d’un projet, d’une idée, d’un concept - à l’inadéquation entre un besoin et une offre - pour construire une alternative qui réponde mieux à une demande insatisfaite par les responsables actuels de l’existant étudié.</p>
-		<p>Certains objecteront que le piratage sert aussi à détourner le fonctionnement d’un système pour le profit d’un (ou d’une somme de) individu.<br />
-			Il s’agit là d’un effet pervers du manque d’éducation relatif à la relative jeunesse de cet outil, excuse que n’a pas la démocratie qui présente chaque jour un peu plus cette même dérive perverse au fur et à mesure que l’outil évolue dans l'intérêt d'une minorité de personnes.<br />
-			A sa naissance en Grèce, ceux qui outrepassaient le système et assoyaient une influence trop importante sur celui-ci étaient exclus du débat, évitant ainsi la ploutocratie qui caractérise la politique moderne.</p>
-		<p>Le Pirate enfin est une personne lambda, peut-être vous sans même le savoir, qui va s’intéresser à un sujet particulier, le décortiquer et tenter d’améliorer le fonctionnement de ce sujet.<br />
-			Le piratage est présent à tous les niveaux de la vie et prend des formes très variées puisqu’il est le fruit de la perception et de l’imagination de chacun des Pirates qui va le pratiquer.<br />
-			Les citoyens investissant la scène politique pour y défendre leurs idées peuvent ainsi être considérés comme des pirates qui, non satisfaits de l’objet fini qu’on leur propose, ont décidé de s’en emparer et de tenter de l’améliorer ainsi.</p>
-		<p>C’est là qu’est tout le but de ce travail&nbsp;: envisager - car le réel résultat dépendra de la motivation citoyenne résultante de la réflexion induite - les influences d’une réelle liberté d’expression, presque impossible à censurer, sur un outil millénaire, la démocratie, qui a pour essence de représenter le peuple, mais n’a pourtant que peu évolué, faute de moyens techniques, alors que la société évolue elle à un rythme jamais égalé dans l’histoire de l’Homme.<br />
-			La démarche est ici de constater l’obsolescence de la démocratie actuelle pour tenter d’ouvrir un certain nombre de réflexions qui pourraient amener un piratage citoyen de celle-ci.</p>
-		<p>Je veux aussi me pencher sur quelques attaques à ces libertés, leurs origines et motivations, et leurs conséquences probables sur un outil que certains ont tout intérêt à faire mourir dans l'œuf.<br />
-			Différents obstacles et pièges à éviter seront couverts.<br />
-			Nous sommes dans une période charnière où la visibilité sur ce que deviendront les outils dont je traite ici est minime si ce n’est moindre, mais nous sommes aussi dans une période où les décisions prises influeront grandement sur l’avenir à long terme.</p>
-		<p>Il faut aussi considérer le fait qu’Internet fait actuellement partie de la vie de presque tous les citoyens du monde, que ce soit directement ou non et que légiférer dans le but de contraindre cet outil aux mêmes règles que celles applicables aux médias il y a des années - ce qui semble la stratégie actuelle des dirigeants de nombre de démocraties - pourrait avoir des implications bien plus larges qu’attendues.</p>
-		<p>Les médias traditionnels, source d’information de la majorité des populations du monde, travaillent aujourd’hui presque exclusivement grâce et avec Internet.<br />
-			Des entreprises ont basé leur activité sur ce réseau ou en dépendent à un point qui, si Internet devait être dénaturé, condamnerait beaucoup plus que les quelques geeks qui se manifestent contre les mesures potentiellement dangereuses adoptées un peu partout dans le monde, aussi bien dans des dictatures qu’au pays dit des droits de l’Homme.</p>
-		<p>Les médias tout particulièrement ont le devoir de protéger leur outil de travail.<br />
-			Ceci peut leur paraître difficile à assumer puisque soudainement Internet les met en concurrence avec les citoyens du monde, à même de créer à leur tour des relais d’information et de gagner une crédibilité suffisante pour diluer les parts de marché jusque-là majoritaires (si ce n’est monopolistes) de leur métier.<br />
-		</p>
-		<p>Cependant, leur métier est aujourd’hui corrélé à l’outil Internet et au réseau de personnes Internet qui lui permettent de fournir des informations toujours plus justes et toujours plus vite à une part grandissante de la population qui ne sait plus se contenter des brides d’informations que la télévision, entre autres, veut bien lui lâcher.<br />
-			Internet permet d’approfondir les sujets, d’aller au-delà du simple feuillet de 4000 signes ou du reportage de 5 minutes.<br />
-			Aucune limite de quantité d’information ne subsiste sur Internet et aucune information ne saurait être laissée de côté faute de place.</p>
-		<p>De même, une information est aujourd’hui infiniment plus rapidement vérifiée et cette démarche est accessible à chacun.<br />
-			Tous les citoyens du monde peuvent (et devraient) faire cette démarche de vérification d’information.<br />
-			Un sens critique est à développer face à l’information alors que les informés avaient été habitués à assumer un rôle passif devant l’informant et son information.</p>
-		<p>Il appartient à la presse de se réinventer pour encourager le développement de la communication entre les individus tout en conservant un rôle de promoteur sûr de l’information.<br />
-			Cette transition ne peut se faire sans que les titres historiques, à travers le monde, n’ouvrent de sites Internet eux-<br />
-			mêmes pour favoriser ces échanges.<br />
-			Démarche qui, par ailleurs, a déjà été amorcée par la majorité de ces titres historiques - avec plus ou moins de succès en fonction de leur compréhension du nouveau milieu dans lequel ils doivent évoluer.</p>
-		<p>Le partage entre particuliers dans un but non lucratif (que les “industries du divertissement” ont tenté de diaboliser en nommant “piratage”) comme cheval de Troie de la censure du Net est un exemple extrêmement parlant d’une attitude dangereuse et à l’opposé de ce qu’elle devrait être.</p>
-		<p>Le partage entre utilisateurs est à l’origine de l’Internet (qui a été inventé pour relier plusieurs universités et partager ainsi un savoir qui serait, sinon, resté isolé) et est son mode de fonctionnement optimal si un jour les acteurs centralisateurs venaient à être supprimés.<br />
-			Cette centralisation, à l’inverse, est néfaste à moyen/court terme aux infrastructures elles-<br />
-			mêmes qui n’ont jamais été prévues pour supporter une pareille charge et pourraient donner tout son sens à la notion de “best effort”, qui est la norme lorsque l’on parle de réseaux, en rendant des parties entières de l’Internet inutilisables faute d’avoir réparti les charges sur tous les points du réseau.</p>
-		<p>Au-delà des considérations techniques - qui sont fondamentalement peu pertinentes - la culture, par essence, n’a de valeur que dans sa diffusion.<br />
-			Un artiste n’est souvent reconnu comme tel qu’à partir du moment où il a rencontré son public.<br />
-			Le public, quant à lui, a soif de découverte et tout cloisonnement de la profusion possible du choix qui s’ouvre à lui, du moins si il est manifeste, lui est intolérable.<br />
-			S’ouvre alors aux artistes comme à leur public un espace de liberté capable de favoriser une diffusion mondiale à un coût infinitésimal et, pourtant, peu semblent prendre la mesure de la révolution amorcée sur ce point.</p>
-		<p>Nous passons d’une culture historique de la rareté, avec une capacité à accéder au divertissement ou à l’enrichissement réservée aux élites, à une culture de l’abondance avec cette même culture enfin accessible à tous.<br />
-			Dans le même temps les artistes autrefois obligés de passer par des intermédiaires monopolistes, qui pouvaient imposer aux artistes des conditions de leur choix et décider ainsi de ce que le public aura culturellement à sa disposition, pour rencontrer leur public peuvent maintenant choisir de se passer de ces intermédiaires et pour autant être diffusés de façon bien plus large qu’ils ne l’auraient été il y a trente ans, connus, reconnus ou non !<br />
-		</p>
-		<p>Sans Internet je n’aurai probablement jamais écrit que pour moi-même.</p>
-		<p>Pire&nbsp;: l’accès à la culture est un des facteurs qui fera de la société un espace plus démocratique et qui éliminera progressivement une partie des différences sociales.<br />
-			En effet, avec l’éducation, la culture est l’un des composés essentiels de la personnalité d’un individu.<br />
-			Ces valeurs sont ce qui le définit, ce qui lui permet d’évoluer et de s’épanouir au-delà de ce que la naissance lui a donné.<br />
-			La “civilisation” du Net passera plus vraisemblablement par un accès plus riche à la culture que par une censure de celle-ci.<br />
-			Si l’accès à la culture et celui à Internet, donc à l’information, devaient devenir des droits fondamentaux ils renforceraient la notion d’égalité entre les citoyens, leur donnant à tous les mêmes possibilités d’épanouissement intellectuel.<br />
-			Si l’éducation préalable à la mise à disposition de cet accès était correctement apportée, dès le plus jeune âge, et afin d’éduquer là où nous avons tendance à enseigner, la démocratie bénéficierait d’autant de nouvelles têtes pensantes prêtes à s’engager dans un débat, lui-même facilité par les outils modernes de communication, essentiel à l’évolution de notre société.<br />
-			Ceci mettant progressivement un terme au caractère ploutocratique qui caractérise actuellement le fonctionnement des régimes démocratiques de par le monde.</p>
-		<p>Enfin, Internet lui-même bénéficierait de cette reconnaissance du droit d’accès à la culture en le démocratisant auprès de ceux encore rétissants à l’adopter.<br />
-			Les passionnés de musique, rats de bibliothèque et autres férus du septième art (pour ne citer qu’eux) trouveraient un intérêt nouveau dans un outil qui peut paraître froid ou hermétique à qui ne l’utilise pas au quotidien mais qui regorge de créations toutes plus à même de toucher la sensibilité des uns ou des autres et parfois inaccessibles autrement.</p>
-		<p>La question se pose alors de comment rétribuer les artistes qui permettent cette richesse culturelle.</p>
-		<p>Je serai tenté de répondre, et je l’ai même déjà fait, que ce n’est pas mon problème et que les enjeux sociétaux sont tels que c’est aux acteurs en place d’imaginer une solution s’ils veulent continuer à gagner de l’agent de leur art.<br />
-			La culture existera toujours, comme elle a existé bien avant que l’on décide de la monnayer comme un vulgaire produit de consommation.<br />
-			Mais comme lesdits acteurs ont une imagination inversement proportionnelle à leur immobilisme historique, il est bon de souligner que nombreuses sont les suggestions et qu’elles viennent toutes de ceux qui sont accusés de vouloir tuer la culture alors qu’ils souhaitent au contraire la voir prospérer et se libérer des contraintes actuelles.</p>
-		<p>Compte tenu de la dimension qu’a pris le partage d'œuvres entre particuliers sur Internet il est évident que l’illusion de la gratuité est un facteur clé dans la propagation de la culture et qu’elle est nécessaire pour encourager le public à la découverte.<br />
-			Reste à savoir à quel niveau de l’argent peut être prélevé et comment il doit être réparti.<br />
-			Les solutions de licence globale ou de mécénat global mettent le prélèvement au dénominateur commun de l’accès à la culture dématérialisée&nbsp;: à l’abonnement Internet.<br />
-			Quand à la répartition, dans un cas elle se base sur la popularité statistique de l’artiste (qui se doit d’être calculée de façon non invasive&nbsp;: il est hors de question de surveiller les usages sur Internet d’une population tout entière, a fortiori sur un sujet aussi sensible) dans le second elle se base sur l’affection du public pour un artiste&nbsp;: c’est au public de décider qui touchera l’argent qu’il dépense pour profiter de cet accès à la culture.</p>
-		<p>Un modèle hybride combinant une partie de la somme répartie de façon statistique et une autre répartie au libre choix de la personne qui paye au final est aussi avancé...<br />
-			J’ai une légère préférence pour le second modèle, mais finalement c’est à l’histoire (et au peuple en particulier) de décider ! Le partage ainsi légalisé, en plus des aspects positifs évidents sur le niveau de connaissance et de réflexion moyen de la population et sur la popularité d’Internet (haut débit) auprès des populations, aurait pour effet de rassembler des passionnés autour de la création, de “créer” encore de nouveaux artistes et de limiter le nombre de fichiers corrompus et vérolés dans la mesure où les sources seront plus nombreuses donc plus fiables.</p>
-		<p>L’impact de cette mesure serait donc bon à la fois pour la culture et pour la citoyenneté en ce sens que le premier pas dans le civisme est la connaissance.<br />
-			Nul n’est censé ignorer la loi, nul ne devrait se voir imposer des restrictions à l’accès aux lectures, écoutes, à la vision de pans entiers de la culture qui permettent d’aborder la loi dans son contexte et de pousser ses réflexions au-delà du carcan des mass-médias, disposant d’espaces limités (en temps ou en quantité de signes) pour exposer un fait en faisant régulièrement l’impasse sur les éléments de contexte pourtant capitaux.</p>
-		<p>Les artistes seront aussi probablement de ceux qui donneront ses lettres de noblesse au réseau en y favorisant la libre diffusion de leur travail afin qu’il profite à tous, eux y compris.<br />
-			Là encore, la question financière est subsidiaire et il leur appartient de la résoudre, en accord avec les doléances de leur public.<br />
-			Du côté des développeurs, par exemple, cette démarche a été entamée il y a longtemps et les logiciels libres côtoient les logiciels propriétaires permettant un accès aux systèmes d’information pour tous.</p>
-		<p>En facilitant l’accès à la culture et à l’information, Internet a déjà joué un rôle considérable dans l’ouverture de l’être humain, lui donnant des armes pour aborder la réalité différemment, pour lui permettre d’entreprendre et de créer à son tour.<br />
-			C’est d’ailleurs le fondement de ce que le Net a amené de meilleur comme de ce qui lui vaut aujourd’hui cette image d’incivilité, fortement accrue par une volonté politique de diabolisation d’un outil potentiellement dangereux pour l’organisation des structures décisionnelles actuelles.<br />
-			Le Net a très largement contribué à la création de communautés composées autour d’affinités et regroupant des personnes à travers le monde qui ne se rencontreront probablement jamais physiquement, mais ne se seraient pas rencontrées idéologiquement autrement.<br />
-			C’est aussi ce qui créé des communautés controversées, les pirates pour ne citer qu’eux, qui vont se rassembler autour de valeurs communes, qu’elles obéissent à la loi ou non, pourvu qu’elles répondent à leur morale, à la conception qu’ils se font d’une société nouvelle et adaptée à l’époque actuelle.</p>
-		<p>Parmi ces communautés une (des multitudes en fait) nous intéresse particulièrement ici&nbsp;: les communautés dites “du libre” - un nombre grandissant de personnes convaincues que les créations ont intérêt à être partagées et transparentes pour que le public puisse en tirer le meilleur et que la diffusion elle-même soit optimale.</p>
-		<p>Le libre, appliqué au logiciel, permet une transparence totale du fonctionnement interne d’un système donné.<br />
-			Il supprime cette barrière entre l’utilisateur final et l’éditeur dudit système pour que chacun ait un total contrôle sur le logiciel, qu’il puisse surveiller son fonctionnement, l’améliorer, le redistribuer à son tour, …<br />
-			Cette notion de logiciel libre devient, au fur et à mesure que les “nouvelles technologies” prennent une place plus importante dans la société et dans la vie politique demain, une caractéristique technique sine qua non aux notions de liberté et de sécurité.<br />
-			Bien plus que la surveillance des citoyens, c’est la surveillance des entités politiques par les citoyens qui fait une réelle sécurité en démocratie.</p>
-		<p>Cette transparence des politiques envers leurs patrons, les citoyens qui les ont élus et payent leurs salaires de ces élus via leurs impôts, permet un droit de regard sur les solutions proposées par les politiques, et sur la vie politique en général.<br />
-			Ce droit de regard ne peut s’exécuter qu’en cas de totale transparence des systèmes et des personnes (dans leur vie publique) pour que ceux qui décident réellement, les citoyens, aient toutes les cartes en main au moment de faire un choix (le vote, direct ou non).<br />
-			De même, personne ne peut prendre de décision politique éclairée, lorsqu’on le leur demande (donc à l’heure actuelle au moment de voter uniquement pour les simples citoyens) si les informations dont il dispose sont partielles ou orientées.</p>
-		<p>À défaut d’avoir cette légitime transparence, le réseau lui-même s’en saisira et l’imposera, comme il l’a imposé avec Wikileaks et surtout les copies du site, créées à travers le monde par de simples citoyens, et qui ont découlé des diverses tentatives de censure du site.<br />
-			Les citoyens du monde, même si tous n’entameront pas cette démarche active, ont le droit d’avoir accès aux informations qui les préoccupent directement ou indirectement et toute tentative d’entrave à ce droit fondamental à la démocratie verra ses efforts anéantis par le réseau lui-<br />
-			même, manifesté ici par la somme des citoyens conscients de ce droit et dont le nombre ira grandissant au fur et à mesure des déceptions des citoyens par le système en place.</p>
-		<p>Le dessein de conserver un peuple entier dans l’ignorance en influant de façon directe ou non sur les informations qui lui permettront de faire des choix capitaux pour sa souveraineté lors des maigres espaces de temps de décision que le système et ses dirigeants lui accordent est le début de son instrumentalisation pour lui faire prendre les décisions que ceux déjà au pouvoir souhaitent le voir prendre, le plongeant ainsi dans un cercle vicieux immobiliste et basé sur un contrôle de leur continuité.</p>
-		<p>La période actuelle est une charnière de notre histoire, elle sera celle d’un passage à une ère faisant la part belle au numérique, à l’accès à l’information, mais surtout aux choix pour tous.<br />
-			La transition va être difficile puisqu’elle se fait vers l’inconnu, mais elle est inéluctable et une fois les premières pierres d’une architecture décentralisée et désordonnée posées il est impossible de faire machine arrière ou d’essayer de contrôler l’incontrôlable.<br />
-			Là aussi il s’agit d’une inconnue&nbsp;: comment contrôler et contenir la liberté d’expression de toute une population là où, il y a à peine une génération, le travail se faisait seul.<br />
-			On observe à l’heure actuelle des tentatives en ce sens, éparses, désordonnées, vouées à l’échec.</p>
-		<p>Qu’Internet meure ! Il sera remplacé par un nouveau réseau, inventé par les mêmes personnes qui ont soutenu Wikileaks dans sa lutte contre la censure, par les communautés, par les pirates, … Et il sera cette fois pensé pour être encore moins contrôlable, encore moins prompt à être censuré, … Encore moins saisissable et toujours plus discret dans son fonctionnement.</p>
-		<p>Cette notion de contrôle, qui est normalement l’apanage des régimes autoritaires, témoigne de l’incompréhension de l’époque moderne et de l’évolution sociétale par la technologie en cours  de la part les élites historiques.<br />
-			Ce contrôle en servitude permettant de prévoir et sécuriser son poste, ses propres desseins politiques et carriéristes n’est plus possible à l’heure ou tous peuvent s’exprimer.<br />
-			Quiconque essayant d’instaurer un système de contrôle sur les individus peut légitimement être assimilé à quelqu’un essayant de faire passer son intérêt personnel avant celui du système démocratique dans lequel il est censé vivre (et qu’il est censé défendre pour les politiques) et de telles démarches sont à l’encontre de ce que les citoyens sont en droit d’attendre de leurs politiques.</p>
-		<p>En sus du contrôle et de la censure, les instances dirigeantes réfléchissent régulièrement à des façons de surveiller tout ou partie de la population sur le Net et ce de façon anonymisée ou non.<br />
-			Dans un cas il s’agit de tirer des tendances de la vie sur le réseau pour adapter les législations ou les infrastructures.<br />
-			Il est fréquent que cela se passe sans même que nous nous en rendions compte et dès lors qu’il s’agit d’une pratique marginale, transparente, à but strictement statistique et que les citoyens sont au courant et peuvent s’y soustraire elle ne pose aucun souci majeur.</p>
-		<p>À l’inverse la surveillance d’un ou plusieurs citoyens, le rattachement de sa vie sur le réseau à son identité physique, morale ou pénale ne peuvent être faits que dans l’intérêt de la société basée sur un système démocratique.<br />
-			Tout manquement à cela doit être considéré comme un manquement au respect de la vie privée de l’individu qui est elle-même fondatrice de la plupart des libertés nécessaires au bon fonctionnement d’un système basé sur le peuple lui-<br />
-			même (à commencer par la liberté d’opinion qui garanti à chacun le droit de penser).</p>
-		<p>La réelle question qui se pose est celle du temps perdu, du temps d’adaptation à des technologies déjà plus vieilles que la durée d’une carrière politique et qui conservent pourtant l’appellation de “nouvelles technologies”, comme pour les amoindrir, les reléguer au rôle d’expériences.<br />
-			Le déclic se fera soit dans la douceur, soit dans la douleur.<br />
-			Dans les deux cas, il arrivera et s’il devait se faire attendre il sera provoqué par la création d’outils, de notices, de nouvelles communautés aptes à redonner du pouvoir aux citoyens pour un coût marginal et un gain maximal.<br />
-			Tout cela a par ailleurs déjà commencé...</p>
-		<p>Au-delà des questions précédemment abordées, la notion économique est souvent mise en avant.<br />
-			Internet détruirai des emplois, condamnerai des professions et changerai les règles établies depuis des années en la matière.<br />
-			Ces accusations sont toutes vraies.<br />
-			Comme tout outil révolutionnaire Internet a un principe darwiniste&nbsp;: seuls les plus adaptés “survivent” à son passage.</p>
-		<p>Loin d’être un mal ce fonctionnement est pragmatiquement optimal puisque catalyseur de création et d’innovation.<br />
-			Il s’agit du premier système Darwiniste mondial et qui mette chaque peuple, chaque habitant de chaque pays (les frontières n’existent plus, malgré tous les efforts des dirigeants en ce sens) sur un pied d’égalité potentiel - encourageant ainsi les nations à s’harmoniser avec leurs voisins pour offrir à leurs citoyens des conditions de vie “compétitives”.<br />
-			Ce jugement appartenant désormais aux citoyens eux-mêmes, capables et outillés pour juger des conditions de vie chez eux et ailleurs.</p>
-		<p>Comme nous l’avons vu en Europe avec l’espace Schengen et les individus, la libre circulation des informations est la règle sur le Net et seule sa censure - que les habitants apprendront à contourner et dénoncer, les formant au passage techniquement et idéologiquement, créant de la richesse intellectuelle - peut permettre à une élite dirigeante obscurantiste de cacher à son peuple les conditions de vie à l’extérieur de ses frontières.</p>
-		<p>Les raisons avancées pour censurer Internet sont actuellement très nombreuses et très variées.<br />
-			Elles dépendent des cultures des pays concernés, du taux de passivité relatif de la population, de la capacité du pouvoir en place à tromper les citoyens sur les réels motifs, … Dans tous les cas, sans exception aucune, il s’agit de mauvaises raisons, de raisons visant à instaurer un contrôle - ou du moins un sentiment de contrôle - sur cet outil qui fait trembler les dictatures comme les démocraties.<br />
-			La censure (par décision unilatérale) est une passade dans le monde de l’Internet, dans un futur très proche l’on prendra la mesure de l’importance de gérer cette question de législation du Net de façon globale, au nom d’une première loi mondiale qui n’autorise la suppression de contenus que lorsque ceux-ci contreviennent à l’intérêt commun d’un société basée sur le droit et la justice.</p>
-		<p>Toute (in)décence étant relative elle devra être elle-même être jugée et évaluée dans la plus grande transparence et sur des critères objectifs afin que la morale ne devienne pas à son tour un prétexte à la censure arbitraire comme c’est aujourd’hui le cas dans certains pays.</p>
-		<p>Ainsi libérés des œillères imposées par les médias traditionnels - très simples à censurer dans un pays autoritaire puisque basés sur la centralisation - les peuples pourront comparer les niveaux de vie des pays environnants, les histoires de ces pays, s’informer, se cultiver et s’organiser pour enfin se soulever contre les régimes qui les maintiennent dans l’ignorance et souvent la servitude depuis déjà bien trop longtemps.</p>
-		<p>L’accès à l’information mondiale est le nerf de la guerre, l’argent n’en est que le sang, nécessaire à la survie, mais pas à l’amélioration des conditions de vie.<br />
-			C’est par l’information, la connaissance et le libre échange que les dictatures tomberont.</p>
-		<p>Demain la Chine tombera sous la pression populaire, les droits de l’Homme y seront respectés et l’usine du monde deviendra - comme c’est déjà le cas parmi les classes moyennes - un pays de connaissance et de richesse.<br />
-			Enfin le monde ne sera plus composé que de pays respectueux des libertés de leur peuple.<br />
-			Enfin les citoyens du monde, vaste pays divisé en régions autrefois connues sous le nom de nations, auront un contrôle sur leurs “dirigeants”.<br />
-			La place de l’autoritarisme aura tellement faibli que les guerres ne seront plus envisageables parce que la seule raison valable à cela serait qu’une de ces régions ne respecte plus son peuple.<br />
-			Le peuple étant au contrôle, ce schéma de fonctionnement est illogique et, s’il est prévu par les technologies (transparentes) mises en place pour lier les citoyens à leur gouvernance, impossible.</p>
-		<p>La démocratie mondiale n’est pas une idéologie communiste puisque le moteur de progrès reste le peuple et pas la nation et que la suppression des frontières établit une libre concurrence réelle.<br />
-			Il ne s’agit pas non plus d’une utopie puisque nous disposons de tous les outils nécessaires à l’accomplissement de ce que nous avons commencé il y a 3.000 ans en inventant la démocratie ou il y a quelques décennies en inventant Internet.<br />
-			Il s’agit tout au plus d’une projection de quelques années dans l’Histoire si nous, citoyens du monde, réclamons ce qui nous est dû&nbsp;: que ceux que nous payons se doivent de nous respecter et d’assumer que les temps changent pour faire passer le système auquel ils contribuent avant leur intérêt personnel.</p>
-		<p>Comme toujours en informatique, le bug actuellement est dans l’interface chaise-clavier.<br />
-		</p>
-		<h4>“Conclusion”</h4>
-		<p>L'avenir seul nous dira ce que nous, citoyens du monde, ferons des deux outils dont il est traité ici.<br />
-			Mais la technologie a fait de nous des acteurs actifs de la société là où nous n'étions, il y a quelques années encore, actifs que de façon très anecdotique.</p>
-		<p>Je rejette le terme de démocratie 2.0 si souvent utilisé ces derniers temps pour décrire ce qui est en substance décrit ici.<br />
-			Ce terme suppose en effet que l’on se place dans le cadre d’une évolution radicale depuis un système dont le fonctionnement était déjà satisfaisant, en espérant l’améliorer ainsi.<br />
-			Alors qu’ici il s’agit d’évolutions mineures, à appliquer de façon très progressive, pour enfin arriver à un système qui fonctionnera comme il a été pensé&nbsp;: pour représenter le peuple.</p>
-		<p>En l’espèce si l’on devait qualifier, de façon très pragmatique, en versions les outils dont nous disposons et disposions jusqu’alors il faudrait considérer que la démocratie était jusque-là un système en beta, fonctionnant sur un principe du best effort compte tenu des contraintes techniques trop fortes à l’époque de son invention, et qui a aujourd’hui une chance de basculer en version stable&nbsp;: 1.0</p>
-		<p>De même la notion de conclusion qui chapeaute cette “fin” de livre suppose que l’on ait arrêté un développement alors que dans la réalité des faits toutes les réponses restent à apporter et tout le travail à faire.<br />
-			C’est là l’un des inconvénients majeurs du support livre&nbsp;: une version doit, à un moment, être arrêtée.<br />
-			Cette contrainte n’est présente sur aucun des deux outils traités ici et cela nous permettra de les faire évoluer, ensemble, vers quelque chose approchant toujours plus la réponse à apporter à un besoin légitime du peuple&nbsp;: sa souveraineté.</p>
-			
-	</article>
-</section>
+<h3><a href="http://www.paulds.fr/" target="_blank">Paul da Silva</a></h3>
 
-<footer id="footer">
-	<h5 class="menu">Commentaires r&eacute;cents</h5>
-	<p><em>Pour laisser un commentaire cliquez sur une icône à côté d'un paragraphe dans le texte ci-dessus</em></p>
+<div class="preface"><!--// Protect Content inside a div : <article> child <p> are dynamically targeted by JS -->
+
+	<p><em>Le livre est <a href="http://pictures.korben.info/2011/07/pld.pdf" target="_blank">disponible au format PDF</a>, et sera très bientôt disponible au format papier pour 2,60€ chez <a href="http://www.inlibroveritas.net/" target="_blank">In Libro Veritas</a>.<br />
+	Vous êtes libres de l'utiliser à loisir, de le copier, de le redistribuer, de le traduire, ...</em></p>
 	<div class="spacer"></div>
-	<!-- COMMENT THIS if you don't have DISCUS //  This script load in-place last comments from all forum (<p>) -->
-	<script src="http://piratonsladmocratie.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=500;" id="discusRecentsComments"></script>
-</footer>
-
-<!--// ---------------------------------------------- !!! All elements with #ID have some JS dependency !!! ---------------------------------------------- //-->
 	
-<aside id="aside" role="summary" class="aside roundered" title="Menu">
-	<div class="stageSpace">
-		<h3 title="Vous pouvez aussi naviguer à l'aide de votre clavier">&Eacute;crans</h3>
-		<nav>
-			<ul id="paginettes"><!-- Here comme the paginettes ! --></ul>
-		</nav>
+	<p>Image de couverture&nbsp;: Geoffrey Dorne (licence CC0)<br />
+	Page web&nbsp;: @molokoloco<br />
+	Préface&nbsp;: Serge Soudoplatoff (licence CC0)</p>			
+	<div class="spacer"></div>
+
+	<h5>Livre publié sous licence <a href="http://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons 0</a></h5>			
+	<div class="spacer"></div>
+	
+	<p>Merci à tous ceux qui ont rendu ce projet possible&nbsp;:</p>		
+	<blockquote class="colonne">
+		Tous ceux que j'ai rencontrés<br />
+		Tous ceux que j'ai lus ou écoutés<br />
+		Et les rares que j'ai ignorés<br />
+		Ainsi que les contributeurs&nbsp;:<br />
+		Aedius, Jérôme Mauvais, Ampelmann, Hadrien Beucher, Ebernat, sgarret,<br />
+		Alexandre Boucherot, Jeey, nka11,<br />
+		iSuitUp, Matthieu Honel, Val1984,<br />
+		Kévin le Jeune, Diane Couprie,<br />
+		Sébastien Debollivier, Shahor,<br />
+		Cédric Boussicaud, DixDel,<br />
+		Valery Xavier Lentz,<br />
+		Charly Coyette<br />
+		Enfin, un remerciement tout particulier à Serge et Geoffrey avec qui j'ai eu l'honneur de travailler sur ce livre.
+	</blockquote>
+	<div class="spacer"></div>
+	
+</div>
+
+<h4>Prologue</h4>
+<h5>Par Serge Soudoplatoff</h5>
+<p>Les grandes phrases ont ceci de terrible que leur beauté amène à figer dans le marbre leur contenu, donnant l'illusion au concept qu'elles soutiennent d'être définitif, immuable, intangible, universel et intemporel.</p>
+<p>La réalité est autre.<br />
+	À part les insectes qui n'ont pas changé d'un iota depuis 170 millions d'années, la vie ne cesse d'évoluer, de se transformer, de constamment s'adapter aux cruelles mutations de l'environnement.<br />
+	Même l'être humain, qui est, pour l'instant, la forme la plus complexe de vie sur notre vaisseau spatial, n'échappe pas à ces nécessaires transformations.<br />
+	Il faut être iconoclaste pour s'adapter, il faut savoir remettre en cause les acquis, les idées reçues, le dogme.</p>
+<p>Pour choisir une grande expression, appelons-en au grand Sir Winston Churchill&nbsp;: « la démocratie est le pire des régimes, à l'exception de tous les autres ».<br />
+	Voilà un exemple de belle phrase, qui a marqué toute la génération de l'après-guerre.<br />
+	Ne la nions pas, elle aura servi à stabiliser un système qui devait se remettre du trauma de la seconde guerre mondiale, voire de la première.<br />
+	De plus, qui pourrait la critiquer ? Qui oserait se prétendre anti démocratique ? Dans une logique binaire, où « ne pas être pour » signifie automatiquement « être contre », oser challenger cette phrase aurait comme conséquence d'être considéré comme fasciste, dictateur, etc...<br />
+	Pas très sympathique.<br />
+	Or, il n'y pas de raison que la démocratie, comme toute forme sociale, ne soit pas remise en question.<br />
+	Si l'idée de base, le pouvoir du peuple, reste entière, la manière dont ce pouvoir s'exprime, les modes de gouvernance, ne doivent pas être figés.<br />
+	Oui, il faut avoir le courage de revisiter la démocratie.</p>
+<p>Surtout qu'arrive une grande révolution&nbsp;: Internet, qui vient tout chambouler, et tout remettre en cause.<br />
+	La vie est ainsi faite&nbsp;: les champs techniques et scientifiques passent leur temps à construire des corpus de connaissances qui s'enrichissent au fur et à mesure ; mais le champ du social ne fait, finalement, que de ré explorer les mêmes formes.<br />
+	Ce qui change, est justement la technologie, qui vient impacter les règles sociales, et les force à se remettre en question.</p>
+<p>De par sa faculté à faire circuler l'information en peer to peer, Internet ne peut pas laisser indifférente la politique.<br />
+	Le gouvernement 2.0, les mouvements hacktivistes, wikileaks (qui est une forme moderne du canard enchaîné), sont autant de tentatives modernes de revoir les modes de gouvernance traditionnels des démocraties.<br />
+	Il est temps de mettre un frein à l'immobilisme.<br />
+	Pour reprendre le bon mot de Hans Rosling&nbsp;: ne soyons ni optimistes, ni pessimistes ; soyons des « possibilistes ».<br />
+	Et changeons la démocratie.</p>
+<p>Mais pourquoi faut-il la « pirater » ? Pourquoi cette méthode plus qu'une autre ? Peut-être parce que toute innovation commence par désobéissance ? Ou bien peut-être parce que, tout simplement, en copiant l'article de wikipedia, l'étymologie du mot vient du grec verbe πειράω (peiraô) signifiant « s'efforcer de », « essayer de », « tenter sa chance à l'aventure », et du latin pirata&nbsp;: « qui est entreprenant ».</p>
+<p>Oui, piratons la démocratie, non pas pour qu'elle soit meilleure, mais tout simplement pour qu'elle soit en phase avec les essentielles mutations de nos sociétés.</p>
+<h4> Introduction</h4>
+<p>Je suis né le 18 septembre 1987, j'ai donc 23 ans à l'heure où j'écris ce livre.<br />
+	Pourquoi moi, pourquoi si jeune ? Je ne suis pas né « fils-de », je n'ai pas touché d'héritage, j'ai fait un bac+2 en informatique que j'ai presque raté, … Rien ne me prédestine à écrire et publier ce que j'apparente à un essai philosophique à cet âge qui est le mien.</p>
+<p>J'en ai eu envie, j'ai eu cette curiosité qui caractérise les gens qui s'ouvrent au monde, j'ai cherché, j'ai réfléchi, j'ai été plus loin que ce que les médias traditionnels m’offraient.<br />
+	En un mot, j'ai satisfait cette curiosité par tous les moyens que le monde moderne a mis à ma disposition.<br />
+	Ainsi, j'ai rencontré des gens, eu des discussions passionnées avec ceux qui partagent mon avis et plus passionnées encore avec ceux qui vont à l'encontre.<br />
+	Du politique carriériste au grand patron, du militant historique à l'Hacktiviste moderne, je les ai tous écoutés, je leur ai à tous dit ma façon de penser et tous ensemble nous avons échangé, partagé nos savoirs et nos opinions.</p>
+<p>Mais cela ne suffit pas, cette démarche que j'ai faite et qui m'a pris plusieurs années j’aimerai qu'elle s'ancre en chacun de nous, que chaque personne qui se sente mis à part ou mal représenté par le système prenne conscience qu'un système n'est que la somme des individus qui le composent et que se taire et laisser faire, aujourd’hui plus que jamais, c'est cautionner.<br />
+	À l'heure où nous avons un réel moyen de faire pression sur les élites qui ont longtemps décidé à notre place, cette passivité est criminelle et contre-productive.<br />
+	Il est temps de pirater la démocratie !<br />
+</p>
+<h4>La démarche derrière ce livre</h4>
+<p>Ce livre est, à ma connaissance, le premier ouvrage à s'ouvrir à la participation collective.<br />
+	Il a été écrit publiquement en utilisant un outil permettant de suivre l'édition en temps réel et de discuter de ce que l'on voit (ou d'autre chose) avec toutes les personnes connectées afin que le parcours de réflexion que je me suis imposé depuis plusieurs années ne soit pas interrompu par la rédaction de ce livre et qu’en ressorte le document le plus complet possible.</p>
+<p>Il est donc le fruit de mon écriture et celui de la réflexion de plusieurs centaines d'Internautes qui m'ont aidé, tout au long de l'écriture, à élargir encore un peu ma vision des choses et à ne pas oublier d'éléments intéressants dans la rédaction d'un ouvrage qui se veut un premier pas vers une réflexion globale d'une remise en question citoyenne de la démocratie dans son fonctionnement pour que celui-ci approche, comme c’est devenu possible aujourd’hui, son optimalité.</p>
+<p>Pour que ce livre rencontre une audience maximale il est diffusé sous licence libre (CC0 domaine public) et est gratuit en version numérique.<br />
+	Je ne touche pas de droits d'auteur sur la version papier afin que celle-ci soit vendue le moins cher possible et accessible ainsi au plus grand nombre.</p>
+<p>Piratons la démocratie a été rédigé en français et sera traduit en Anglais au plus tôt.<br />
+	Toute traduction est la bienvenue afin de propager les idées, au-delà des frontières de la langue, que je considère comme fondamentales et que j'ai exposées dans ce livre.</p>
+<p>Le financement de la publication de ce livre a été assuré par les Internautes désirant participer de cette façon via une plateforme de financement collective et a recueilli l'ensemble des fonds nécessaires en moins de deux jours, signe de l’intérêt citoyen pour le débat lancé ici.</p>
+<p>Enfin, pour pousser la réflexion plus loin encore j'ai ouvert un site regroupant mes publications diverses et ouvert aux commentaires&nbsp;: <a href="http://livres.paulds.fr" target="_blank">http://livres.paulds.fr</a>.<br />
+	Ainsi, au-delà de ce support relativement figé qu'est le livre, le débat peut continuer sur l'outil le plus démocratique qui ait, à l’heure actuelle, jamais été inventé&nbsp;: Internet.</p>
+
+<p class="center spaced">
+	<img src="./images/piratons-la-democratie.png" width="372" height="558" border="0">
+</p>
+
+<h4> Piratons la démocratie</h4>
+<p>Théoriquement la liberté d’expression est un droit accessible à tous, dans la mesure de son audience et du contexte sociopolitique en place.<br />
+	C’est une liberté primaire qui va dans le sens de la nature de l’être humain à qui l’évolution a donné la parole et le langage.<br />
+	Être humain qui s’est par la suite doté de l’alphabet, de l’imprimerie et d’autres médiums à la liberté d’expression pour satisfaire à cette faculté primaire.<br />
+	Malgré cela, avant Internet les gens devaient se battre pour que cette liberté leur soit accordée.<br />
+	Quand elle était enfin reconnue, dans les faits, ce sont les élites qui avaient accès à une réelle liberté d’expression, une parole qui ait un poids et une portée au-delà de leur cercle d’amis proches ou de rencontres.<br />
+	Les seules et rares grandes familles de personnes ayant un réel accès à la liberté d’expression étaient donc les politiciens, les auteurs professionnels (écrivains, nouvellistes, poètes, artistes) et les journalistes (ou plus généralement les Hommes de médias).</p>
+<p>Cette liberté a toujours été contrebalancée d’un devoir de décence et la diffamation est suffisamment ancrée dans le droit pour que l’on comprenne que n’importe qui n’exprime pas ce qu’il veut, que le droit d’un individu s’arrête là où celui de son prochain commence.<br />
+	Pour autant, personne ne devrait, en démocratie et en théorie, pouvoir être inquiété pour avoir exprimé ses opinions.</p>
+<p>Cette distinction est moins présente de l’autre côté de l’Atlantique où le premier amendement de la constitution américaine défend de façon presque extrémiste la liberté d’expression.<br />
+	S’il est effectivement souhaitable que les libertés des uns ne soient pas bafouées par celles des autres, la modération a priori de tout ce que l’Homme peut dire publiquement n’est plus possible.<br />
+	Elle est un réel danger pour la liberté d’expression en ce sens qu’elle conduit nécessairement à une réduction de ce que chacun de nous aurait le droit d’exprimer (les volumes d’information échangés chaque jour sont tels que pour qu’un tiers de la population ait le droit de s’exprimer, les deux tiers restants devraient se poser en censeur).<br />
+	La modération est aussi dangereuse dans la mesure où elle place un jugement arbitraire du bien et du mal entre les mains de tout un chacun et ce même si elle est encadrée par des textes de loi stricts, le verdict restant le fruit d’un être humain soumis lui-même à son propre jugement potentiellement discutable même s’il est rendu dans le cadre de lois, de règlements qui sont eux aussi issus de la réflexion d’êtres humains.</p>
+<p>Quelle est alors la solution au respect des libertés de chacun ? La censure par un acteur étranger étant rendue matériellement impossible par la profusion des informations, produit des libertés de chacun, la liberté d’expression étant devenue un droit à part entière, concret, et sur lequel nous ne pourrions jamais revenir.<br />
+	La solution adoptée jusqu’alors est la modération a posteriori.<br />
+	Elle a l’avantage de respecter la liberté d’expression de tous - y compris dans ses dérives - et de proposer un recours afin de faire respecter la liberté de tous.<br />
+	C’est ainsi que cela fonctionne sur Internet, c’est aussi comme cela que ça fonctionne dans notre société matérielle actuelle&nbsp;: personne n’a jamais été interdit de s’exprimer publiquement par la loi (en démocratie telle qu’on la connaît à l’heure actuelle).</p>
+<p>Ce concept implique que les dérives soient suffisamment peu nombreuses pour que l’autorité en charge de les réprimer puisse faire son travail correctement.<br />
+	Ce qui devient difficile - en assumant que le nombre de dérives soit proportionnel au volume total d’informations échangées - quand la somme de ces informations atteint un seuil trop important.<br />
+	Quand les gens ont le tort de trop s’exprimer...</p>
+<p>Le concept de liberté d’expression lui-même est finalement assez mal adapté à ce que tout un chacun puisse avoir une audience.<br />
+	C’est pourtant ce qui est favorisé par la naissance d’outils comme Internet qui posent, par conséquent, de graves questions à ceux qui avaient, historiquement, le monopole de cette liberté et qui, à tort ou à raison, ont plus peur des dérives qu’ils ne voient les avancés sociétales considérables que ces outils permettent.</p>
+<p>J’ai coutume de dire que l’Histoire de l’Homme a connu deux percées fondamentales du point de vue de la liberté d’expression&nbsp;: la démocratie et Internet.<br />
+	Le second est encore tout jeune et seul l’avenir, et ce que nous déciderons de faire, conditionnera ce que sera son futur.<br />
+	Le premier présente un grand nombre de défauts qui correspondent à une réponse faite au mieux à un besoin de liberté manifesté il y a plusieurs millénaires déjà.<br />
+	Il s’agit de deux outils basés sur la neutralité la plus absolue afin de donner à tous la même chance de se faire entendre à travers un système pensé pour que la société évolue dans le sens souhaité par les populations.<br />
+	Dans les deux cas, le système s’efface devant ses utilisateurs pour que seule se manifeste la voix de ceux-ci, dans un cadre forcément strict, mais qui se doit de ne pas orienter les réflexions portées par l’utilisation de l’un ou l’autre de ces outils.<br />
+	Toute atteinte à cette neutralité risque d’orienter les réflexions et donc les débats ultérieurs - elles doivent donc être considérées comme une tentative de truchement d’un débat démocratique.</p>
+<p>La démocratie est ce formidable outil qui permet à chacun de se faire entendre au travers du prisme de la politique, une élite désignée, directement ou non, par le peuple lui-<br />
+	même et censée représenter ses intérêts et prendre des décisions consensuelles pour l’avenir de la société les ayant élus.<br />
+	Cette représentation délégative vient de l’impossibilité technique de consulter la totalité des intéressés de façon directe ou d’organiser un débat constructif à très grande échelle.<br />
+	C’est une contrainte bien connue et qui se reproduit partout où l’on a, historiquement, tenté de représenter les intérêts d’une population trop conséquente pour que la représentation directe soit envisageable dans un contexte technologique qui ne permettait pas la communication rapide entre les individus.<br />
+	Par cet outil la liberté d’expression de tous est exprimée par ceux à qui l’on confère le pouvoir de les représenter, créant ainsi une élite délégative à qui l’on doit, de par le fonctionnement du système, faire confiance pour la durée d’un mandat d’une durée variable définie par le système lui-même.</p>
+<p>Jusqu’alors, du fait de la difficulté d’accéder aux postes de décideur en démocratie, nous sommes plus proches d’une méritocratie couplée à une ploutocratie et incluant une certaine part de “hasard” (au sens mathématique du terme) par le vote.<br />
+	Cet acte décisionnel unique est donc le seul moyen pour le citoyen d’influer sur un système qui lui échappe par ailleurs totalement alors qu’il est censé œuvrer pour lui.<br />
+	Depuis peu, quelques années, décennies au plus, et en réponse à ce manque de possible implication, des citoyens ont commencé à investir la scène politique pour faire entendre leur voix de façon plus durable que par un simple vote.</p>
+<p>Le vote en soi a en effet un rôle castrateur sur la population qui a pour seule mission de désigner des représentants et d’assumer les conséquences négatives de ces choix sans jamais tirer d’intérêt réel, au delà des quelques mesures prises et qui satisferont les citoyens en tant que tels, aux actions intéressantes menées par ces mêmes représentants.<br />
+	Le résultat est que de moins en moins de personnes s’intéressent à la politique et se reconnaissent dans l’action prétendue essentielle de voter.</p>
+<p>Internet a cette faculté extraordinaire de couper toutes les barrières existant entre les Hommes&nbsp;: de la distance géographique à la langue.<br />
+	Et là où nous avions besoin, il y a près de 3000 ans, d’être représentés par une élite politique, de nous contenter du vote comme seul médium de la liberté d’expression, nous pourrons peut-être demain intervenir directement sur la vie politique, y participer autrement, plus pleinement et plus durablement.<br />
+	La politique elle-même pourrait souffrir de ce regain d’intérêt citoyen pour enfin entrer en adéquation avec les attentes du peuple - ce qui est son rôle primaire et pourrait - devrait - devenir son rôle unique.</p>
+<p>Comme tous les outils, ceux-ci ont tout intérêt à se faire chaque jour plus discret, à s’effacer en tant qu’entités pour rejaillir en tant que résultats de ces systèmes.<br />
+	La démocratie comme l’Internet ont pour vocation de donner la liberté d’expression au peuple en le contraignant le moins possible à leur fonctionnement.<br />
+	Sur ce point, Internet est quelque peu particulier puisqu’il répond à des normes techniques sous-jacentes et particulièrement obscures pour un néophyte.<br />
+	Cependant, ces normes sont toutes disponibles au grand public et celui-ci a un contrôle de principe sur le fonctionnement de l’outil et là où les néophytes peuvent avoir des difficultés à lire ces documentations, des spécialistes se chargent de les décrypter et les vulgariser pour les rendre accessibles - ce que les politiques ne font pas à propos des lois, tout aussi obscures.</p>
+<p>La démocratie elle aussi fonctionne selon des règles établies, les textes de loi, qui évoluent eux aussi en fonction de la société pour y répondre toujours mieux...<br />
+	En principe.</p>
+<p>Le piratage est cette forme d’art qui vise à considérer un existant souvent vieillissant, à l’analyser et à essayer de l’envisager autrement, de le faire tendre vers quelque chose qui réponde plus aux besoins actuels des utilisateurs.<br />
+	Le piratage vient souvent répondre à l’obsolescence d’un projet, d’une idée, d’un concept - à l’inadéquation entre un besoin et une offre - pour construire une alternative qui réponde mieux à une demande insatisfaite par les responsables actuels de l’existant étudié.</p>
+<p>Certains objecteront que le piratage sert aussi à détourner le fonctionnement d’un système pour le profit d’un (ou d’une somme de) individu.<br />
+	Il s’agit là d’un effet pervers du manque d’éducation relatif à la relative jeunesse de cet outil, excuse que n’a pas la démocratie qui présente chaque jour un peu plus cette même dérive perverse au fur et à mesure que l’outil évolue dans l'intérêt d'une minorité de personnes.<br />
+	A sa naissance en Grèce, ceux qui outrepassaient le système et assoyaient une influence trop importante sur celui-ci étaient exclus du débat, évitant ainsi la ploutocratie qui caractérise la politique moderne.</p>
+<p>Le Pirate enfin est une personne lambda, peut-être vous sans même le savoir, qui va s’intéresser à un sujet particulier, le décortiquer et tenter d’améliorer le fonctionnement de ce sujet.<br />
+	Le piratage est présent à tous les niveaux de la vie et prend des formes très variées puisqu’il est le fruit de la perception et de l’imagination de chacun des Pirates qui va le pratiquer.<br />
+	Les citoyens investissant la scène politique pour y défendre leurs idées peuvent ainsi être considérés comme des pirates qui, non satisfaits de l’objet fini qu’on leur propose, ont décidé de s’en emparer et de tenter de l’améliorer ainsi.</p>
+<p>C’est là qu’est tout le but de ce travail&nbsp;: envisager - car le réel résultat dépendra de la motivation citoyenne résultante de la réflexion induite - les influences d’une réelle liberté d’expression, presque impossible à censurer, sur un outil millénaire, la démocratie, qui a pour essence de représenter le peuple, mais n’a pourtant que peu évolué, faute de moyens techniques, alors que la société évolue elle à un rythme jamais égalé dans l’histoire de l’Homme.<br />
+	La démarche est ici de constater l’obsolescence de la démocratie actuelle pour tenter d’ouvrir un certain nombre de réflexions qui pourraient amener un piratage citoyen de celle-ci.</p>
+<p>Je veux aussi me pencher sur quelques attaques à ces libertés, leurs origines et motivations, et leurs conséquences probables sur un outil que certains ont tout intérêt à faire mourir dans l'œuf.<br />
+	Différents obstacles et pièges à éviter seront couverts.<br />
+	Nous sommes dans une période charnière où la visibilité sur ce que deviendront les outils dont je traite ici est minime si ce n’est moindre, mais nous sommes aussi dans une période où les décisions prises influeront grandement sur l’avenir à long terme.</p>
+<p>Il faut aussi considérer le fait qu’Internet fait actuellement partie de la vie de presque tous les citoyens du monde, que ce soit directement ou non et que légiférer dans le but de contraindre cet outil aux mêmes règles que celles applicables aux médias il y a des années - ce qui semble la stratégie actuelle des dirigeants de nombre de démocraties - pourrait avoir des implications bien plus larges qu’attendues.</p>
+<p>Les médias traditionnels, source d’information de la majorité des populations du monde, travaillent aujourd’hui presque exclusivement grâce et avec Internet.<br />
+	Des entreprises ont basé leur activité sur ce réseau ou en dépendent à un point qui, si Internet devait être dénaturé, condamnerait beaucoup plus que les quelques geeks qui se manifestent contre les mesures potentiellement dangereuses adoptées un peu partout dans le monde, aussi bien dans des dictatures qu’au pays dit des droits de l’Homme.</p>
+<p>Les médias tout particulièrement ont le devoir de protéger leur outil de travail.<br />
+	Ceci peut leur paraître difficile à assumer puisque soudainement Internet les met en concurrence avec les citoyens du monde, à même de créer à leur tour des relais d’information et de gagner une crédibilité suffisante pour diluer les parts de marché jusque-là majoritaires (si ce n’est monopolistes) de leur métier.<br />
+</p>
+<p>Cependant, leur métier est aujourd’hui corrélé à l’outil Internet et au réseau de personnes Internet qui lui permettent de fournir des informations toujours plus justes et toujours plus vite à une part grandissante de la population qui ne sait plus se contenter des brides d’informations que la télévision, entre autres, veut bien lui lâcher.<br />
+	Internet permet d’approfondir les sujets, d’aller au-delà du simple feuillet de 4000 signes ou du reportage de 5 minutes.<br />
+	Aucune limite de quantité d’information ne subsiste sur Internet et aucune information ne saurait être laissée de côté faute de place.</p>
+<p>De même, une information est aujourd’hui infiniment plus rapidement vérifiée et cette démarche est accessible à chacun.<br />
+	Tous les citoyens du monde peuvent (et devraient) faire cette démarche de vérification d’information.<br />
+	Un sens critique est à développer face à l’information alors que les informés avaient été habitués à assumer un rôle passif devant l’informant et son information.</p>
+<p>Il appartient à la presse de se réinventer pour encourager le développement de la communication entre les individus tout en conservant un rôle de promoteur sûr de l’information.<br />
+	Cette transition ne peut se faire sans que les titres historiques, à travers le monde, n’ouvrent de sites Internet eux-<br />
+	mêmes pour favoriser ces échanges.<br />
+	Démarche qui, par ailleurs, a déjà été amorcée par la majorité de ces titres historiques - avec plus ou moins de succès en fonction de leur compréhension du nouveau milieu dans lequel ils doivent évoluer.</p>
+<p>Le partage entre particuliers dans un but non lucratif (que les “industries du divertissement” ont tenté de diaboliser en nommant “piratage”) comme cheval de Troie de la censure du Net est un exemple extrêmement parlant d’une attitude dangereuse et à l’opposé de ce qu’elle devrait être.</p>
+<p>Le partage entre utilisateurs est à l’origine de l’Internet (qui a été inventé pour relier plusieurs universités et partager ainsi un savoir qui serait, sinon, resté isolé) et est son mode de fonctionnement optimal si un jour les acteurs centralisateurs venaient à être supprimés.<br />
+	Cette centralisation, à l’inverse, est néfaste à moyen/court terme aux infrastructures elles-<br />
+	mêmes qui n’ont jamais été prévues pour supporter une pareille charge et pourraient donner tout son sens à la notion de “best effort”, qui est la norme lorsque l’on parle de réseaux, en rendant des parties entières de l’Internet inutilisables faute d’avoir réparti les charges sur tous les points du réseau.</p>
+<p>Au-delà des considérations techniques - qui sont fondamentalement peu pertinentes - la culture, par essence, n’a de valeur que dans sa diffusion.<br />
+	Un artiste n’est souvent reconnu comme tel qu’à partir du moment où il a rencontré son public.<br />
+	Le public, quant à lui, a soif de découverte et tout cloisonnement de la profusion possible du choix qui s’ouvre à lui, du moins si il est manifeste, lui est intolérable.<br />
+	S’ouvre alors aux artistes comme à leur public un espace de liberté capable de favoriser une diffusion mondiale à un coût infinitésimal et, pourtant, peu semblent prendre la mesure de la révolution amorcée sur ce point.</p>
+<p>Nous passons d’une culture historique de la rareté, avec une capacité à accéder au divertissement ou à l’enrichissement réservée aux élites, à une culture de l’abondance avec cette même culture enfin accessible à tous.<br />
+	Dans le même temps les artistes autrefois obligés de passer par des intermédiaires monopolistes, qui pouvaient imposer aux artistes des conditions de leur choix et décider ainsi de ce que le public aura culturellement à sa disposition, pour rencontrer leur public peuvent maintenant choisir de se passer de ces intermédiaires et pour autant être diffusés de façon bien plus large qu’ils ne l’auraient été il y a trente ans, connus, reconnus ou non !<br />
+</p>
+<p>Sans Internet je n’aurai probablement jamais écrit que pour moi-même.</p>
+<p>Pire&nbsp;: l’accès à la culture est un des facteurs qui fera de la société un espace plus démocratique et qui éliminera progressivement une partie des différences sociales.<br />
+	En effet, avec l’éducation, la culture est l’un des composés essentiels de la personnalité d’un individu.<br />
+	Ces valeurs sont ce qui le définit, ce qui lui permet d’évoluer et de s’épanouir au-delà de ce que la naissance lui a donné.<br />
+	La “civilisation” du Net passera plus vraisemblablement par un accès plus riche à la culture que par une censure de celle-ci.<br />
+	Si l’accès à la culture et celui à Internet, donc à l’information, devaient devenir des droits fondamentaux ils renforceraient la notion d’égalité entre les citoyens, leur donnant à tous les mêmes possibilités d’épanouissement intellectuel.<br />
+	Si l’éducation préalable à la mise à disposition de cet accès était correctement apportée, dès le plus jeune âge, et afin d’éduquer là où nous avons tendance à enseigner, la démocratie bénéficierait d’autant de nouvelles têtes pensantes prêtes à s’engager dans un débat, lui-même facilité par les outils modernes de communication, essentiel à l’évolution de notre société.<br />
+	Ceci mettant progressivement un terme au caractère ploutocratique qui caractérise actuellement le fonctionnement des régimes démocratiques de par le monde.</p>
+<p>Enfin, Internet lui-même bénéficierait de cette reconnaissance du droit d’accès à la culture en le démocratisant auprès de ceux encore rétissants à l’adopter.<br />
+	Les passionnés de musique, rats de bibliothèque et autres férus du septième art (pour ne citer qu’eux) trouveraient un intérêt nouveau dans un outil qui peut paraître froid ou hermétique à qui ne l’utilise pas au quotidien mais qui regorge de créations toutes plus à même de toucher la sensibilité des uns ou des autres et parfois inaccessibles autrement.</p>
+<p>La question se pose alors de comment rétribuer les artistes qui permettent cette richesse culturelle.</p>
+<p>Je serai tenté de répondre, et je l’ai même déjà fait, que ce n’est pas mon problème et que les enjeux sociétaux sont tels que c’est aux acteurs en place d’imaginer une solution s’ils veulent continuer à gagner de l’agent de leur art.<br />
+	La culture existera toujours, comme elle a existé bien avant que l’on décide de la monnayer comme un vulgaire produit de consommation.<br />
+	Mais comme lesdits acteurs ont une imagination inversement proportionnelle à leur immobilisme historique, il est bon de souligner que nombreuses sont les suggestions et qu’elles viennent toutes de ceux qui sont accusés de vouloir tuer la culture alors qu’ils souhaitent au contraire la voir prospérer et se libérer des contraintes actuelles.</p>
+<p>Compte tenu de la dimension qu’a pris le partage d'œuvres entre particuliers sur Internet il est évident que l’illusion de la gratuité est un facteur clé dans la propagation de la culture et qu’elle est nécessaire pour encourager le public à la découverte.<br />
+	Reste à savoir à quel niveau de l’argent peut être prélevé et comment il doit être réparti.<br />
+	Les solutions de licence globale ou de mécénat global mettent le prélèvement au dénominateur commun de l’accès à la culture dématérialisée&nbsp;: à l’abonnement Internet.<br />
+	Quand à la répartition, dans un cas elle se base sur la popularité statistique de l’artiste (qui se doit d’être calculée de façon non invasive&nbsp;: il est hors de question de surveiller les usages sur Internet d’une population tout entière, a fortiori sur un sujet aussi sensible) dans le second elle se base sur l’affection du public pour un artiste&nbsp;: c’est au public de décider qui touchera l’argent qu’il dépense pour profiter de cet accès à la culture.</p>
+<p>Un modèle hybride combinant une partie de la somme répartie de façon statistique et une autre répartie au libre choix de la personne qui paye au final est aussi avancé...<br />
+	J’ai une légère préférence pour le second modèle, mais finalement c’est à l’histoire (et au peuple en particulier) de décider ! Le partage ainsi légalisé, en plus des aspects positifs évidents sur le niveau de connaissance et de réflexion moyen de la population et sur la popularité d’Internet (haut débit) auprès des populations, aurait pour effet de rassembler des passionnés autour de la création, de “créer” encore de nouveaux artistes et de limiter le nombre de fichiers corrompus et vérolés dans la mesure où les sources seront plus nombreuses donc plus fiables.</p>
+<p>L’impact de cette mesure serait donc bon à la fois pour la culture et pour la citoyenneté en ce sens que le premier pas dans le civisme est la connaissance.<br />
+	Nul n’est censé ignorer la loi, nul ne devrait se voir imposer des restrictions à l’accès aux lectures, écoutes, à la vision de pans entiers de la culture qui permettent d’aborder la loi dans son contexte et de pousser ses réflexions au-delà du carcan des mass-médias, disposant d’espaces limités (en temps ou en quantité de signes) pour exposer un fait en faisant régulièrement l’impasse sur les éléments de contexte pourtant capitaux.</p>
+<p>Les artistes seront aussi probablement de ceux qui donneront ses lettres de noblesse au réseau en y favorisant la libre diffusion de leur travail afin qu’il profite à tous, eux y compris.<br />
+	Là encore, la question financière est subsidiaire et il leur appartient de la résoudre, en accord avec les doléances de leur public.<br />
+	Du côté des développeurs, par exemple, cette démarche a été entamée il y a longtemps et les logiciels libres côtoient les logiciels propriétaires permettant un accès aux systèmes d’information pour tous.</p>
+<p>En facilitant l’accès à la culture et à l’information, Internet a déjà joué un rôle considérable dans l’ouverture de l’être humain, lui donnant des armes pour aborder la réalité différemment, pour lui permettre d’entreprendre et de créer à son tour.<br />
+	C’est d’ailleurs le fondement de ce que le Net a amené de meilleur comme de ce qui lui vaut aujourd’hui cette image d’incivilité, fortement accrue par une volonté politique de diabolisation d’un outil potentiellement dangereux pour l’organisation des structures décisionnelles actuelles.<br />
+	Le Net a très largement contribué à la création de communautés composées autour d’affinités et regroupant des personnes à travers le monde qui ne se rencontreront probablement jamais physiquement, mais ne se seraient pas rencontrées idéologiquement autrement.<br />
+	C’est aussi ce qui créé des communautés controversées, les pirates pour ne citer qu’eux, qui vont se rassembler autour de valeurs communes, qu’elles obéissent à la loi ou non, pourvu qu’elles répondent à leur morale, à la conception qu’ils se font d’une société nouvelle et adaptée à l’époque actuelle.</p>
+<p>Parmi ces communautés une (des multitudes en fait) nous intéresse particulièrement ici&nbsp;: les communautés dites “du libre” - un nombre grandissant de personnes convaincues que les créations ont intérêt à être partagées et transparentes pour que le public puisse en tirer le meilleur et que la diffusion elle-même soit optimale.</p>
+<p>Le libre, appliqué au logiciel, permet une transparence totale du fonctionnement interne d’un système donné.<br />
+	Il supprime cette barrière entre l’utilisateur final et l’éditeur dudit système pour que chacun ait un total contrôle sur le logiciel, qu’il puisse surveiller son fonctionnement, l’améliorer, le redistribuer à son tour, …<br />
+	Cette notion de logiciel libre devient, au fur et à mesure que les “nouvelles technologies” prennent une place plus importante dans la société et dans la vie politique demain, une caractéristique technique sine qua non aux notions de liberté et de sécurité.<br />
+	Bien plus que la surveillance des citoyens, c’est la surveillance des entités politiques par les citoyens qui fait une réelle sécurité en démocratie.</p>
+<p>Cette transparence des politiques envers leurs patrons, les citoyens qui les ont élus et payent leurs salaires de ces élus via leurs impôts, permet un droit de regard sur les solutions proposées par les politiques, et sur la vie politique en général.<br />
+	Ce droit de regard ne peut s’exécuter qu’en cas de totale transparence des systèmes et des personnes (dans leur vie publique) pour que ceux qui décident réellement, les citoyens, aient toutes les cartes en main au moment de faire un choix (le vote, direct ou non).<br />
+	De même, personne ne peut prendre de décision politique éclairée, lorsqu’on le leur demande (donc à l’heure actuelle au moment de voter uniquement pour les simples citoyens) si les informations dont il dispose sont partielles ou orientées.</p>
+<p>À défaut d’avoir cette légitime transparence, le réseau lui-même s’en saisira et l’imposera, comme il l’a imposé avec Wikileaks et surtout les copies du site, créées à travers le monde par de simples citoyens, et qui ont découlé des diverses tentatives de censure du site.<br />
+	Les citoyens du monde, même si tous n’entameront pas cette démarche active, ont le droit d’avoir accès aux informations qui les préoccupent directement ou indirectement et toute tentative d’entrave à ce droit fondamental à la démocratie verra ses efforts anéantis par le réseau lui-<br />
+	même, manifesté ici par la somme des citoyens conscients de ce droit et dont le nombre ira grandissant au fur et à mesure des déceptions des citoyens par le système en place.</p>
+<p>Le dessein de conserver un peuple entier dans l’ignorance en influant de façon directe ou non sur les informations qui lui permettront de faire des choix capitaux pour sa souveraineté lors des maigres espaces de temps de décision que le système et ses dirigeants lui accordent est le début de son instrumentalisation pour lui faire prendre les décisions que ceux déjà au pouvoir souhaitent le voir prendre, le plongeant ainsi dans un cercle vicieux immobiliste et basé sur un contrôle de leur continuité.</p>
+<p>La période actuelle est une charnière de notre histoire, elle sera celle d’un passage à une ère faisant la part belle au numérique, à l’accès à l’information, mais surtout aux choix pour tous.<br />
+	La transition va être difficile puisqu’elle se fait vers l’inconnu, mais elle est inéluctable et une fois les premières pierres d’une architecture décentralisée et désordonnée posées il est impossible de faire machine arrière ou d’essayer de contrôler l’incontrôlable.<br />
+	Là aussi il s’agit d’une inconnue&nbsp;: comment contrôler et contenir la liberté d’expression de toute une population là où, il y a à peine une génération, le travail se faisait seul.<br />
+	On observe à l’heure actuelle des tentatives en ce sens, éparses, désordonnées, vouées à l’échec.</p>
+<p>Qu’Internet meure ! Il sera remplacé par un nouveau réseau, inventé par les mêmes personnes qui ont soutenu Wikileaks dans sa lutte contre la censure, par les communautés, par les pirates, … Et il sera cette fois pensé pour être encore moins contrôlable, encore moins prompt à être censuré, … Encore moins saisissable et toujours plus discret dans son fonctionnement.</p>
+<p>Cette notion de contrôle, qui est normalement l’apanage des régimes autoritaires, témoigne de l’incompréhension de l’époque moderne et de l’évolution sociétale par la technologie en cours  de la part les élites historiques.<br />
+	Ce contrôle en servitude permettant de prévoir et sécuriser son poste, ses propres desseins politiques et carriéristes n’est plus possible à l’heure ou tous peuvent s’exprimer.<br />
+	Quiconque essayant d’instaurer un système de contrôle sur les individus peut légitimement être assimilé à quelqu’un essayant de faire passer son intérêt personnel avant celui du système démocratique dans lequel il est censé vivre (et qu’il est censé défendre pour les politiques) et de telles démarches sont à l’encontre de ce que les citoyens sont en droit d’attendre de leurs politiques.</p>
+<p>En sus du contrôle et de la censure, les instances dirigeantes réfléchissent régulièrement à des façons de surveiller tout ou partie de la population sur le Net et ce de façon anonymisée ou non.<br />
+	Dans un cas il s’agit de tirer des tendances de la vie sur le réseau pour adapter les législations ou les infrastructures.<br />
+	Il est fréquent que cela se passe sans même que nous nous en rendions compte et dès lors qu’il s’agit d’une pratique marginale, transparente, à but strictement statistique et que les citoyens sont au courant et peuvent s’y soustraire elle ne pose aucun souci majeur.</p>
+<p>À l’inverse la surveillance d’un ou plusieurs citoyens, le rattachement de sa vie sur le réseau à son identité physique, morale ou pénale ne peuvent être faits que dans l’intérêt de la société basée sur un système démocratique.<br />
+	Tout manquement à cela doit être considéré comme un manquement au respect de la vie privée de l’individu qui est elle-même fondatrice de la plupart des libertés nécessaires au bon fonctionnement d’un système basé sur le peuple lui-<br />
+	même (à commencer par la liberté d’opinion qui garanti à chacun le droit de penser).</p>
+<p>La réelle question qui se pose est celle du temps perdu, du temps d’adaptation à des technologies déjà plus vieilles que la durée d’une carrière politique et qui conservent pourtant l’appellation de “nouvelles technologies”, comme pour les amoindrir, les reléguer au rôle d’expériences.<br />
+	Le déclic se fera soit dans la douceur, soit dans la douleur.<br />
+	Dans les deux cas, il arrivera et s’il devait se faire attendre il sera provoqué par la création d’outils, de notices, de nouvelles communautés aptes à redonner du pouvoir aux citoyens pour un coût marginal et un gain maximal.<br />
+	Tout cela a par ailleurs déjà commencé...</p>
+<p>Au-delà des questions précédemment abordées, la notion économique est souvent mise en avant.<br />
+	Internet détruirai des emplois, condamnerai des professions et changerai les règles établies depuis des années en la matière.<br />
+	Ces accusations sont toutes vraies.<br />
+	Comme tout outil révolutionnaire Internet a un principe darwiniste&nbsp;: seuls les plus adaptés “survivent” à son passage.</p>
+<p>Loin d’être un mal ce fonctionnement est pragmatiquement optimal puisque catalyseur de création et d’innovation.<br />
+	Il s’agit du premier système Darwiniste mondial et qui mette chaque peuple, chaque habitant de chaque pays (les frontières n’existent plus, malgré tous les efforts des dirigeants en ce sens) sur un pied d’égalité potentiel - encourageant ainsi les nations à s’harmoniser avec leurs voisins pour offrir à leurs citoyens des conditions de vie “compétitives”.<br />
+	Ce jugement appartenant désormais aux citoyens eux-mêmes, capables et outillés pour juger des conditions de vie chez eux et ailleurs.</p>
+<p>Comme nous l’avons vu en Europe avec l’espace Schengen et les individus, la libre circulation des informations est la règle sur le Net et seule sa censure - que les habitants apprendront à contourner et dénoncer, les formant au passage techniquement et idéologiquement, créant de la richesse intellectuelle - peut permettre à une élite dirigeante obscurantiste de cacher à son peuple les conditions de vie à l’extérieur de ses frontières.</p>
+<p>Les raisons avancées pour censurer Internet sont actuellement très nombreuses et très variées.<br />
+	Elles dépendent des cultures des pays concernés, du taux de passivité relatif de la population, de la capacité du pouvoir en place à tromper les citoyens sur les réels motifs, … Dans tous les cas, sans exception aucune, il s’agit de mauvaises raisons, de raisons visant à instaurer un contrôle - ou du moins un sentiment de contrôle - sur cet outil qui fait trembler les dictatures comme les démocraties.<br />
+	La censure (par décision unilatérale) est une passade dans le monde de l’Internet, dans un futur très proche l’on prendra la mesure de l’importance de gérer cette question de législation du Net de façon globale, au nom d’une première loi mondiale qui n’autorise la suppression de contenus que lorsque ceux-ci contreviennent à l’intérêt commun d’un société basée sur le droit et la justice.</p>
+<p>Toute (in)décence étant relative elle devra être elle-même être jugée et évaluée dans la plus grande transparence et sur des critères objectifs afin que la morale ne devienne pas à son tour un prétexte à la censure arbitraire comme c’est aujourd’hui le cas dans certains pays.</p>
+<p>Ainsi libérés des œillères imposées par les médias traditionnels - très simples à censurer dans un pays autoritaire puisque basés sur la centralisation - les peuples pourront comparer les niveaux de vie des pays environnants, les histoires de ces pays, s’informer, se cultiver et s’organiser pour enfin se soulever contre les régimes qui les maintiennent dans l’ignorance et souvent la servitude depuis déjà bien trop longtemps.</p>
+<p>L’accès à l’information mondiale est le nerf de la guerre, l’argent n’en est que le sang, nécessaire à la survie, mais pas à l’amélioration des conditions de vie.<br />
+	C’est par l’information, la connaissance et le libre échange que les dictatures tomberont.</p>
+<p>Demain la Chine tombera sous la pression populaire, les droits de l’Homme y seront respectés et l’usine du monde deviendra - comme c’est déjà le cas parmi les classes moyennes - un pays de connaissance et de richesse.<br />
+	Enfin le monde ne sera plus composé que de pays respectueux des libertés de leur peuple.<br />
+	Enfin les citoyens du monde, vaste pays divisé en régions autrefois connues sous le nom de nations, auront un contrôle sur leurs “dirigeants”.<br />
+	La place de l’autoritarisme aura tellement faibli que les guerres ne seront plus envisageables parce que la seule raison valable à cela serait qu’une de ces régions ne respecte plus son peuple.<br />
+	Le peuple étant au contrôle, ce schéma de fonctionnement est illogique et, s’il est prévu par les technologies (transparentes) mises en place pour lier les citoyens à leur gouvernance, impossible.</p>
+<p>La démocratie mondiale n’est pas une idéologie communiste puisque le moteur de progrès reste le peuple et pas la nation et que la suppression des frontières établit une libre concurrence réelle.<br />
+	Il ne s’agit pas non plus d’une utopie puisque nous disposons de tous les outils nécessaires à l’accomplissement de ce que nous avons commencé il y a 3.000 ans en inventant la démocratie ou il y a quelques décennies en inventant Internet.<br />
+	Il s’agit tout au plus d’une projection de quelques années dans l’Histoire si nous, citoyens du monde, réclamons ce qui nous est dû&nbsp;: que ceux que nous payons se doivent de nous respecter et d’assumer que les temps changent pour faire passer le système auquel ils contribuent avant leur intérêt personnel.</p>
+<p>Comme toujours en informatique, le bug actuellement est dans l’interface chaise-clavier.<br />
+</p>
+<h4>“Conclusion”</h4>
+<p>L'avenir seul nous dira ce que nous, citoyens du monde, ferons des deux outils dont il est traité ici.<br />
+	Mais la technologie a fait de nous des acteurs actifs de la société là où nous n'étions, il y a quelques années encore, actifs que de façon très anecdotique.</p>
+<p>Je rejette le terme de démocratie 2.0 si souvent utilisé ces derniers temps pour décrire ce qui est en substance décrit ici.<br />
+	Ce terme suppose en effet que l’on se place dans le cadre d’une évolution radicale depuis un système dont le fonctionnement était déjà satisfaisant, en espérant l’améliorer ainsi.<br />
+	Alors qu’ici il s’agit d’évolutions mineures, à appliquer de façon très progressive, pour enfin arriver à un système qui fonctionnera comme il a été pensé&nbsp;: pour représenter le peuple.</p>
+<p>En l’espèce si l’on devait qualifier, de façon très pragmatique, en versions les outils dont nous disposons et disposions jusqu’alors il faudrait considérer que la démocratie était jusque-là un système en beta, fonctionnant sur un principe du best effort compte tenu des contraintes techniques trop fortes à l’époque de son invention, et qui a aujourd’hui une chance de basculer en version stable&nbsp;: 1.0</p>
+<p>De même la notion de conclusion qui chapeaute cette “fin” de livre suppose que l’on ait arrêté un développement alors que dans la réalité des faits toutes les réponses restent à apporter et tout le travail à faire.<br />
+	C’est là l’un des inconvénients majeurs du support livre&nbsp;: une version doit, à un moment, être arrêtée.<br />
+	Cette contrainte n’est présente sur aucun des deux outils traités ici et cela nous permettra de les faire évoluer, ensemble, vers quelque chose approchant toujours plus la réponse à apporter à un besoin légitime du peuple&nbsp;: sa souveraineté.</p>
+
+<!--// ---------------------------------------------- END OF THE MAIN CONTENT ---------------------------------------------- //-->
+
+		</article>
+	</section>
+	
+	<footer id="footer">
+		<h5 class="menu">Commentaires r&eacute;cents</h5>
+		<p><em>Pour laisser un commentaire cliquez sur une icône à côté d'un paragraphe dans le texte ci-dessus</em></p>
 		<div class="spacer"></div>
-		<h3>Sommaire</h3>
-		<nav>
-			<ul id="summary"><!-- Here comme the summary based on H(1245), see JS --></ul>
-		</nav>
-		<div class="spacer"></div>
-		<p title="Changer la taille du texte"><button id="zoommoins">A-</button><button id="zoomdefault">A</button><button id="zoomplus">A+</button><button id="fullscreen" title="Plein écran">F11</button></p>
-		<div class="spacer"></div>
-		<a class="top fade" href="#top" title="Haut de page">Top</a>
+		<!-- COMMENT THIS if you don't have DISCUS //  This script load in-place last comments from all forum (<p>) -->
+		<script src="http://piratonsladmocratie.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=500;" id="discusRecentsComments" async="true"></script>
+	</footer>
+	
+	<div id="autor" class="stageSpace"> 
+		<p>A <a href="https://github.com/molokoloco/My-Book-ReadR/" target="_blank" title="Get the code ! Fork me on GitHub">page</a> by <a href="mailto:molokoloco@gmail.com" id="a_0" title="Aka Julien G, contactez-moi par email">molokoloco</a> <img src="./images/copyleft.png" alt="Copyleft" width="12" height="12" border="0" title="Copyleft"/> <a href="http://www.b2bweb.fr/" title="b2bweb.fr" target="_blank">b2bweb.fr</a> 2011 <img src="./images/html5_logo_25.png" alt="Copyleft" width="16" height="16" border="0" title="HTML5 Powered"/>
+		<a href="https://github.com/molokoloco/My-Book-ReadR/" id="ribbon" title="Get the code ! Fork me on GitHub">Fork Me !</a></p>
 	</div>
-</aside>
-
-<div id="partage" class="fade"><!-- Social APIs -->
-	<g:plusone size="medium" count="true"></g:plusone>
-	<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="Paul_Da_Silva">Tweet</a>
-	<iframe id="facebook" src="javascript:void(0)" scrolling="no" frameborder="0" width="120" height="20" allowtransparency="true"></iframe>
-</div>
-
-<div id="disqus_thread" class="rounded fade">
-	<!-- Discuss Dynamic comment thread -->
-</div>
-
-<div id="resizeHandle" title="Vous pouvez redimensionner le texte">
-	<!-- Section resize UX -->
-</div>
-
-<div id="minibar" class="roundered" style="display:none;">
-	<button id="copier">Copier</button><button id="editer">Editer</button>
-</div>
-
-<div id="autor" class="stageSpace"> 
-	<p>A <a href="https://github.com/molokoloco/My-Book-ReadR/" target="_blank" title="Get the code ! Fork me on GitHub">page</a> by <a href="mailto:molokoloco@gmail.com" id="a_0" title="Aka Julien G, contactez-moi par email">molokoloco</a> <img src="./images/copyleft.png" alt="Copyleft" width="12" height="12" border="0" title="Copyleft"/> <a href="http://www.b2bweb.fr/" title="b2bweb.fr" target="_blank">b2bweb.fr</a> 2011 <img src="./images/html5_logo_25.png" alt="Copyleft" width="16" height="16" border="0" title="HTML5 Powered"/>
-	<a href="https://github.com/molokoloco/My-Book-ReadR/" id="ribbon" title="Get the code ! Fork me on GitHub">Fork Me !</a></p>
-</div>
-
-<!--// ---------------------------------------------- Here we go... ---------------------------------------------- //-->
-
-<script src="./js/jquery-1.6.2.min.js"></script>
-<script src="./js/jquery-ui-1.8.14.custom.min.js"></script>
-<script src="./js/jquery.readr.min.js"></script>
+	
+	<!--// ---------------------------------------------- !!! All elements with #ID have some JS dependency !!! ---------------------------------------------- //-->
+		
+	<aside id="aside" role="summary" class="aside roundered" title="Menu">	
+		<div class="stageSpace">
+			<a id="help" href="javascript:void(0);" title="Obtenir de l'aide">?</a>
+			<h3 title="Pour naviguer écran par écran...">&Eacute;crans</h3>
+			<nav>
+				<ul id="viewport" title="Touche &quot;Entrée&quot; pour lancer la lecture (0,1,2,3,... pour la vitesse)"><!-- Here comme the viewport ! --></ul>
+			</nav>
+			<div class="spacer"></div>
+			<h3>Sommaire</h3>
+			<nav>
+				<ul id="summary"><!-- Here comme the summary based on H(1245), see JS --></ul>
+			</nav>
+			<div class="spacer"></div>
+			<p><button id="autoplay" title="Défilement automatique (Vitesse : Touches 0,1,2,...,9 Défaut : 5)">&#8711;</button> <button id="fullscreen" title="Plein écran (Touche F11)"><sup>F11</sup></button> <button id="zoomminus" title="Diminuer taille du texte">A-</button> <button id="zoomdefault" title="Taille du texte par défaut">A</button> <button id="zoomplus" title="Augmenter taille du texte">A+</button></p>
+			<div class="spacer"></div>
+			<a class="top fade" href="#top" title="Haut de page">Top</a>
+		</div>
+	</aside>
+	
+	<div id="notes" class="roundered" style="display:none;">	
+		<div class="stageSpace">
+			<form method="post" name="formNotes" id="formNotes" action="actions.php?action=saveNotes" target="frameAction">
+				<input type="hidden" name="saveText" id="saveText" value=""/>
+				<h3>Notes</h3>
+				<nav>
+					<ul id="notesList"><!-- Here comme the notes ! --></ul>
+				</nav>
+				<button type="submit" id="saveNotes" title="Téléchargez vos notes dans un fichier .txt" accesskey="s 0">Sauver</button>
+			</form>
+		</div>
+	</div>
+	
+	<div id="helpPanel" class="unrounded" style="display:none;">
+		<div class="stageSpace">
+			<h5>Utilisation du clavier</h5>
+			<ul>
+				<li>&quot;<strong>Espace</strong>&quot; ou &quot;<strong>Entrée</strong>&quot; : Lecture automatique
+					<ul>
+						<li>Touches <strong>1</strong>,<strong>2</strong>,<strong>3</strong>,...,<strong>9</strong> pour régler la vitesse (<strong>5, </strong>valeur par défaut)</li>
+					</ul>
+				</li>
+				<li>Flèches &quot;<strong>Haut</strong>&quot; et &quot;<strong>Bas</strong>&quot; : Défilement de la page
+					<ul>
+						<li>Flèches &quot;<strong>Gauche</strong>&quot; et &quot;<strong>Droite</strong>&quot; : Défilement doux</li>
+					</ul>
+				</li>
+				
+				<li>&quot;<strong>+</strong>&quot; et &quot;<strong>-</strong>&quot; ou &quot;<strong>Ctrl</strong>&quot; + &quot;<strong>Molette de la souris</strong>&quot; : Ajustement de la taille du texte</li>
+				<li>... et &quot;<strong>F11</strong>&quot; pour le plein écran !</li>
+			</ul>
+			<h5>Autre fonctions</h5>
+			<ul>
+				<li>Le fond de page est cliquable et peut <strong>glisser de haut en bas</strong></li>
+				<li>Le <strong>texte est redimensionnale</strong> en largeur : Poignée &agrave; droite dans la marge</li>
+				<li>Sélection du texte pour <strong>annoter</strong>, <strong>copier ou éditer</strong></li>
+			</ul>
+			<h5>Annotations dynamiques</h5>
+			<ul>
+				<li>Chaque paragraphe accueil un <strong>mini-forum <a href="http://disqus.com/" target="_blank">Disqus</a></strong>
+					<ul>
+						<li>Possiblité de <strong>commenter le texte</strong> en utilisant les petites bulles sur la gauche</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="spacer"></div>
+			<img src="images/keyboard.png" alt="Utilisation du clavier" border="0" />
+		</div>
+	</div>
+	
+	<div id="sharing" class="fade"><!-- Social APIs -->
+		<g:plusone size="medium" count="true"></g:plusone>
+		<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="Paul_Da_Silva">Tweet</a>
+		<iframe id="facebook" src="javascript:void(0)" scrolling="no" frameborder="0" width="120" height="20" allowtransparency="true"></iframe>
+	</div>
+	
+	<div id="disqus_thread" class="rounded fade"><!-- Discuss Dynamic comment thread --></div>
+	
+	<div id="resizeHandle" title="Vous pouvez redimensionner le texte"><!-- Section resize UX --></div>
+	
+	<div id="dragLeft"></div><div id="dragRight"></div><!-- Click to drag -->
+	
+	<div id="minibar" class="roundered" style="display:none;"><button id="noter">Noter</button> <button id="copier">Copier</button> <button id="editer">Editer</button></div>
+	
+	<iframe id="frameAction" name="frameAction" allowtransparency="1" frameborder="0" scrolling="no" src="javascript:void(0)" width="1" height="1" style="display:none;"></iframe>
+	
+	<!--// ---------------------------------------------- Here we go... ---------------------------------------------- //-->
+	
+	<script>
+	// Optionnals DISQUS comments system, must by global
+	// Remove url to kill Discuss (Don't forget the script above : id="discusRecentsComments")
+	var disqus_url				= 'http://www.b2bweb.fr/bonus/piratons-la-democratie.html', // This page URL
+		disqus_identifier		= 'pirate', // I give this name...
+		disqus_domain			= 'disqus.com', // Don't touch
+		disqus_shortname		= 'piratonsladmocratie', // Get it by creating a new forum under Discuss dashboard
+		disqus_title			= 'Piratons la d&eacute;mocratie'; // Page title (Will be displayed in comments)
+	</script>
+	<script src="./js/jquery-1.6.2.min.js"></script>
+	<script src="./js/jquery.readr.min.js"></script><!-- Main script -->
 </body>
 </html>
+<!--
+	End of the world --- > 417 lines for a book ;)
+-->

@@ -1,24 +1,22 @@
 @charset "utf-8";
 
 /* Remixed by @molokoloco 2011 - http://b2bweb.fr              */
-/* Src : https://github.com/molokoloco/My-Book-ReadR/ - V0.99 */
+/* Src : https://github.com/molokoloco/My-Book-ReadR/ - V0.96 */
 
-/* ------------------------- MAIN TAGS ------------------------------------------------------------- */	
+/* ------------------------- FONTS FACE ------------------------------------------------------------- */	
 
 @font-face {
-  font-family:'Terminal Dosis Light';
-  font-style:normal;
-  font-weight:normal;
-  src:local('Terminal Dosis Light'),local('TerminalDosis-Light'),url('http://themes.googleusercontent.com/static/fonts/terminaldosislight/v1/UyNOlq8pwXsdXFw6uDx3EvE6Kx76Zt1qXITZE9-oKFQ.woff') format('woff');
+	font-family:'Terminal Dosis Light';
+	font-style:normal; font-weight:normal;
+	src:local('Terminal Dosis Light'),local('TerminalDosis-Light'),url('./Terminal-Dosis-Light.woff') format('woff');
 }
 @font-face {
-  font-family:'Varela';
-  font-style:normal;
-  font-weight:normal;
-  src:local('Varela'),url('http://themes.googleusercontent.com/font?kit=_yYHMt_E4smqfVTA22m7TQ') format('woff');
+	font-family:'Varela';
+	font-style:normal; font-weight:normal;
+	src:local('Varela'),url('./Varela-Regular.woff') format('woff');
 }
 
-/* ------------------------- MAIN TAGS ------------------------------------------------------------- */	
+/* ------------------------- MAIN ------------------------------------------------------------- */	
 
 ::selection { background-color:rgba(160,160,160,0.8); color:rgba(250,250,250,1); }
 	::-moz-selection { background-color:rgba(160,160,160,0.8); color:rgba(250,250,250,1); }
@@ -30,7 +28,7 @@
 
 html { font-size:100%;  }
 body {
-	font:normal 62.5%/100% 'Varela',Verdana,Arial,Sans-Serif; /* Setting 1em == 10px (for root elements) !!! */
+	font:normal 62.5%/100% 'Varela','Trebuchet',Verdana,Arial,Sans-Serif; /* Setting 1em == 10px (for root elements) !!! */
 	text-rendering:optimizeLegibility;
 	font-smooth:always; -webkit-font-smoothing:antialiased; -moz-font-smoothing:antialiased; -ms-font-smoothing:antialiased; -o-font-smoothing:antialiased;
 	size-adjust:none; -webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none; -o-text-size-adjust:none;
@@ -48,36 +46,34 @@ body {
 /* ------------------------- MAIN TAGS - Zoommmable BODY TEXT (with em) ------------------------------------------------------------- */	
 
 p, blockquote, input, pre, code {
-	font-size:1.4em;
+	font-size:1.4em; /* 14px */
 	color:rgba(5,5,5,0.8);
 	text-align:left;
 	line-height:175%;
 }
-
 p, blockquote, pre, code {
 	padding:0 10px;
 }
-
-	a,a:visited {
-		color:rgba(0,0,99,0.9);
-		font-weight:bold;
-		text-decoration:none;
-		cursor:pointer;
-		margin:auto 0.1em; /* little margin with text */
-	}
-	a:hover {
-		color:rgba(99,0,0,0.9);
+	h1 + p, h2 + p, h3 + p, h4 + p, h5 + p { /* Les P suivants un header... */
+	
 	}
 
-h1 + p, h2 + p, h3 + p, h4 + p, h5 + p { /* Les P suivants un header... */
-
+a,a:visited {
+	color:rgba(0,0,99,0.9);
+	font-weight:bold;
+	text-decoration:none;
+	cursor:pointer;
+	margin:auto 0.1em; /* little margin with text */
+}
+a:hover {
+	color:rgba(99,0,0,0.9);
 }
 
 h1,h2,h3,h4,h5 {
 	line-height:100%;
 	margin:10px 10px 15px 10px; /* according to p */
 	padding:0;
-	font-family:'Terminal Dosis Light','Trebuchet','Tahoma',Verdana,Arial,Sans-Serif;
+	font-family:'Terminal Dosis Light','Tahoma',Arial,Sans-Serif;
 	font-weight:normal;
 	letter-spacing:0.05em;
 	word-spacing:-0.05em;
@@ -88,42 +84,32 @@ h1,h2,h3,h4,h5 {
 	clear:both;
 	page-break-after: avoid;
 }
-	h1 {  /* Book Chapter main title */
+	h1 {  /* Book main title */
 		font-size:11.3em;
 		margin:1em 0;
 		text-align:center;
 		text-shadow:0 0 16px rgba(5,5,5,0.3),0 1px 1px rgba(5,5,5,0.3),-1px -1px 0px rgba(5,5,5,0.1),1px 1px 0px rgba(5,5,5,0.3);
 	}
-	h2 { font-size:8em; margin:0 0 15px 7px; text-align:center; } /* Book Chapter sub title */
-	h3 { font-size:4.2em; font-weight:bold; font-variant: small-caps; }  /* Special info (Autor... ) */
+	h2 { font-size:8em; margin:0 0 15px 7px; text-align:center; } /* Book sub title */
+	h3 { font-size:4.2em; font-weight:bold; font-variant: small-caps; }  /* Special info (Author... ) */
 		h3 a { margin:1.3em 0; padding:20px 0; display:block; border-top:1px solid rgba(5,5,5,0.6); border-bottom:1px solid rgba(5,5,5,0.6); text-align:right; }
-	h4 { font-size:6em; margin:0.66em 0 15px 7px; } /* Book Chapter Header */
-	h5 { font-size:2.6em; margin:0 0 15px 10px; color:rgba(5,5,5,0.8); } /* Book Chapter Sub Header */
+	h4 { font-size:6em; margin:0.66em 0 15px 7px; } /* Book Chapters Header */
+	h5 { font-size:2.6em; margin:0 0 15px 10px; color:rgba(5,5,5,0.8); } /* Book Sub Chapters */
 
-em { font-style:italic; }
-strong { font-weight:bold; }
+em { font-style:italic !important; }
+strong { font-weight:bold !important; }
 blockquote { margin-top:10px; margin-bottom:10px; }
 ul, ol { margin-left: 2em; }
 
-button {
-	color:rgba(40,40,40,1);
-	cursor:pointer;
-	font-size:13px;
-	line-height:13px;
-	margin:0 3px;
-	padding:6px;
-	text-align:center;
-	text-shadow:0 1px 0 rgba(250, 250, 250, 0.8);
-}
 button {
     color: #282828;
     cursor: pointer;
     display: block;
     float:left;
-    font-size:0.9em;
+    font-size:1.2em;
 	letter-spacing:0;
-	width:33px; height: 25px;
-    line-height:25px;
+	width:28px; height: 25px;
+    line-height:100%;
     margin: 0 3px 0 0;
     padding:0;
     text-align: center;
@@ -131,9 +117,7 @@ button {
 }
 /* ------------------------- UTILS ------------------------------------------------------------- */
 
-/* 
-	Here you can check some utilities in ./modernizr.css
-*/
+/* Here you can check some utilities in ./modernizr.css too */
 
 .center { text-align:center; }
 .spaced { padding:1.8em; }	
@@ -162,22 +146,26 @@ button {
 	
 /* ------------------------- MAIN CONTENT ------------------------------------------------------------- */
 
-#section {
+#article {
 	position:relative; /* IMPORTANT : With RELATIVE, body is content aware (it "wrap") so it made a better scrollTo function... */
 	margin:50px 25% 15px 8%; /* 8% left is fixe for JS resize, but 25% can change */
 	min-width:280px;
 	max-width:920px;
 	padding:50px;
-	cursor:move;
+	cursor:url('../images/hand.cur') 0 0, move;
 }
-	@media all and (min-width:1280px){ body { font-size:70%; } }
-	@media all and (max-width:900px){ #section { margin:50px 200px 50px 50px; } } /* Elastic resize depending on SCREEN size */
-	@media all and (max-width:780px){ body { font-size:58%; } }
-	@media all and (max-width:680px){ #section { margin:10px; } }
-	
+	#article:active { cursor:url('../images/hand-active.cur') 0 0, move; } /* no active for article on #FF4 ? */
 	
 	/* Specific TEXT polish ! */
-	#section p {
+	#article h1, #article h2, #article h3, #article h4, #article h5, #article blockquote { cursor:text; }
+		#article a { cursor:pointer; }
+		#article a:hover { background:rgba(5,5,5,0.03); }
+		#article h2 + p:first-letter, #article h3 + p:first-letter, #article h4 + p:first-letter, #article h5 + p:first-letter { /* P after header... */
+			font-size:1.8em;
+			line-height:100%;
+		}
+		
+	#article p {
 		text-align:justify;
 		word-spacing:0.03em;
 		hyphenate:auto; hyphenate-before:3; hyphenate-after:3; hyphenate-lines:3;
@@ -185,50 +173,44 @@ button {
 		position:relative;
 		cursor:text;
 	}
-		#section h1, #section h2, #section h3, #section h4, #section h5, #section blockquote { cursor:text; }
-		#section a { cursor:pointer; }
-		#section a:hover { background:rgba(5,5,5,0.03); }
-		#section h2 + p:first-letter, #section h3 + p:first-letter, #section h4 + p:first-letter, #section h5 + p:first-letter { /* P after header... */
-			font-size:1.8em;
-			line-height:100%;
-		}
-		#section article > p + p { text-indent:2em; }/* P after an other P */	
-		#section article p > br:after {} /* Les retours à la ligne dans les paragraphes... */
-		#section span.indent { /* :after br not working, so span appended with jQuery cf. JS */
+		#article > p + p { text-indent:2em; }/* P after an other P */	
+		#article p > br:after {} /* Les retours à la ligne dans les paragraphes... */
+		#article span.indent { /* :after br not working, so span appended with jQuery cf. JS */
 			/* padding-left:10px; */
 		}
-		#section p.center { text-align:center; }
+		#article p.center { text-align:center; }
 		
 		/* P mouseover + autoscroll hightlight */
-		#section article > p {
+		#article > p {
 			border-left:1px dotted rgba(5,5,5,0.2);
 			padding-left:9px;
 			border-right:1px dotted rgba(5,5,5,0.2);
 			padding-right:9px;
 		}
-		#section article > p:hover {
-			border-left:1px dotted rgba(5,5,5,0.4) !important;
+		#article > p:hover {
+			/*border-left:1px dotted rgba(5,5,5,0.4) !important;
 			padding-left:9px;
 			border-right:1px dotted rgba(5,5,5,0.4) !important;
-			padding-right:9px;
+			padding-right:9px;*/
+			background:rgba(5,5,5,0.01);
 		}
-		#section article > p.p-actif {
+		#article > p.p-actif {
 			border-left:1px dotted transparent;
 			padding-left:9px;
 			border-right:1px dotted transparent;
 			padding-right:9px;
 		}
-		#section.editable * { /* Content edit hightlight */
+		#article.editable * { /* Content edit hightlight */
 			outline:1px dashed rgba(160,160,160,0.4) !important;
 		}
 
 #footer {
-	position:relative; /* IMPORTANT : With RELATIVE, body is content aware (it "wrap") so it made a better scrollTo function... */
-	margin:15px 25% 20px 8%; /* 8% left is fixe for JS resize, but 25% can change */
+	position:relative;
+	margin:15px 25% 20px 8%;
 	min-width:280px;
 	max-width:920px;
 	padding:50px;
-	font-size:1.5em; /* Discuss recents comments... */
+	font-size:1.5em;
 	text-shadow:0 1px 0 rgba(250,250,250,0.3);
 	line-height:100%;
 }
@@ -281,7 +263,7 @@ span.comment {
 	top:5%; left:100%;
 	height:100%; width:30px;
 	cursor:e-resize;
-	z-index:9;
+	z-index:1; /* just above the #article book */
 	user-select:none; -webkit-user-select:none; -moz-user-select:none; -o-user-select:none; -ms-user-select:none;
 	user-focus:none; -webkit-user-focus:none; -moz-user-focus:none; -o-user-focus:none; -ms-user-focus:none;
 	background:rgba(5,5,5,0.2);
@@ -306,7 +288,7 @@ span.comment {
 	#resizeHandle:hover {
 		opacity:1;
 	}
-	#resizeHandle:active,#resizeHandle:focus  {
+	#resizeHandle.actif  {
 		background:-moz-linear-gradient(left,rgba(5,5,5,0) 0%,rgba(0,0,99,0.5) 100%) !important; /* FF3.6+ */
 			background:-webkit-gradient(linear,left top,right top,color-stop(0%,rgba(5,5,5,0)),color-stop(100%,rgba(0,0,99,0.5))) !important; /* Chrome,Safari4+ */
 			background:-webkit-linear-gradient(left,rgba(5,5,5,0) 0%,rgba(0,0,99,0.5) 100%) !important; /* Chrome10+,Safari5.1+ */
@@ -316,21 +298,36 @@ span.comment {
 		background:linear-gradient(left,rgba(5,5,5,0) 0%,rgba(0,0,99,0.5) 100%) !important; 
 	}
 
+
+#dragLeft, #dragRight {
+	position:fixed;
+	z-index:0;
+	top:0; bottom:0;
+	cursor:url('../images/hand.cur') 0 0, move;
+}
+	#dragLeft:active, #dragRight:active { cursor:url('../images/hand-active.cur') 0 0, move; }
+	#dragLeft { left:0; width:8%; }
+	#dragRight { right:0; width:25%; }
+	
 #minibar {
 	position:absolute;
-	z-index:9999;
+	z-index:2;
 	top:0; left:0;
 	transition:opacity 500ms linear; -webkit-transition:opacity 500ms linear; -moz-transition:opacity 500ms linear; -ms-transition:opacity 500ms linear; -o-transition:opacity 500ms linear;
 	padding:3px;
 	background:rgba(230,230,230,0.8);
 }
+	#minibar button { width:45px; height:20px; }
 
+.hightlight {
+	background:rgba(0,0,99,0.3) !important;
+}
 /* ------------------------- BOX RADIUS AND GRADIENTS ------------------------------------------------------------- */
 
 .rounded,#disqus_thread { /* BOOK BG */
 	border:1px solid rgba(160,160,160,0.8);
 	border-radius:23px; -moz-border-radius:23px; -webkit-border-radius:23px; -ms-border-radius:23px; -o-border-radius:23px;
-	background: rgb(250,250,250);
+	background: rgb(250,250,250); /* Plain color for performance with big text */
 	box-shadow:1px 1px 3px rgba(5,5,5,0.3),inset 0 0 9px rgba(255,255,255,1);
 		-moz-box-shadow:1px 1px 3px rgba(5,5,5,0.3),inset 0 0 9px rgba(255,255,255,1);
 		-webkit-box-shadow:1px 1px 3px rgba(5,5,5,0.3),inset 0 0 9px rgba(255,255,255,1);
@@ -357,11 +354,23 @@ span.comment {
 		-o-box-shadow:0 5px 10px rgba(60,60,60,0.8),0 0 10px rgba(250,250,250,0.8);
 }
 
+.unrounded { /* BOOK BG */
+	border:1px solid rgba(160,160,160,0.8);
+	border-radius:23px; -moz-border-radius:23px; -webkit-border-radius:23px; -ms-border-radius:23px; -o-border-radius:23px;
+	background:rgba(200,200,200,1) url('../images/bg_vertical.jpg') top left;
+	box-shadow:0 0 8px rgba(5,5,5,0.6),0 0 32px rgba(5,5,5,0.4), 0 0 6px rgba(250,250,250,0.6) inset;
+		-moz-box-shadow:0 0 8px rgba(5,5,5,0.6),0 0 32px rgba(5,5,5,0.4), 0 0 6px rgba(250,250,250,0.6) inset;
+		-webkit-box-shadow:0 0 8px rgba(5,5,5,0.6),0 0 32px rgba(5,5,5,0.4), 0 0 6px rgba(250,250,250,0.6) inset;
+		-ms-box-shadow:0 0 8px rgba(5,5,5,0.6),0 0 32px rgba(5,5,5,0.4), 0 0 6px rgba(250,250,250,0.6) inset;
+		-o-box-shadow:0 0 8px rgba(5,5,5,0.6),0 0 32px rgba(5,5,5,0.4), 0 0 6px rgba(250,250,250,0.6) inset;
+	background-clip: padding-box; -moz-background-clip: padding-box; -webkit-background-clip: padding-box; -ms-background-clip: padding-box; -o-background-clip: padding-box;
+}
+
 /* ------------------------- ASIDE MENU ( + Dialog jqueryUI) ------------------------------------------------------------- */
 
 #aside {
 	display:block;
-	z-index:999;
+	z-index:250;
 	overflow:auto;
 }
 	.aside { /* jQuery UI Dialog() offset with fixed */
@@ -370,6 +379,7 @@ span.comment {
 		bottom:16px; /* it's important to be bottom/right aligned,with window resize...,check JS */
 		right:16px;
 		overflow:hidden;
+		z-index:250;
 	}
 	
 	div.ui-dialog {
@@ -401,42 +411,56 @@ span.comment {
 			}
 			div.ui-dialog .ui-dialog-titlebar-toggle:hover { border-top:8px solid rgba(99,0,0,0.8);16px }
 			div.ui-dialog .ui-dialog-titlebar-toggle.toggled:hover { border-bottom:8px solid rgba(99,0,0,0.8);16px }
+			
+			a#help, a#help:visited { /* Will be dynamicly detached from #aside and attached to #dialog */
+				position: absolute;
+				display: block;
+				height:17px; width:30px;
+				top:0; left:0; 
+				margin:0; padding:6px 0 0 0;
+				font-size: 14px;
+				color:rgba(250,250,250,0.8);
+				text-shadow:0 1px 0 rgba(150,150,150,1);
+				cursor: help;
+			}
+			a#help:hover { color:rgba(0,0,99,0.9); }
 	
 	#aside h3,#aside p {
-		font-size:14px;
+		font-size:12px;
 		letter-spacing:0.3em;
 		margin:0 0 8px 0;
 		padding:0;
 		text-align:center;
-		color:rgba(250,250,250,0.6);
-		color:rgba(5,5,5,0.6);
+		color:rgba(150,150,150,1);
+		text-shadow:0 1px 0 rgba(250,250,250,1);
+		cursor:default;
 	}
 	
-	ul#paginettes { list-style-type:none; margin:0; padding:0; overflow:hidden; }
-		ul#paginettes li { margin:0; padding:0; float:left; }
-		ul#paginettes li a,#paginettes ul li a:visited {
+	ul#viewport { list-style-type:none; margin:0; padding:0; overflow:hidden; }
+		ul#viewport li { margin:0; padding:0; float:left; }
+		ul#viewport li a,#viewport ul li a:visited {
 			display:block;
-			margin:0 0 1px 1px;
-			padding:2px;
-			width:16px; height:16px; /* real width 20px */
+			margin:0 0 0.5px 0.5px;
+			padding:2px 0px;
+			width:22px;
+			height:16px;
 			line-height:16px;
 			font-size:12px;
 			font-weight:normal;
-			word-wrap: break-word;
 			text-align:center;
 			color:rgba(5,5,5,0.2);
 			text-shadow:0 0.05em 0 rgba(250,250,250,0.6);
 			border:1px solid rgba(250,250,250,0.6);
 			background:rgba(5,5,5,0.05);
 		}
-		ul#paginettes li a:hover,ul#paginettes li a.current {
-			color:rgba(100,100,100,0.9);
+		ul#viewport li a:hover,ul#viewport li a.current {
+			color:rgba(250,250,250,0.9);
 			background:rgba(5,5,5,0.3);
 			text-decoration:none;
 		}
 	
 	ul#summary { list-style-type:none;  margin:0; padding:0; overflow:hidden; }
-		ul#paginettes li { margin:0; padding:0; }
+		ul#viewport li { margin:0; padding:0; }
 		ul#summary li a,ul#summary li a:visited {
 			display:block;
 			font-size:12px;
@@ -452,12 +476,72 @@ span.comment {
 			text-decoration:underline;
 		}
 
+
+#notes {
+	position:fixed;
+	z-index:100;
+	top:16px; left:16px;
+	width:66px;
+	background:rgba(230,230,230,0.75);
+}
+	#notes .stageSpace { overflow:visible; }
+	#notes h3,#notes p {
+		font-size:12px;
+		letter-spacing:0.3em;
+		margin:0 0 8px 0;
+		padding:0;
+		text-align:center;
+		color:rgba(150,150,150,1);
+		text-shadow:0 1px 0 rgba(250,250,250,1);
+		cursor:default;
+	}
+	#notes button { width:50px; margin:6px 0; }
+	ul#notesList { list-style-type:none; margin:0; padding:0; }
+	ul#notesList li { margin:0; padding:0; float:left; position:relative; }
+	ul#notesList li a,#viewport ul li a:visited {
+		display:block;
+		margin:0 0 1px 1px;
+		padding:2px;
+		width:42px; height:16px; /* real width 48px */
+		line-height:100%;
+		font-size:12px;
+		font-weight:normal;
+		white-space:nowrap;
+		text-align:center;
+		color:rgba(5,5,5,0.2);
+		text-shadow:0 0.05em 0 rgba(250,250,250,0.6);
+		border:1px solid rgba(250,250,250,0.6);
+		background:rgba(5,5,5,0.05);
+	}
+	ul#notesList li div.note {
+		display:none;
+		position:absolute;
+		left:70px;
+		top:0;
+		width:240px;
+		height:auto;
+		padding:12px;
+		color:rgba(50,50,50,1);
+		background:rgba(230,230,230,1);
+		overflow:visible;
+		text-align:left;
+		font-size:13px;
+		line-height:125%;
+		font-weight:normal;
+		word-wrap: break-word;
+		color:rgba(5,5,5,0.9);
+	}
+	ul#notesList li a:hover {
+		color:rgba(250,250,250,0.9);
+		background:rgba(5,5,5,0.3);
+		text-decoration:none;
+	}
 /* ------------------------- DISCUSS BOX ------------------------------------------------------------- */
 
 #disqus_thread {
 	transition:all 500ms linear; -webkit-transition:all 500ms linear; -moz-transition:all 500ms linear; -ms-transition:all 500ms linear; -o-transition:all 500ms linear;
 		position:fixed;
-		z-index:99999;
+		z-index:300;
 		top:16px;
 		right:16px;
 		width:45%;
@@ -495,6 +579,7 @@ a.top {
 }
 	a.top:hover {
 		background:rgba(5,5,5,0.3);
+		border:1px solid rgba(60,60,60,0.3);
 		opacity:1 !important ;
 	}
 	a.top.fade { opacity:0; }
@@ -502,7 +587,7 @@ a.top {
 		position:absolute;
 		top:5px;
 		left:50%;
-		margin-left:-8px;
+		margin-left:-12px;
 		content:"";
 		border-bottom:12px solid rgba(5,5,5,0.6);
 		border-left:16px solid transparent;
@@ -515,9 +600,9 @@ a.top {
 a#ribbon {
 	display:block;
 	position:fixed;
-	top:0; right:0;
-	width:80px; height:80px;
-	z-index:100; 
+	top:0; left:0;
+	width:100px; height:100px;
+	z-index:99; 
 	margin:0;
 	text-indent:-9999px;
 	background:url('../images/github-ribbon.png') no-repeat;
@@ -526,13 +611,108 @@ a#ribbon {
 }
 	a#ribbon:hover { opacity:1; }
 
-#partage {
+#sharing {
 	position:fixed;
-	z-index:99;
+	z-index:100;
 	bottom:16px; left:12px;
 	width:120px; height:60px;
 	transition:all 500ms linear; -webkit-transition:opacity 500ms linear; -moz-transition:opacity 500ms linear; -ms-transition:opacity 500ms linear; -o-transition:opacity 500ms linear;
 	opacity:0.2;
 }
-	#partage:hover { opacity:1; }
-	#partage > * { marging:2px 0; padding:0; } /* intent override external js insert */
+	#sharing:hover { opacity:1; }
+	#sharing > * { marging:2px 0; padding:0; } /* intent override external js insert */
+
+
+#helpPanel {
+	display:block;
+	position:fixed;
+	top:-1000px; left:0;
+	width:616px; max-width:90%;
+	max-height:90%; /* for small screen, 990 not 100 because lot of shadow */
+	overflow:auto;
+	z-index:600;
+}
+	#helpPanel h5 { text-align:center; }
+	#helpPanel img { max-width:100%; }
+	#helpPanel ul, #helpPanel ul li ul { list-style-type:disc; margin:0 0 16px 0; padding:0 0 0 40px; overflow:hidden; color:rgba(250,250,250,1); }
+	#helpPanel ul li ul { list-style-type:circle; margin:0; }
+	#helpPanel ul li {
+		margin:0;
+		padding:0 0 0.5em 0;
+		font-size:1.5em;
+		line-height:100%;
+		color:rgba(100,100,100,1);
+		text-shadow: 0 1px 0 rgba(250,250,250,0.6);
+	}
+	#helpPanel ul li ul li { font-size:100%; line-height:100%; padding:0.5em 0 0 0; }
+
+textarea#textEdit {
+	font: 13px/13px "Courier New", Courier, monospace;
+	color:rgba(5,5,5,0.9);
+	display:block;
+	width:100%; height:100%;
+	overflow:auto;
+	margin:0;
+	padding:5px;
+}
+	textarea#textEdit, table#textEdit_tbl /* From TinyMCE */ {
+		position:fixed;
+		top:5%; left:10%;
+		width:80%; height:90%;
+		overflow:auto;
+		z-index:600;
+	}
+	table#textEdit_tbl tr.mceLast {
+		height:1px;
+	}
+	table#textEdit_tbl iframe#textEdit_ifr {
+		width:100%;
+		height:100%;
+	}
+
+#overlay {
+	z-index:500; /* 500 for OVERLAY ! */
+	position:fixed;
+	top:0; right:0; bottom:0; left:0;
+	background:rgba(250,250,250,0.92);
+	cursor:pointer;
+	box-shadow:0 0 33px rgba(5,5,5,0.7) inset, 0 0 5px rgba(5,5,5,0.6) inset;
+		-moz-box-shadow:0 0 33px rgba(5,5,5,0.7) inset, 0 0 5px rgba(5,5,5,0.6) inset;
+		-webkit-box-shadow:0 0 33px rgba(5,5,5,0.7) inset, 0 0 5px rgba(5,5,5,0.6) inset;
+		-ms-box-shadow:0 0 33px rgba(5,5,5,0.7) inset, 0 0 5px rgba(5,5,5,0.6) inset;
+		-o-box-shadow:0 0 33px rgba(5,5,5,0.7) inset, 0 0 5px rgba(5,5,5,0.6) inset;
+}
+
+
+#message {
+	z-index:9999;
+	position:fixed;
+	top:-20px; left:50%;
+	height:15px; width:360px;
+	margin:0 0 0 -170px;
+	padding:5px;
+	border-radius:0 0 15px 15px; -moz-border-radius:0 0 15px 15px; -webkit-border-radius:0 0 15px 15px; -ms-border-radius:0 0 15px 15px; -o-border-radius:0 0 15px 15px;
+	background:rgba(200,200,200,1) url('../images/bg_vertical.jpg') top left;
+	box-shadow:0 0 8px rgba(5,5,5,0.6),0 0 32px rgba(5,5,5,0.4), 0 0 6px rgba(250,250,250,0.6) inset;
+		-moz-box-shadow:0 0 8px rgba(5,5,5,0.6),0 0 32px rgba(5,5,5,0.4), 0 0 6px rgba(250,250,250,0.6) inset;
+		-webkit-box-shadow:0 0 8px rgba(5,5,5,0.6),0 0 32px rgba(5,5,5,0.4), 0 0 6px rgba(250,250,250,0.6) inset;
+		-ms-box-shadow:0 0 8px rgba(5,5,5,0.6),0 0 32px rgba(5,5,5,0.4), 0 0 6px rgba(250,250,250,0.6) inset;
+		-o-box-shadow:0 0 8px rgba(5,5,5,0.6),0 0 32px rgba(5,5,5,0.4), 0 0 6px rgba(250,250,250,0.6) inset;
+	background-clip: padding-box; -moz-background-clip: padding-box; -webkit-background-clip: padding-box; -ms-background-clip: padding-box; -o-background-clip: padding-box;
+	
+	
+}
+	#message p {
+		color:color:rgba(160,160,160,0.8);
+		font-size:14px;
+		font-weight:bold;
+		line-height:16px;
+		text-align:center;
+	}
+
+/* ------------------------- MEDIA QUERY // ZOOM // Overide above // ------------------------------------------------------------- */
+
+@media all and (min-width:1280px) { body { font-size:70%; } } /* Augmente legererment la taille du taille sur les grands ecrans (65 -> 70%) */
+@media all and (max-width:900px) { #article { margin:50px 200px 50px 50px; } #dragLeft { width:50px; } #dragRight { width:200px; }  } /* Elastic resize depending on SCREEN size */
+@media all and (max-width:780px) { body { font-size:58%; } #resizeHandle { display:none;} }  /* User resize handle desactived... */
+@media all and (max-width:680px) { #article { margin:10px; } #dragLeft { width:10px; } #dragRight { width:10px; } }

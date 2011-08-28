@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* Remixed by @molokoloco 2011 - http://b2bweb.fr              */
+/* Src : https://github.com/molokoloco/My-Book-ReadR/ - V0.96 */
+
+/* ------------------------- FONTS FACE ------------------------------------------------------------- */	
+
+@font-face {
+	font-family:'Terminal Dosis Light';
+	font-style:normal; font-weight:normal;
+	src:local('Terminal Dosis Light'),local('TerminalDosis-Light'),url('./Terminal-Dosis-Light.woff') format('woff');
+}
+@font-face {
+	font-family:'Varela';
+	font-style:normal; font-weight:normal;
+	src:local('Varela'),url('./Varela-Regular.woff') format('woff');
+}
+
+/* ------------------------- MAIN TAGS ------------------------------------------------------------- */	
+
+* { margin:0; padding:0; }
+
+html { font-size:100%;  }
+body {
+	font:normal 62.5%/100% 'Varela','Trebuchet',Verdana,Arial,Sans-Serif; /* Setting 1em == 10px (for root elements) !!! */
+	text-rendering:optimizeLegibility;
+	font-smooth:always; -webkit-font-smoothing:antialiased; -moz-font-smoothing:antialiased; -ms-font-smoothing:antialiased; -o-font-smoothing:antialiased;
+	size-adjust:none; -webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none; -o-text-size-adjust:none;
+	color:rgba(5,5,5,0.8);
+	background:#FFFFFF;
+}
+
+/* ------------------------- MAIN TAGS - Zoommmable BODY TEXT (with em) ------------------------------------------------------------- */	
+
+p, blockquote, input, pre, code {
+	font-size:1.4em;
+	color:rgba(5,5,5,0.8);
+	text-align:left;
+	line-height:175%;
+}
+p, blockquote, pre, code {
+	padding:0 10px;
+}
+
+a,a:visited {
+	color:rgba(0,0,99,0.9);
+	font-weight:bold;
+	text-decoration:none;
+	cursor:pointer;
+	margin:auto 0.1em; /* little margin with text */
+}
+a:hover {
+	color:rgba(99,0,0,0.9);
+}
+
+h1,h2,h3,h4,h5 {
+	line-height:100%;
+	margin:10px 10px 15px 10px; /* according to p */
+	padding:0;
+	font-family:'Terminal Dosis Light','Tahoma',Arial,Sans-Serif;
+	font-weight:normal;
+	letter-spacing:0.05em;
+	word-spacing:-0.05em;
+	color:rgba(20,20,20,0.8);
+	text-shadow:1px 1px 1px rgba(5,5,5,0.25),0 0 6px rgba(5,5,5,0.2);
+	overflow:visible;
+	width:100%;
+	clear:both;
+	page-break-after: avoid;
+}
+	h1 {  /* Book Chapter main title */
+		font-size:11.3em;
+		margin:1em 0;
+		text-align:center;
+		text-shadow:0 0 16px rgba(5,5,5,0.3),0 1px 1px rgba(5,5,5,0.3),-1px -1px 0px rgba(5,5,5,0.1),1px 1px 0px rgba(5,5,5,0.3);
+	}
+	h2 { font-size:8em; margin:0 0 15px 7px; text-align:center; } /* Book Chapter sub title */
+	h3 { font-size:4.2em; font-weight:bold; font-variant: small-caps; margin:1.3em 0; }  /* Special info (Autor... ) */
+		h3 a { padding:20px 0; display:block; border-top:1px solid rgba(5,5,5,0.6); border-bottom:1px solid rgba(5,5,5,0.6); text-align:right; }
+	h4 { font-size:6em; margin:0.66em 0 15px 7px; } /* Book Chapter Header */
+	h5 { font-size:2.6em; margin:0 0 15px 10px; color:rgba(5,5,5,0.8); } /* Book Chapter Sub Header */
+
+em { font-style:italic !important; }
+strong { font-weight:bold !important; }
+blockquote { margin-top:10px; margin-bottom:10px; }
+ul, ol { margin-left: 2em; }
+
+button {
+    color: #282828;
+    cursor: pointer;
+    display: block;
+    float:left;
+    font-size:0.9em;
+	letter-spacing:0;
+	width:28px; height: 25px;
+    line-height:25px;
+    margin: 0 3px 0 0;
+    padding:0;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(250, 250, 250, 0.8);
+}
+
+
+.colonne {
+	text-align:left;
+	column-count:2; column-gap:1em; column-rule:none;
+		-moz-column-count:2; -moz-column-gap:1em; -moz-column-rule:none;
+		-webkit-column-count:2; -webkit-column-gap:1em; -webkit-column-rule:none;
+		-ms-column-count:2; -ms-column-gap:1em; -ms-column-rule:none;
+		-o-column-count:2; -o-column-gap:1em; -o-column-rule:none;
+}
+	 .colonneBreaker {
+		column-break-before:always;
+			-webkit-column-break-before:always;
+			-moz-column-break-before:always;
+			-ms-column-break-before:always;
+			-o-column-break-before:always;
+	}
+	
+	/* Specific TEXT polish ! */
+	p {
+		text-align:justify;
+		word-spacing:0.03em;
+		hyphenate:auto; hyphenate-before:3; hyphenate-after:3; hyphenate-lines:3;
+		font-variant-numeric: oldstyle-nums;
+		position:relative;
+		cursor:text;
+	}
+		h1, h2, h3, h4, h5, blockquote { cursor:text; }
+		a { cursor:pointer; }
+		a:hover { background:rgba(5,5,5,0.03); }
+		h2 + p:first-letter, h3 + p:first-letter, h4 + p:first-letter, h5 + p:first-letter { /* P after header... */
+			font-size:1.8em;
+			line-height:100%;
+		}
+		p + p { text-indent:2em; }/* P after an other P */	
+		article p > br:after {} /* Les retours à la ligne dans les paragraphes... */
+		
+		.center { text-align:center; }
