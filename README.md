@@ -1,7 +1,7 @@
 My Book ReadR V1.12 - By @molokoloco 2011 - http://b2bweb.fr
 
 Polished HTML5/CSS3 and jQuery powered "read-a-book" page
-This start from the idea to made a page specialy thinked for reading a long page or a book on the web
+This start from the idea to make a page specially engineered for reading a long book on the web
 
   * Demo : http://www.b2bweb.fr/bonus/piratons-la-democratie.html
   * Infos : http://www.b2bweb.fr/molokoloco/my-book-readr-v1-12-html5-jquery-polished-page-as-a-book-reader/
