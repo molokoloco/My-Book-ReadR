@@ -244,7 +244,7 @@ var readr = function() { // Your welcome to the events-o-drome !
 	if (_db_) db('$titlesChapter=', $titlesChapter.length);
 	
 	$summaryLinks.bind('click.'+name, function(event) {
-		setTimeout(function(i) { // Normally waypoint trigger with offset of 23%, but scrollToMe scroll to offset 30px, with 800ms delay
+		setTimeout(function(i) { // Normally waypoint trigger with offset of 10%, but scrollToMe scroll to offset 30px, with 800ms delay
 			$titlesChapter.eq(i).trigger('waypoint.reached'); //  Force event if summary click
 		}, 1000, $(this).data('id'));
 	});
@@ -308,13 +308,14 @@ var readr = function() { // Your welcome to the events-o-drome !
 						.data({id:i}) // Attach menu_id to chapters
 						.before('<a name="chapter_'+(i+1)+'" id="chapter_'+(i+1)+'"></a>') // Add anchors, anchor position is important because we go exactly to this offset
 				});
-			if (disqusEnabled)
+			if (disqusEnabled) {
 				$articlePrgh.each(function(i) { // Add infobulle comments for each <P> - Disqus system // BE CAREFULL : Editing the "STATICS" HTML <P> could lead to comments serious disorder !!!
 					// This link open the Discuss Comment form related to a <P>
 					// href : page.html?pirate=78#disqus_thread // Create fake var "pirate" : force Discus beliving that it's a new page, so a new forum... 
 					$(this).append('<span class="comment"><a href="'+disqus_url+'?pirate='+i+disqus_thread+'" data-disqus-identifier="pirate='+i+'" id="pirate_'+i+'" title="Commenter le texte (P#'+i+')">-</a></span>');
 					// don't prepend, because <p> have CSS :first-letter setted
 				});
+			}
 		};
 	
 	textEnhance();		

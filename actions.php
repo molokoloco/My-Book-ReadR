@@ -26,7 +26,6 @@ switch($action) {
 	<meta name="description" content="Piratons la démocratie, un livre de Paul da Silva 2011" />
 	<meta name="viewport" content="width=720" />
 	<link type="text/css" rel="stylesheet" href="http://www.b2bweb.fr/bonus/css/modernizr.css" />
-	<!--<link" type="text/css" rel="stylesheet" href="http://www.b2bweb.fr/bonus/css/jquery-ui-1.8.14.custom.css />-->
 	<link rel="stylesheet" type="text/css" href="http://www.b2bweb.fr/bonus/css/styles.css" />
 	<script src="http://www.b2bweb.fr/bonus/js/modernizr-2.0.min.js"></script>
 </head>
