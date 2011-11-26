@@ -182,9 +182,9 @@ button {
 		
 		/* P mouseover + autoscroll hightlight */
 		#article > p {
-			border-left:1px dotted rgba(5,5,5,0.2);
+			border-left:1px dotted rgba(5,5,5,0.5);
 			padding-left:9px;
-			border-right:1px dotted rgba(5,5,5,0.2);
+			border-right:1px dotted rgba(5,5,5,0.5);
 			padding-right:9px;
 		}
 		#article > p:hover {
