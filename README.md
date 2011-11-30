@@ -10,7 +10,6 @@ GPL/MIT/Copyleft - [@molokoloco](https://twitter.com/#!/molokoloco/) 2011 - <htt
 - Infos (Blog)        : <http://www.b2bweb.fr/molokoloco/my-book-readr-v1-12-html5-jquery-polished-page-as-a-book-reader/>
 - Slides (#ParisJS)   : <http://www.b2bweb.fr/bonus/my-book-readr/>
 - Plain demo          : <http://www.b2bweb.fr/bonus/piratons-la-democratie.html>
-- Main Script         : <https://github.com/molokoloco/My-Book-ReadR/blob/master/js/jquery.readr.js>
 - Sources & download  : <https://github.com/molokoloco/My-Book-ReadR/>
 
 ---
@@ -22,7 +21,7 @@ My Book Readr, c’est un code source ouvert qui peut permettre de publier un lo
 
 * **Principes de base**
     - Mise en page simple, claire et typographique, compatible HTML5
-	- Création d'un sommaire, à partir des balises de titres (Ex. <H4>) du texte
+	- Création d'un sommaire, à partir des balises de titres (Ex. &lt;H4&gt;) du texte
 	- Le texte est redimensionnable en largeur (Poignée à droite dans la marge) et en taille de police (CSS basé sur les .em)
 * **Principes intéractifs**
 	- Commentaires dynamiques, chaque paragraphe accueil un mini-forum Disqus. (API gratuite, qui accepte plusieurs type d'identification : Open ID, Facebook, Google, Twitter, Disqus, etc)
