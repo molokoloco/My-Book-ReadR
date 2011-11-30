@@ -3,7 +3,7 @@
 /* Remixed by @molokoloco 2011 - http://b2bweb.fr              */
 /* Src : https://github.com/molokoloco/My-Book-ReadR/ - V0.96 */
 
-/* ------------------------- FONTS FACE ------------------------------------------------------------- */	
+/* ------------------------- FONTS FACE ------------------------------------------------------------- */    
 
 @font-face {
 	font-family:'Terminal Dosis Light';
@@ -34,7 +34,7 @@ body {
 	size-adjust:none; -webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none; -o-text-size-adjust:none;
 	color:rgba(5,5,5,0.8);
 	min-width:280px;
-	background:#dbdbdb url('../images/bg_vertical.jpg') top left;
+	background:#dbdbdb url('../images/bg_vertical.jpg') top left fixed;
 	width:100%; height:100%;
 	box-shadow:0 0 33px rgba(250,250,250,0.7) inset, 0 0 5px rgba(250,250,250,0.6) inset;
 		-moz-box-shadow:0 0 33px rgba(250,250,250,0.7) inset, 0 0 5px rgba(250,250,250,0.6) inset;
@@ -277,7 +277,7 @@ span.comment {
 
 	border:1px solid #999;
 	border-left:none;
-	border-radius:0 23px 23px 0; -moz-border-radius:0 23px 23px 0; -webkit-border-radius:0 23px 23px 0; -ms-border-radius:0 23px 23px 0; -o-border-radius:0 23px 23px 0;
+	/* border-radius:0 23px 23px 0; -moz-border-radius:0 23px 23px 0; -webkit-border-radius:0 23px 23px 0; -ms-border-radius:0 23px 23px 0; -o-border-radius:0 23px 23px 0; */
 	transition:opacity 500ms linear,height 500ms linear;
 		-webkit-transition:opacity 500ms linear,height 500ms linear;
 		-moz-transition:opacity 500ms linear,height 500ms linear;
@@ -324,9 +324,9 @@ span.comment {
 }
 /* ------------------------- BOX RADIUS AND GRADIENTS ------------------------------------------------------------- */
 
-.rounded,#disqus_thread { /* BOOK BG */
+.rounded, #disqus_thread { /* BOOK BG */
 	border:1px solid rgba(160,160,160,0.8);
-	border-radius:23px; -moz-border-radius:23px; -webkit-border-radius:23px; -ms-border-radius:23px; -o-border-radius:23px;
+	/* border-radius:23px; -moz-border-radius:23px; -webkit-border-radius:23px; -ms-border-radius:23px; -o-border-radius:23px; *//* FUCKING BORDER-RADIUS IS KILLING SCROLL PERFS */
 	background: rgb(250,250,250); /* Plain color for performance with big text */
 	box-shadow:1px 1px 3px rgba(5,5,5,0.3),inset 0 0 9px rgba(255,255,255,1);
 		-moz-box-shadow:1px 1px 3px rgba(5,5,5,0.3),inset 0 0 9px rgba(255,255,255,1);
@@ -335,6 +335,9 @@ span.comment {
 		-o-box-shadow:1px 1px 3px rgba(5,5,5,0.3),inset 0 0 9px rgba(255,255,255,1);
 	background-clip: padding-box; -moz-background-clip: padding-box; -webkit-background-clip: padding-box; -ms-background-clip: padding-box; -o-background-clip: padding-box;
 }
+	#disqus_thread { /* BOOK BG */
+		border-radius:23px; -moz-border-radius:23px; -webkit-border-radius:23px; -ms-border-radius:23px; -o-border-radius:23px;
+	}
 
 .roundered { /* ASIDE BG + header top bar in gradient */
 	border:1px solid rgba(250,250,250,0.2);
@@ -354,7 +357,7 @@ span.comment {
 		-o-box-shadow:0 5px 10px rgba(60,60,60,0.8),0 0 10px rgba(250,250,250,0.8);
 }
 
-.unrounded { /* BOOK BG */
+.unrounded {
 	border:1px solid rgba(160,160,160,0.8);
 	border-radius:23px; -moz-border-radius:23px; -webkit-border-radius:23px; -ms-border-radius:23px; -o-border-radius:23px;
 	background:rgba(200,200,200,1) url('../images/bg_vertical.jpg') top left;

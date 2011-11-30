@@ -472,7 +472,8 @@ var readr = function() { // Your welcome to the events-o-drome !
         });
 
     // ----------- VIEWPORT SCREEN THUMBS ---------------------------------------------------------------------------------- //
-
+    // Made as a plugin here : http://jsfiddle.net/molokoloco/Atj8Z/
+    
     var setCurrentViewport = function() { // Focus current page view link
             var page = 0, // ?
                 currentScroll = getScrollTop(),
@@ -611,6 +612,7 @@ var readr = function() { // Your welcome to the events-o-drome !
             if (_db_) db('checkZooming()');
             
             return; ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// TODO
+            
             // if (!isChrome) return;
             // em width size change with user zoom, but pix width only change visualy, not the value given by Chrome
             if (counterZoom % 2 === 0 && $refEm.width() != $refPix.width()) { // Detect user zoom in Chrome, it keep 120% but we reduce here to conterbalance and
@@ -635,7 +637,7 @@ var readr = function() { // Your welcome to the events-o-drome !
 
     var wheelReset = function() {
             if (_db_) db('wheelReset()');
-            wheelFactor     = 0.25;
+            wheelFactor     = 0.50;
             wheelCounter    = 0;
             wheelDeltaBack  = 0;
             wheelTmr        = null;
@@ -649,11 +651,14 @@ var readr = function() { // Your welcome to the events-o-drome !
             if (!wheelTime) wheelTime = new Date();
             var now = new Date(),
                 diff = now.getSeconds() - wheelTime.getSeconds();
-            if ((wheelCounter > 10 && diff <= 3) || wheelCounter > 18 || wheelFactor == 20) wheelFactor = 20;
-            else if (wheelCounter > 4 && diff <= 2) wheelFactor = 2;
-            else if (wheelCounter > 2) wheelFactor = 1;
+            
+            // Tunnig of the mouseWheel scroll distance factor
+            if ((wheelCounter > 10 && diff <= 3) || wheelCounter > 18 || wheelFactor == 20) wheelFactor = 15;
+            else if (wheelCounter > 4 && diff <= 2) wheelFactor = 1.8;
+            else if (wheelCounter > 2) wheelFactor = 1.2;
             wheelDeltaBack = delta;
             wheelCounter++;
+            
             // if (event.ctrlKey || keyPressed) { // Intent to set custom ZOOM with ctrl + wheel, but fail in Chrome, like ghost, nothing trigger
                 // if (_db_) db('setZoom(currentZoom)+ctrlKey');
                 // if (delta > 0) setZoom(currentZoom + 5.00);
