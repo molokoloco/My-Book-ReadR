@@ -500,7 +500,7 @@ var readr = function() { // Your welcome to the events-o-drome !
         createViewport = function() { // Build viewport // One page for each screen that user need to scroll to get to the bottom of the HTML page
             if (_db_) db('createViewport()');
             totalViews = Math.ceil(getPageHeight() / getWinHeight());
-            if ($viewportLinks.lenght > 0) $viewportLinks.unbind('click.'+name, viewportClick);
+            if ($viewportLinks.length > 0) $viewportLinks.unbind('click.'+name, viewportClick);
             $viewportUl.empty();
             if (totalViews < 1) return; // Never now...
             for (var i = 0, views = ''; i < totalViews; i++)
@@ -530,11 +530,7 @@ var readr = function() { // Your welcome to the events-o-drome !
 
     // ----------- ZOOM TEXT ---------------------------------------------------------------------------------- //
 
-    var currentZoom         = 62.50, // %, let's say that 1em == 10px
-        playTmr             = null,
-        playSpeed           = 5, // from 0 to 9 avec les touches - default 5
-        playDist            = 12, // We increment by 12px (half <p> line height, so eye don't lose the text)
-        playTimer           = 150; // 150(ms) * 5(speed) * 3 (factor) = 2250ms, default time to read a 1/2 line
+    var currentZoom         = 62.50; // %, let's say that 1em == 10px
 
     // Aside tool buttons
     var setZoom = function(zoom) { // Global Text zoom
@@ -543,7 +539,7 @@ var readr = function() { // Your welcome to the events-o-drome !
             currentZoom = (currentZoom > 60.00 && currentZoom <= 65.00 ? 62.50 : currentZoom); // Round to normal default size
             $body.css('font-size', zoom+'%'); // We deal text in .em so don't need to zoom all with : $('html,body').css('zoom', currentZoom);
             printInfos('Taille du texte : '+parseInt((zoom/62.50) * 100, 10)+'%');
-            setTimeout(resizeRefreshEvent, 500); // Little timeout waiting all the doc text to resize...
+            setTimeout(resizeRefreshEvent, 500); // Some timeout waiting all the doc text to resize...
         },
         fullScreen = function (event) { // Intent resize the browser to full screen
             if (_db_) db('fullScreen()');
@@ -559,7 +555,11 @@ var readr = function() { // Your welcome to the events-o-drome !
     $fullscreen.bind('click.'+name,     fullScreen);
 
     // ----------- Screen AUTO SCROLLING ---------------------------------------------------------------------------------- //
-
+    var playTmr             = null,
+        playSpeed           = 5, // from 0 to 9 avec les touches - default 5
+        playDist            = 12, // We increment by 12px (half <p> line height, so eye don't lose the text)
+        playTimer           = 150; // 150(ms) * 5(speed) * 3 (factor) = 2250ms, default time to read a 1/2 line
+    
     var callAutoPlay = function(event) {
             if (_db_) db('callAutoPlay() playSpeed', playSpeed, 'isAutoPlay', isAutoPlay);
             if (!isAutoPlay) { // Toggle when is called
@@ -871,11 +871,11 @@ var readr = function() { // Your welcome to the events-o-drome !
                     .prepend('<a name="note_'+numNotes+'" id="note_'+numNotes+'"></a>');
             printInfos('Note ajout&eacute;e');
         },
-        killNoteTmr = function($note) {
+        killNoteTmr = function() {
             if (notesTmr) clearTimeout(notesTmr);
             notesTmr = null;
         },
-        killNoteOver = function($note) {
+        killNoteOver = function() {
             killNoteTmr();
             $noteToKill.fadeOut(300);
         };
