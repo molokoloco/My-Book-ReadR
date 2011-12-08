@@ -298,6 +298,13 @@ var readr = function() { // Your welcome to the events-o-drome !
             if (_db_) db('textEnhance()');
             $titlesChapter // Create summary based on the H4 tags
                 .each(function(i) {
+                    
+                    // https://github.com/rstacruz/jquery.unorphan/blob/master/jquery.unorphan.js
+                    // var last = this.lastChild;
+                    //if ((last) && (last.nodeType == 3)) {
+                        //last.nodeValue = last.nodeValue.replace(/\s+([^\s]+\s*)$/g, '\xA0$1');
+                    //}
+                    
                     $(this)
                         .data({id:i}) // Attach menu_id to chapters
                         .before('<a name="chapter_'+(i+1)+'" id="chapter_'+(i+1)+'"></a>'); // Add anchors, anchor position is important because we go exactly to this offset
@@ -500,8 +507,10 @@ var readr = function() { // Your welcome to the events-o-drome !
         createViewport = function() { // Build viewport // One page for each screen that user need to scroll to get to the bottom of the HTML page
             if (_db_) db('createViewport()');
             totalViews = Math.ceil(getPageHeight() / getWinHeight());
-            if ($viewportLinks.length > 0) $viewportLinks.unbind('click.'+name, viewportClick);
-            $viewportUl.empty();
+            if ($viewportLinks.length > 0){
+                $viewportLinks.unbind('click.'+name, viewportClick);
+                $viewportUl.empty();
+            }
             if (totalViews < 1) return; // Never now...
             for (var i = 0, views = ''; i < totalViews; i++)
                 views += '<li><a href="#screen_'+(i+1)+'">'+(i+1)+'</a></li>';
