@@ -1,7 +1,7 @@
 jQuery.ReadR.JS
 ================
 
-**My Book ReadR V1.12** Polished HTML5/CSS3 and jQuery powered "read-a-book" page.  
+**My Book ReadR V1.12** : Polished framework to read a book online (HTML5/CSS3/jQuery)
 "*This start from the idea to design a page specially engineered to read a long text on the web...*" ^^  
 GPL/MIT/Copyleft - [@molokoloco](https://twitter.com/#!/molokoloco/) 2011 - <http://b2bweb.fr>
 
