@@ -9,7 +9,7 @@ GPL/MIT/Copyleft - [@molokoloco](https://twitter.com/#!/molokoloco/) 2011 - <htt
 
 - Infos (Blog)        : <http://www.b2bweb.fr/molokoloco/my-book-readr-v1-12-html5-jquery-polished-page-as-a-book-reader/>
 - Slides (#ParisJS)   : <http://www.b2bweb.fr/bonus/my-book-readr/>
-- Plain demo          : <http://www.b2bweb.fr/bonus/piratons-la-democratie.html>
+- **Plain demo**          : <http://www.b2bweb.fr/bonus/piratons-la-democratie.html>
 - Sources & download  : <https://github.com/molokoloco/My-Book-ReadR/>
 
 ---
@@ -18,7 +18,7 @@ GPL/MIT/Copyleft - [@molokoloco](https://twitter.com/#!/molokoloco/) 2011 - <htt
 New sources and examples here :**
 
 - My Book ReadR V1.13  
-  http://www.b2bweb.fr/molokoloco/accord-de-libre-echange-transatlantique-readr-ified-with-html5/
+  **http://www.b2bweb.fr/molokoloco/accord-de-libre-echange-transatlantique-readr-ified-with-html5/**
   http://www.b2bweb.fr/molokoloco/etienne-chouard-centralite-du-tirage-au-sort-en-democratie/
 - My Book ReadR V1.12b  
   http://www.b2bweb.fr/molokoloco/quotes-from-george-orwell-html5-redesign/
