@@ -7,10 +7,11 @@ GPL/MIT/Copyleft - [@molokoloco](https://twitter.com/#!/molokoloco/) 2011 - <htt
 
 ---
 
-- Infos (Blog)        : <http://www.b2bweb.fr/molokoloco/my-book-readr-v1-12-html5-jquery-polished-page-as-a-book-reader/>
-- Slides (#ParisJS)   : <http://www.b2bweb.fr/bonus/my-book-readr/>
-- **Plain demo**          : <http://www.b2bweb.fr/bonus/piratons-la-democratie.html>
-- Sources & download  : <https://github.com/molokoloco/My-Book-ReadR/>
+- Infos (Blog) : <http://www.b2bweb.fr/molokoloco/my-book-readr-v1-12-html5-jquery-polished-page-as-a-book-reader/>
+- Slides (#ParisJS) : <http://www.b2bweb.fr/bonus/my-book-readr/>
+- **Plain demo** : <http://www.b2bweb.fr/bonus/piratons-la-democratie.html>
+- Sources & download : <https://github.com/molokoloco/My-Book-ReadR/>
+- Talk @ ParisJS meetup : <https://www.dailymotion.com/video/xmt4wi/> on Dailymotion @Microsoft France
 
 ---
 
