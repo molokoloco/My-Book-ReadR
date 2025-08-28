@@ -7,9 +7,9 @@ GPL/MIT/Copyleft - [@molokoloco](https://twitter.com/#!/molokoloco/) 2011 - <htt
 
 ---
 
-- Infos (Blog) : <http://www.b2bweb.fr/molokoloco/my-book-readr-v1-12-html5-jquery-polished-page-as-a-book-reader/>
-- Slides (#ParisJS) : <http://www.b2bweb.fr/bonus/my-book-readr/>
-- **Plain demo** : <http://www.b2bweb.fr/bonus/piratons-la-democratie.html>
+- Infos (Blog) : <https://web.archive.org/web/20160526211831/http://www.b2bweb.fr/molokoloco/my-book-readr-v1-12-html5-jquery-polished-page-as-a-book-reader/>
+- Slides (#ParisJS) : <http://julienweb.fr/bonus/my-book-readr/>
+- **Plain demo** : <http://julienweb.fr/bonus/piratons-la-democratie.html>
 - Sources & download : <https://github.com/molokoloco/My-Book-ReadR/>
 - Talk @ ParisJS meetup : <https://www.dailymotion.com/video/xmt4wi/> on Dailymotion @Microsoft France
 
@@ -19,21 +19,21 @@ GPL/MIT/Copyleft - [@molokoloco](https://twitter.com/#!/molokoloco/) 2011 - <htt
 New sources and examples here :**
 
 - My Book ReadR V1.13  
-  **http://www.b2bweb.fr/molokoloco/accord-de-libre-echange-transatlantique-readr-ified-with-html5/**
-  http://www.b2bweb.fr/molokoloco/etienne-chouard-centralite-du-tirage-au-sort-en-democratie/
+  **https://web.archive.org/web/20160526211831/http://www.b2bweb.fr/molokoloco/accord-de-libre-echange-transatlantique-readr-ified-with-html5/**
+  https://web.archive.org/web/20160526211831/http://www.b2bweb.fr/molokoloco/etienne-chouard-centralite-du-tirage-au-sort-en-democratie/
 - My Book ReadR V1.12b  
-  http://www.b2bweb.fr/molokoloco/quotes-from-george-orwell-html5-redesign/
+  https://web.archive.org/web/20160526211831/http://www.b2bweb.fr/molokoloco/quotes-from-george-orwell-html5-redesign/
 - My Book ReadR V1.12 (HERE)  
-  http://www.b2bweb.fr/molokoloco/my-book-readr-v1-12-html5-jquery-polished-page-as-a-book-reader/
+  https://web.archive.org/web/20160526211831/http://www.b2bweb.fr/molokoloco/my-book-readr-v1-12-html5-jquery-polished-page-as-a-book-reader/
 
 **Some plugins extracted from this prototype...**
 
 - **jQuery scrollView** : Viewport scroll and screen vertical helper  
-  http://www.b2bweb.fr/molokoloco/jquery-scrollview-viewport-scroll-and-screen-vertical-helper/
+  https://web.archive.org/web/20160526211831/http://www.b2bweb.fr/molokoloco/jquery-scrollview-viewport-scroll-and-screen-vertical-helper/
 - **jQuery Colonize plugin** : In-between titles multicols paragraphs with CSS3  
-  http://www.b2bweb.fr/molokoloco/jquery-colonize-plugin-in-between-titles-multicols-paragraphes-with-css3/
+  https://web.archive.org/web/20160526211831/http://www.b2bweb.fr/molokoloco/jquery-colonize-plugin-in-between-titles-multicols-paragraphes-with-css3/
 - **BeeLine Reader** : Lire plus vite et réduire les erreurs  
-  http://www.b2bweb.fr/molokoloco/beeline-reader-lire-plus-vite-et-reduire-les-erreurs/
+  https://web.archive.org/web/20160526211831/http://www.b2bweb.fr/molokoloco/beeline-reader-lire-plus-vite-et-reduire-les-erreurs/
 
 ---
 
